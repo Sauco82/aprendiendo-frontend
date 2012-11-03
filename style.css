@@ -4,7 +4,12 @@ body {
 	margin: 25px auto;
 	border: 1px solid #222;
 	background:#f5f5f5;
+	background: red;
 	color:#222;
+}
+td,th{
+	border: 1px solid #222;
+	padding: 3px;
 }
 p.explicacion {margin-left:20px;}
 span.rendimiento_potencial {font-weight:normal;}
