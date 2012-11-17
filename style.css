@@ -1,36 +1,80 @@
 body {
-	padding: 25px;
-	margin: 25px auto;
-	border: 1px solid #222;
-	background:#f5f5f5;	
 	color:#222;
+	font-family: Verdana, sans-serif;
 }
+
+h1,h2,h3,h4,h5{margin: 0;}
+
+h1{
+	font-size: 38px;
+	line-height: 90%;
+	margin-bottom: 20px;
+}
+	h1 small{
+		font-weight: normal;
+		font-size: 25px
+	}
+
+h2{
+	font-weight: normal;
+	margin: 5px 0 10px 0;
+}
+
 td,th{
 	border: 1px solid #222;
 	padding: 3px;
 }
-p.explicacion {margin-left:20px;}
+
+p{
+	font-size: 16px;
+}
+
+ul,ol,p.explicacion{
+	margin-left: 20px;
+}
+
 span.rendimiento_potencial {font-weight:normal;}
 
-
-.izquierda{
-	background: red;
-	width: 350px;
-	float: right;
+.container{
+	position:relative;
+	margin:0 auto;
+	width:1100px;
+	padding:50px; /*ancho total 1200px*/
+	overflow:hidden;
 }
 
-.derecha{
-	background: yellow;
-	width: 550px;
-	float: right;
+.contexto{
+	width: 600px;
+	min-height: 1px;
+	margin-right: 50px; 
+	float:left;
 }
 
-.derecha p{
-	background: #eee;
-	width: 150px;
-	float: right;	
+.contenido{
+	float:left;
+	width:450px;
 }
 
-.arregla,.conclear{
-	clear:right;
+.page_links a{
+	float:right;
+	padding: 10px 30px;
+	font-size: 20px;
+	background:#d4aa00;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:white;
+	text-shadow: 1px 1px 0 #b49000;
+	text-decoration: none;
+	font-weight: normal;
 }
+
+
+/**  Estilos unicos ****/
+
+.indice .contexto img{
+	position: fixed;
+	top:70px;
+}
+
+
