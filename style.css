@@ -1,6 +1,8 @@
 body {
+	background:#eee;
 	color:#222;
 	font-family: Verdana, sans-serif;
+	margin:0;
 }
 
 h1,h2,h3,h4,h5{margin: 0;}
@@ -36,6 +38,11 @@ ul,ol,p.explicacion{
 span.rendimiento_potencial {font-weight:normal;}
 
 .container{
+	background:#f5f5f5;
+	border:1px solid #ccc;
+	-moz-box-shadow: 0px 0px 10px #bbb;
+	-webkit-box-shadow: 0px 0px 10px #bbb;
+	box-shadow: 0px 0px 10px #bbb;
 	position:relative;
 	margin:0 auto;
 	width:1100px;
@@ -69,8 +76,14 @@ span.rendimiento_potencial {font-weight:normal;}
 	font-weight: normal;
 }
 
+	.page_links a.prev{
+		float:left;
+		background:#ddd;
+		text-shadow: 1px 1px 0 #ccc;
+	}
 
-/**  Estilos unicos ****/
+
+/***  Estilos unicos ****/
 
 .indice .contexto img{
 	position: fixed;
