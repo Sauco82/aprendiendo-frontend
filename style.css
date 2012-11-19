@@ -50,17 +50,19 @@ span.rendimiento_potencial {font-weight:normal;}
 	overflow:hidden;
 }
 
-.contexto{
-	width: 600px;
-	min-height: 1px;
-	margin-right: 50px; 
+.libro .izquierda, .libro .derecha{
+	width: 525px;
 	float:left;
 }
+.libro .izquierda{margin-right: 50px;}
 
-.contenido{
-	float:left;
-	width:450px;
+.tres_columnas .primera,.tres_columnas .segunda,.tres_columnas .tercera{
+	width: 332px;
+	float:left;	
 }
+.tres_columnas .primera,.tres_columnas .tercera{margin-right: 52px}
+
+.page_links{clear: both;}
 
 .page_links a{
 	float:right;
@@ -78,16 +80,19 @@ span.rendimiento_potencial {font-weight:normal;}
 
 	.page_links a.prev{
 		float:left;
-		background:#ddd;
-		text-shadow: 1px 1px 0 #ccc;
+		background:#bbb;
+		text-shadow: 1px 1px 0 #aaa;
 	}
 
 
-/***  Estilos unicos ****/
 
-.indice .contexto img{
-	position: fixed;
-	top:70px;
+.ultrarresumen{
+	padding: 50px 50px 20px 50px;
+	font-size: 50px;
+	color:#0099d4;
+	text-align: center;
 }
-
-
+	.ultrarresumen small{ 
+		display: block;
+		font-size: 25px;
+	}
