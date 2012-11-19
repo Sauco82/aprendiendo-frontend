@@ -60,9 +60,20 @@ span.rendimiento_potencial {font-weight:normal;}
 	width: 332px;
 	float:left;	
 }
-.tres_columnas .primera,.tres_columnas .tercera{margin-right: 52px}
+.tres_columnas .primera,.tres_columnas .segunda{margin-right: 52px}
 
-.page_links{clear: both;}
+
+.cuatro_columnas .primera,.cuatro_columnas .segunda,.cuatro_columnas .tercera,.cuatro_columnas .cuarta{
+	width: 250px;
+	float:left;	
+}
+.cuatro_columnas .primera,.cuatro_columnas .segunda,.cuatro_columnas .tercera{margin-right: 33px}
+
+.page_links{
+	padding-top: 50px;
+	overflow: hidden;
+	clear: both;
+}
 
 .page_links a{
 	float:right;
