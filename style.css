@@ -69,7 +69,7 @@ span.rendimiento_potencial {font-weight:normal;}
 }
 .cuatro_columnas .primera,.cuatro_columnas .segunda,.cuatro_columnas .tercera{margin-right: 33px}
 
-.cuatro_columnas img{
+.cuatro_columnas img,.img_contexto{
 	height: 200px;
 	margin: 30px auto 10px auto;
 	display: block;
