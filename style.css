@@ -31,10 +31,6 @@ p{
 	font-size: 16px;
 }
 
-ul,ol,p.explicacion{
-	margin-left: 20px;
-}
-
 span.rendimiento_potencial {font-weight:normal;}
 
 .container{
@@ -95,15 +91,7 @@ span.rendimiento_potencial {font-weight:normal;}
 .page_links a{
 	float:right;
 	padding: 10px 30px;
-	font-size: 20px;
-	background:#d4aa00;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	color:white;
-	text-shadow: 1px 1px 0 #b49000;
-	text-decoration: none;
-	font-weight: normal;
+	font-size: 20px;	
 }
 
 	.page_links a.prev{
@@ -126,3 +114,71 @@ span.rendimiento_potencial {font-weight:normal;}
 		display: block;
 		font-size: 25px;
 	}
+
+
+/** Introduccion interactiva Odiorne **/
+#tabla_odiorne{
+	float:right;
+	width: 650px;
+	height: 448px;
+	background: url(grafico_odiorne_interactivo.png) 0 0 no-repeat;
+}
+
+table td,table th{
+	border:0;
+}
+
+table#ejemplos{
+	border-collapse:collapse;
+	text-align: center;
+	margin: 70px 0 0 0px;
+}
+
+table#ejemplos th{	
+	border-bottom: 1px solid #aaa;
+	font-weight:normal;
+	font-size
+}
+table#ejemplos td{	
+	line-height: 60px;
+	height: 60px;
+	width: 90px;
+	border-bottom: 1px solid #aaa;
+	font-size:20px;
+}
+
+	table#ejemplos td.cuadrante,table#ejemplos th.cuadrante{
+		display: none;
+	}
+
+	table#ejemplos td.conboton{
+		width: 190px
+	}
+		table#ejemplos td.conboton a{			
+			font-size: 14px;
+			padding: 5px 20px;
+		}
+
+#ejercicios {
+	clear:both;
+}
+
+
+/* Efectos para enlaces y botones, etc */ 
+table#ejemplos td.conboton a, .page_links a{
+	cursor:pointer;
+	background:#d4aa00;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:white;
+	text-shadow: 1px 1px 0 #b49000;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+table#ejemplos td.conboton a:hover, .page_links a:hover{
+	background:#ffce06
+}
+
+.page_links a.prev:hover{background:#aaa;}
