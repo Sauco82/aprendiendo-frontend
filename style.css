@@ -118,11 +118,37 @@ span.rendimiento_potencial {font-weight:normal;}
 
 /** Introduccion interactiva Odiorne **/
 #tabla_odiorne{
+	position:relative;
 	float:right;
-	width: 650px;
-	height: 448px;
+	width: 550px;
+	height: 348px;
+	padding:50px;
 	background: url(grafico_odiorne_interactivo.png) 0 0 no-repeat;
 }
+
+	#tabla_odiorne div#cuadrante1,#tabla_odiorne div#cuadrante2,#tabla_odiorne div#cuadrante3,#tabla_odiorne div#cuadrante4{
+		position:absolute;
+		width: 229px;
+		height: 99px;
+		padding: 15px;
+	}
+	#tabla_odiorne div#cuadrante1{ top: 30px; left:63px;}
+	#tabla_odiorne div#cuadrante2{ top: 30px; left:319px;}
+	#tabla_odiorne div#cuadrante3{ top:225px; left:63px;}
+	#tabla_odiorne div#cuadrante4{ top:225px; left:319px;}
+
+	#tabla_odiorne div#cuadrante1 span,#tabla_odiorne div#cuadrante2 span,#tabla_odiorne div#cuadrante3 span,#tabla_odiorne div#cuadrante4 span{
+		background:url(payo.png);
+		float:left;
+		width: 63px;
+		height: 52px;
+		padding-top: 5px;
+		text-align: center;
+		color:white;
+		font-size: 18px;
+	}
+
+
 
 table td,table th{
 	border:0;
@@ -157,6 +183,11 @@ table#ejemplos td{
 		table#ejemplos td.conboton a{			
 			font-size: 14px;
 			padding: 5px 20px;
+		}
+		table#ejemplos td.conboton.azul a,table#ejemplos td.conboton.azul a:hover{
+			background:#0099d4;
+			text-shadow: 1px 1px 0 #008abf;
+			font-weight: bold;
 		}
 
 #ejercicios {
