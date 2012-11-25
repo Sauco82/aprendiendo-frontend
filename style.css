@@ -123,6 +123,7 @@ span.rendimiento_potencial {font-weight:normal;}
 	width: 550px;
 	height: 348px;
 	padding:50px;
+	margin-bottom: 50px;
 	background: url(grafico_odiorne_interactivo.png) 0 0 no-repeat;
 }
 
@@ -190,9 +191,30 @@ table#ejemplos td{
 			font-weight: bold;
 		}
 
-#ejercicios {
+ul#ejercicios{
 	clear:both;
+	width: 100%;
+	overflow: hidden;
 }
+	ul#ejercicios li {
+		float:left;
+		border: 1px solid #aaa;
+		border-left: 0px;
+		border-right: 0px;
+		list-style-type: none;
+		margin: 0 30px 20px 0;
+	}
+		ul#ejercicios li span{
+			float:left;
+			padding: 25px 0;
+			width: 80px;
+			text-align: center;
+		}
+
+		ul#ejercicios li span.payo{
+			background:url(payo.png) 50% 50% no-repeat;
+		}
+
 
 
 /* Efectos para enlaces y botones, etc */ 
