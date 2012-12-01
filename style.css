@@ -235,3 +235,19 @@ table#ejemplos td.conboton a:hover, .page_links a:hover{
 }
 
 .page_links a.prev:hover{background:#aaa;}
+
+
+/* ==========   Formularios ===============*/
+
+.esconde ul.ss-choices li,
+ul.ss-choices li div,
+.esconde input
+{display: none;}
+
+ul.ss-choices li.muestra,
+ul.ss-choices li.muestra div,
+ .esconde input.muestra
+ {display:block;}
+
+ul.ss-choices li.muestra div{background:red;} 
+ul.ss-choices li.muestra div.correcto{background:green;}
