@@ -18,7 +18,7 @@ function valida(numero_de_preguntas){
 	return true;
 }
 
-function ValidaDNI(dni) {
+function validaDNI(dni) {
   numero = dni.substr(0,dni.length-1);
   let = dni.substr(dni.length-1,1).toUpperCase();
   numero = numero % 23;
@@ -34,4 +34,6 @@ function muestraSoluciones(){
 	$("input:checked").parent().parent().addClass('muestra');
 	$("#ss-form").addClass("esconde");
 	$("input:text").addClass("muestra");
+	$("#boton_envio").hide();
+	$("#terminado").show();
 }

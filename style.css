@@ -102,7 +102,7 @@ span.rendimiento_potencial {font-weight:normal;}
 
 
 
-.intro p{font-size: 20px}
+.intro p, p.intro{font-size: 20px}
 
 .ultrarresumen{
 	padding: 50px 50px 20px 50px;
@@ -239,15 +239,99 @@ table#ejemplos td.conboton a:hover, .page_links a:hover{
 
 /* ==========   Formularios ===============*/
 
-.esconde ul.ss-choices li,
-ul.ss-choices li div,
-.esconde input
-{display: none;}
+form#ss-form{
+	margin: 10px 180px;
+}
 
-ul.ss-choices li.muestra,
-ul.ss-choices li.muestra div,
- .esconde input.muestra
- {display:block;}
+.ss-q-title{
+	color: #333;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 20px 0 5px 0;
+	display: block;
+}
 
-ul.ss-choices li.muestra div{background:red;} 
-ul.ss-choices li.muestra div.correcto{background:green;}
+.ss-q-help{
+	color:#444;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.ss-q-short{
+	border: 1px solid #AAA;
+	width: 160px;
+	font-size: 30px;
+	padding: 5px;
+	color: #333;
+	border-radius: 3px;
+}
+
+ul.ss-choices{
+	list-style: none;
+	margin:0;	
+	padding: 0;
+}
+
+	ul.ss-choices li{
+		margin: 0 0 15px 30px;
+	}
+
+		ul.ss-choices li .ss-choice-label,ul.ss-choices li .ss-choice-label input{
+			cursor: pointer;
+		}
+
+
+	.esconde ul.ss-choices li,
+	ul.ss-choices li div,
+	.esconde input
+	{display: none;}
+
+	ul.ss-choices li.muestra,
+	ul.ss-choices li.muestra div,
+	 .esconde input.muestra
+	 {display:block;}
+
+	ul.ss-choices li.muestra div{
+		background:#f7e1e1;
+		padding: 20px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	} 
+	ul.ss-choices li.muestra div.correcto{
+		background:#e1f7e5;
+		padding: 20px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+#boton_envio{
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px 40px;
+	display: block;
+	margin: 0 auto;
+	border:none;
+	cursor:pointer;
+	background:#0099d4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:white;
+	text-shadow: 1px 1px 0 #007dae;
+	text-decoration: none;
+	font-weight: normal;
+}
+	#boton_envio:hover{background:#00b1f4;}
+
+.warning{ 
+	color:red;
+	text-align: center;
+	font-size: 18px;
+}
+
+#felicidades{
+	text-align: center;
+	
+}

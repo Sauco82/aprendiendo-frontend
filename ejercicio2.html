@@ -4,143 +4,69 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>PRÁCTICA No 2: TÉCNICAS AUXILIARES DEL PROCESO DE DIRECCIÓN ESTRATÉGICA DE RRHH.</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="interaction.js"></script>
+		<script type="text/javascript">
+			function envia(form){
+				numero_de_preguntas = 1;
+				if (valida(numero_de_preguntas)){
+					form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dGVmMHRXckR4eXozX0EyLWlQbi1DalE6MQ&amp;ifq';
+					muestraSoluciones();
+				}
+			}
+		</script>
 	</head>
 
 	<body>
-		<h1>CASO PRÁCTICO PARA RESOLVER No 2: EMPRESA YAKARA, S.A</h1>
-		<p>La empresa YAKARA, S.A. viene obteniendo grandes beneficios desde que decidió implantar un departamento de I+D en la estructura organizativa, dotándolo de los recursos necesarios para el desarrollo de nuevos productos y tecnologías de producción. En la planificación estratégica que actualmente está llevando a cabo, se ha llegado a un balance económico muy favorable para una nueva inversión. No obstante, se preguntan si estarán en una buena situación respecto a sus RRHH para afrontar los nuevos objetivos. Las expectativas de crecimiento para el futuro de la empresa YAKARA, S.A. son las siguientes:</p>
-		<ol>
-			<li>Incrementar el volumen de producción con la introducción de nueva tecnología en el sistema de fabricación. Esta nueva tecnología reducirá el número de operarios necesarios de 16 a 10. Así mismo, requerirá de operarios adaptables al manejo de maquinaria a través de soporte informático y de intranet, capacidad para trabajar coordinadamente en equipo y para organizar su propio trabajo.</li>
-			<li>Ampliar los servicios que ofrece el departamento de logística de tal manera que les permita ampliar su radio de acción en el contexto nacional. Esta ampliación de los servicios implica crear 6 puestos de trabajo.</li>
-		</ol>
+		<div class="container">
+			<h1>Ejercicio 1</h1>
+			<p class="intro">Risus sit dolor nunc nascetur adipiscing dolor placerat sed, magna ac? Amet phasellus habitasse porttitor pellentesque arcu amet magna ac, vut dictumst, natoque. In pulvinar sed non a porta mus turpis rhoncus, lundium cursus a, est auctor eros aliquet nisi sed etiam etiam adipiscing rhoncus mattis tristique? Natoque, integer a, enim</p>
 
-		<p>Se ha evaluado el rendimiento de los operarios, así como el potencial necesario para el desarrollo de las nuevas competencias requeridas para el desempeño de este puesto y de los nuevos puestos que se van a crear en el departamento de logística. Los datos de estas evaluaciones en una escala de 10 puntos son los siguientes:</p>
+			<form target="fake-target" action="" onsubmit="envia(this);" method="POST" id="ss-form">
+				<br>
+				<div class="errorbox-good">
+				<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">Tu nombre
+				</label>
+				<label class="ss-q-help" for="entry_0"></label>
+				<input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0"></div></div></div>
+				<br> <div class="errorbox-good">
+				<div class="ss-item  ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_2">cuanto es uno + dos
+				</label>
+				<label class="ss-q-help" for="entry_2"></label>
 
-	<table>
-		<tr>
-			<th>Plantilla actual</th>
-			<th>Rendimiento de Técnicos en fertilizantes</th>
-			<th>Potencial para Técnico en fertilizantes</th>
-			<th>Potencial para Técnico en plaguicidas</th>
-		</tr>
-		<tr>
-			<td>Técnico A</td>
-			<td>4</td>
-			<td>3</td>
-			<td>3</td>
-		</tr>
-		<tr>
-			<td>Técnico B</td>
-			<td>7</td>
-			<td>7</td>
-			<td>9</td>
-		</tr>
-		<tr>
-			<td>Técnico C</td>
-			<td>6</td>
-			<td>5</td>
-			<td>6</td>
-		</tr>
-		<tr>
-			<td>Técnico D</td>
-			<td>9</td>
-			<td>3</td>
-			<td>4</td>
-		</tr>
-		<tr>
-			<td>Técnico E</td>
-			<td>7</td>
-			<td>5</td>
-			<td>6</td>
-		</tr>
-		<tr>
-			<td>Técnico F</td>
-			<td>7</td>
-			<td>3</td>
-			<td>3</td>
-		</tr>
-		<tr>
-			<td>Técnico G</td>
-			<td>8</td>
-			<td>3</td>
-			<td>3</td>
-		</tr>
-		<tr>
-			<td>Técnico H</td>
-			<td>9</td>
-			<td>4</td>
-			<td>4</td>
-		</tr>
-		<tr>
-			<td>Técnico I</td>
-			<td>7</td>
-			<td>82</td>
-			<td>9</td>
-		</tr>
-		<tr>
-			<td>Técnico K</td>
-			<td>6</td>
-			<td>8</td>
-			<td>8</td>
-		</tr>
-			<td>Técnico M</td>
-			<td>4</td>
-			<td>7</td>
-			<td>9</td>
-		</tr>
-		<tr>
-			<td>Técnico P</td>
-			<td>3</td>
-			<td>9</td>
-			<td>8</td>
-		</tr>
-		<tr>
-			<td>Técnico Q</td>
-			<td>3</td>
-			<td>8</td>
-			<td>8</td>
-		</tr>
-		<tr>
-			<td>Técnico R</td>
-			<td>4</td>
-			<td>5</td>
-			<td>7</td>
-		</tr>
-		<tr>
-			<td>Técnico S</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-		</tr>
-		<tr>
-			<td>Técnico O</td>
-			<td>9</td>
-			<td>9</td>
-			<td>9</td>
-		</tr>
-	</table>
-
-		<h2>Cuestiones a resolver</h2>
-		<ol>
-			<li>¿Cuáles son los objetivos generales de la empresa?</li>
-			<li>¿Qué consecuencias tiene este objetivo en materia de RRHH, esto es, qué necesidades de personal se derivan de dicho objetivo? Dicho de otra manera, ¿cuántos empleados necesitamos tener en plantilla y para qué puestos? Señale entonces, cuáles son los objetivos de RRHH que se derivan de los objetivos de la empresa.</li>
-			<li>Siguiendo el modelo de Odiorne, refleje en una matriz los datos aportados para los operarios de la empresa, teniendo en cuenta el potencial requerido para su actual puesto de trabajo. Utilice una escala de 10 puntos. A continuación, determine en cada situación qué operarios se encuentran al límite, cuáles son estrellas, cuáles son prescindibles y cuáles son problemas.</li>
-			<li>Teniendo en cuenta los objetivos de la empresa y sus repercusiones en materia de RRHH, así como la clasificación de los empleados según el modelo de Odiorne, indique usted hasta qué punto la empresa dispone actualmente en plantilla de suficientes RRHH para afrontar los objetivos que persigue. ¿Está la empresa en una situación de fortaleza o de debilidad respecto a sus RRHH? (En este ejercicio no vamos a considerar la disponibilidad externa de RRHH, por lo que haga su valoración atendiendo solo a la disponibilidad interna). Antes de responder a esta pregunta trate de resolver las siguientes:</li>
-				<ol>
-					<li>Dado que hay que reducir operarios, ¿cuáles retendría en su puesto y por qué?</li>
-					<li>¿Cómo cubriría los puestos de logística y por qué?</li>
-					<li>En función del análisis efectuado, ¿de cuántos empleados disponemos y para qué puestos?</li>
-					<li>En el caso de no disponer de los RRHH suficientes para cubrir las necesidades de personal con los empleados actuales, indique el número de empleados que haría falta conseguir y qué proceso/s de la gestión de RRHH llevaría a cabo para conseguirlo.</li>
-					<li>Finalmente, indique qué proceso o función de la gestión de RRHH, debería ponerse en marcha con los empleados que se mantengan en plantilla con la finalidad de que puedan cubrir exitosamente los puestos de trabajo y por qué.</li>
-				</ol>
-			<li>Teniendo en consideración que las expectativas de crecimiento de la empresa se ha estimado en 7 puntos y que el grado de preparación de la empresa en materia de RRHH se ha estimado en 4,5 puntos, indique la opción o situación estratégica más adecuada siguiendo el modelo de Lengnick-Hall. Para ello, refleje en una matriz dichos datos.</li>
-			<li>Finalmente, en función de la situación estratégica en la que se encuentre la empresa, identifique usted qué alternativa de entre las posibles a adoptar en dicha situación, sería la más adecuada o conveniente para esta empresa y explique las razones por las que cree que esa alternativa podría ser la mejor.</li>
+				<ul class="ss-choices">
+					<li class="ss-choice-item"><label class="ss-choice-label">
+						<input type="radio" name="entry.2.group" value="uno" class="ss-q-radio" id="group_2_1">
+				uno</label>
+				<div class="correcto">sdmknfdslkjdgk</div>
+				</li> 
+						<li class="ss-choice-item"><label class="ss-choice-label">
+							<input type="radio" name="entry.2.group" value="dos" class="ss-q-radio" id="group_2_2">
+						dos</label><div>sdmknfdslkjdgk</div></li> 
+						<li class="ss-choice-item"><label class="ss-choice-label">
+							<input type="radio" name="entry.2.group" value="tres" class="ss-q-radio" id="group_2_3">
+					tres</label><div>sdmknfdslkjdgk</div></li>
+					</ul>
+				</div></div></div>
+					<br>
+					<input type="hidden" name="pageNumber" value="0">
+					<input type="hidden" name="backupCache" value="">
 
 
-		</ol>
+					<div class="ss-item ss-navigate"><div class="ss-form-entry">
+					<input type="submit" name="submit" value="Submit"></div></div>
+			</form>
 
-	<a href="ejercicio1.html">volver al Ejercicio 1</a>
-	
+			<div class="page_links">
+				<a class='prev' href="pagina4.html">volver a la página 4</a>
+				<a class='next' href="ejercicio2.html">Ir al Ejercicio 2</a>	
+			</div>
+
+		</div>
+
+  		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
 
 	</body>
-</html>			
+</html>	
+
+
