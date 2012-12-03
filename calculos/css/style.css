@@ -118,6 +118,13 @@ span.rendimiento_potencial {font-weight:normal;}
 	}
 
 
+.ejemplo{
+	background:#e1f0f7;
+	padding:20px;
+}
+
+.ejemplo p{font-size:15px;}
+
 /** Introduccion interactiva Odiorne **/
 #tabla_odiorne{
 	position:relative;
