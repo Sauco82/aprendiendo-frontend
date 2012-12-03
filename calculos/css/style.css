@@ -1,0 +1,339 @@
+body {
+	background:#eee;
+	color:#222;
+	font-family: Verdana, sans-serif;
+	margin:0;
+}
+
+h1,h2,h3,h4,h5{margin: 0;}
+
+h1{
+	font-size: 38px;
+	line-height: 90%;
+	margin-bottom: 20px;
+}
+	h1 small{
+		font-weight: normal;
+		font-size: 25px
+	}
+
+h2{
+	font-weight: normal;
+	margin: 5px 0 10px 0;
+}
+
+td,th{
+	border: 1px solid #222;
+	padding: 3px;
+}
+
+p{
+	font-size: 16px;
+}
+
+span.rendimiento_potencial {font-weight:normal;}
+
+.container{
+	background:#f5f5f5;
+	border:1px solid #ccc;
+	-moz-box-shadow: 0px 0px 10px #bbb;
+	-webkit-box-shadow: 0px 0px 10px #bbb;
+	box-shadow: 0px 0px 10px #bbb;
+	position:relative;
+	margin:0 auto;
+	width:1100px;
+	padding:50px; /*ancho total 1200px*/
+	overflow:hidden;
+}
+
+.libro, .tres_columnas, .cuatro_columnas{overflow: hidden;}
+
+.libro .izquierda, .libro .derecha{
+	width: 525px;
+	float:left;
+}
+.libro .izquierda{margin-right: 50px;}
+
+.tres_columnas .primera,.tres_columnas .segunda,.tres_columnas .tercera{
+	width: 332px;
+	float:left;	
+}
+.tres_columnas .primera,.tres_columnas .segunda{margin-right: 52px}
+
+
+.cuatro_columnas .primera,.cuatro_columnas .segunda,.cuatro_columnas .tercera,.cuatro_columnas .cuarta{
+	width: 250px;
+	float:left;	
+}
+.cuatro_columnas .primera,.cuatro_columnas .segunda,.cuatro_columnas .tercera{margin-right: 33px}
+
+.cuatro_columnas img,.img_contexto{
+	height: 200px;
+	margin: 30px auto 10px auto;
+	display: block;
+}
+
+.cuatro_columnas h2{
+	font-weight: normal;
+	font-size: 30px;
+	text-align:center;
+}
+	.cuatro_columnas h2 small{
+		display: block;
+		font-size: 13px;
+		font-weight: bold;
+	}
+
+.page_links{
+	padding-top: 50px;
+	overflow: hidden;
+	clear: both;
+}
+
+.page_links a{
+	float:right;
+	padding: 10px 30px;
+	font-size: 20px;	
+}
+
+	.page_links a.prev{
+		float:left;
+		background:#bbb;
+		text-shadow: 1px 1px 0 #aaa;
+	}
+
+
+
+.intro p, p.intro{font-size: 20px}
+
+.ultrarresumen{
+	padding: 50px 50px 20px 50px;
+	font-size: 50px;
+	color:#0099d4;
+	text-align: center;
+}
+	.ultrarresumen small{ 
+		display: block;
+		font-size: 25px;
+	}
+
+
+/** Introduccion interactiva Odiorne **/
+#tabla_odiorne{
+	position:relative;
+	float:right;
+	width: 550px;
+	height: 348px;
+	padding:50px;
+	margin-bottom: 50px;
+	background: url(grafico_odiorne_interactivo.png) 0 0 no-repeat;
+}
+
+	#tabla_odiorne div#cuadrante1,#tabla_odiorne div#cuadrante2,#tabla_odiorne div#cuadrante3,#tabla_odiorne div#cuadrante4{
+		position:absolute;
+		width: 229px;
+		height: 99px;
+		padding: 15px;
+	}
+	#tabla_odiorne div#cuadrante1{ top: 30px; left:63px;}
+	#tabla_odiorne div#cuadrante2{ top: 30px; left:319px;}
+	#tabla_odiorne div#cuadrante3{ top:225px; left:63px;}
+	#tabla_odiorne div#cuadrante4{ top:225px; left:319px;}
+
+	#tabla_odiorne div#cuadrante1 span,#tabla_odiorne div#cuadrante2 span,#tabla_odiorne div#cuadrante3 span,#tabla_odiorne div#cuadrante4 span{
+		background:url(payo.png);
+		float:left;
+		width: 63px;
+		height: 52px;
+		padding-top: 5px;
+		text-align: center;
+		color:white;
+		font-size: 18px;
+	}
+
+
+
+table td,table th{
+	border:0;
+}
+
+table#ejemplos{
+	border-collapse:collapse;
+	text-align: center;
+	margin: 70px 0 0 0px;
+}
+
+table#ejemplos th{	
+	border-bottom: 1px solid #aaa;
+	font-weight:normal;
+	font-size
+}
+table#ejemplos td{	
+	line-height: 60px;
+	height: 60px;
+	width: 90px;
+	border-bottom: 1px solid #aaa;
+	font-size:20px;
+}
+
+	table#ejemplos td.cuadrante,table#ejemplos th.cuadrante{
+		display: none;
+	}
+
+	table#ejemplos td.conboton{
+		width: 190px
+	}
+		table#ejemplos td.conboton a{			
+			font-size: 14px;
+			padding: 5px 20px;
+		}
+		table#ejemplos td.conboton.azul a,table#ejemplos td.conboton.azul a:hover{
+			background:#0099d4;
+			text-shadow: 1px 1px 0 #008abf;
+			font-weight: bold;
+		}
+
+ul#ejercicios{
+	clear:both;
+	width: 100%;
+	overflow: hidden;
+}
+	ul#ejercicios li {
+		float:left;
+		border: 1px solid #aaa;
+		border-left: 0px;
+		border-right: 0px;
+		list-style-type: none;
+		margin: 0 30px 20px 0;
+	}
+		ul#ejercicios li span{
+			float:left;
+			padding: 25px 0;
+			width: 80px;
+			text-align: center;
+		}
+
+		ul#ejercicios li span.payo{
+			background:url(payo.png) 50% 50% no-repeat;
+		}
+
+
+
+/* Efectos para enlaces y botones, etc */ 
+table#ejemplos td.conboton a, .page_links a{
+	cursor:pointer;
+	background:#d4aa00;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:white;
+	text-shadow: 1px 1px 0 #b49000;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+table#ejemplos td.conboton a:hover, .page_links a:hover{
+	background:#ffce06
+}
+
+.page_links a.prev:hover{background:#aaa;}
+
+
+/* ==========   Formularios ===============*/
+
+form#ss-form{
+	margin: 10px 180px;
+}
+
+.ss-q-title{
+	color: #333;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 20px 0 5px 0;
+	display: block;
+}
+
+.ss-q-help{
+	color:#444;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.ss-q-short{
+	border: 1px solid #AAA;
+	width: 160px;
+	font-size: 30px;
+	padding: 5px;
+	color: #333;
+	border-radius: 3px;
+}
+
+ul.ss-choices{
+	list-style: none;
+	margin:0;	
+	padding: 0;
+}
+
+	ul.ss-choices li{
+		margin: 0 0 15px 30px;
+	}
+
+		ul.ss-choices li .ss-choice-label,ul.ss-choices li .ss-choice-label input{
+			cursor: pointer;
+		}
+
+
+	.esconde ul.ss-choices li,
+	ul.ss-choices li div,
+	.esconde input
+	{display: none;}
+
+	ul.ss-choices li.muestra,
+	ul.ss-choices li.muestra div,
+	 .esconde input.muestra
+	 {display:block;}
+
+	ul.ss-choices li.muestra div{
+		background:#f7e1e1;
+		padding: 20px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	} 
+	ul.ss-choices li.muestra div.correcto{
+		background:#e1f7e5;
+		padding: 20px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+#boton_envio{
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px 40px;
+	display: block;
+	margin: 0 auto;
+	border:none;
+	cursor:pointer;
+	background:#0099d4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:white;
+	text-shadow: 1px 1px 0 #007dae;
+	text-decoration: none;
+	font-weight: normal;
+}
+	#boton_envio:hover{background:#00b1f4;}
+
+.warning{ 
+	color:red;
+	text-align: center;
+	font-size: 18px;
+}
+
+#felicidades{
+	text-align: center;
+	
+}
