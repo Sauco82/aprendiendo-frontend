@@ -12,7 +12,7 @@
 			);
 
 			function envia(form){
-				numero_de_preguntas = 3;
+				var numero_de_preguntas = 3;
 				$('.warning').remove();
 				if (valida(numero_de_preguntas) && validaDNI($('#dni').val())){
 					form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dHJ2WHotb1lBYWdSSnN2dVNFa1pKSWc6MQ&amp;theme=0AX42CRMsmRFbUy04NmYzYTk2OC1hYzhjLTQ1NTAtOTRiNS0zZWI4YWM2MmI4Njk&amp;ifq';
