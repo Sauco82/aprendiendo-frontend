@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>PRÁCTICA No 2: TÉCNICAS AUXILIARES DEL PROCESO DE DIRECCIÓN ESTRATÉGICA DE RRHH.</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="interaction.js"></script>
+		<script type="text/javascript">
+			$().ready(
+				function(){$('#felicidades').hide();}
+			);
+
+			function envia(form){
+				var numero_de_preguntas = 3;
+				$('.warning').remove();
+				if (valida(numero_de_preguntas) && validaDNI($('#dni').val())){
+					form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dHJ2WHotb1lBYWdSSnN2dVNFa1pKSWc6MQ&amp;theme=0AX42CRMsmRFbUy04NmYzYTk2OC1hYzhjLTQ1NTAtOTRiNS0zZWI4YWM2MmI4Njk&amp;ifq';
+					muestraSoluciones();
+				} else if (!valida(numero_de_preguntas)) {
+					$("#boton_envio").before("<p class='warning'>Faltan preguntas por responder</p>");
+				} else if (!validaDNI($('#dni').val())) {
+					$("#boton_envio").before("<p class='warning'>El DNI no es correcto</p>");
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Ejercicio 1</h1>
+			<p class="intro">Risus sit dolor nunc nascetur adipiscing dolor placerat sed, magna ac? Amet phasellus habitasse porttitor pellentesque arcu amet magna ac, vut dictumst, natoque. In pulvinar sed non a porta mus turpis rhoncus, lundium cursus a, est auctor eros aliquet nisi sed etiam etiam adipiscing rhoncus mattis tristique? Natoque, integer a, enim</p>
+
+			<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
+
+				<br>
+				<div class="errorbox-good">
+					<div class="ss-item ss-item-required ss-text">
+						<div class="ss-form-entry">
+							<label class="ss-q-title" for="entry_0">Escribe tu DNI
+								<span class="ss-required-asterisk">*</span>
+							</label>
+							<label class="ss-q-help" for="entry_0">En el documento de identidad hay unos numeritos junto con una letra, eso es chaval! </label>
+							<input id="dni" type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0">
+						</div>
+					</div>
+				</div>
+				<br> <div class="errorbox-good">
+				<div class="ss-item  ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_1">1.- ¿Cuál de las siguientes alternativas refleja uno de los objetivos generales de la empresa? 
+				</label>
+				<label class="ss-q-help" for="entry_1"></label>
+				<ul class="ss-choices">
+					
+					<li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.1.group" value="Ampliar la cartera de productos con la fabricación de plaguicidas. " class="ss-q-radio" id="group_1_1">
+						Ampliar la cartera de productos con la fabricación de plaguicidas. </label>
+						<div>Estoy mal</div>
+					</li> 
+					<li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.1.group" value="Obtener 5 técnicos especialistas en los procesos químicos relacionados con los nuevos productos plaguicidas. " class="ss-q-radio" id="group_1_2">
+						Obtener 5 técnicos especialistas en los procesos químicos relacionados con los nuevos productos plaguicidas. </label>
+						<div>Estoy mal</div>
+					</li> 
+					<li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.1.group" value="Las alternativas a y b son correctas. " class="ss-q-radio" id="group_1_3">
+						Las alternativas a y b son correctas. </label>
+						<div class="correcto">Estoy bien</div>
+					</li>
+				</ul></div></div></div>
+
+				<br> <div class="errorbox-good">
+				<div class="ss-item  ss-radio">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_2">2.- ¿Cuál de las siguientes alternativas refleja uno de los objetivos generales de la empresa? </label>
+						<label class="ss-q-help" for="entry_2"></label>
+
+							<ul class="ss-choices">
+								<li class="ss-choice-item">
+									<label class="ss-choice-label">
+										<input type="radio" name="entry.2.group" value="Ampliar la cartera de productos con la fabricación de plaguicidas.  " class="ss-q-radio" id="group_2_1">
+										Ampliar la cartera de productos con la fabricación de plaguicidas.  
+									</label>
+									<div>Estoy mal</div>
+								</li> 
+
+								<li class="ss-choice-item">
+									<label class="ss-choice-label">
+										<input type="radio" name="entry.2.group" value="Mantener la producción de fertilizantes. " class="ss-q-radio" id="group_2_2">
+									Mantener la producción de fertilizantes. 
+									</label>
+									<div>Estoy mal</div>
+								</li>
+
+								<li class="ss-choice-item">
+									<div>Estoy mal</div>
+									<label class="ss-choice-label">
+										<input type="radio" name="entry.2.group" value="Las alternativas a y b son correctas. " class="ss-q-radio" id="group_2_3"> Las alternativas a y b son correctas. 
+									</label>
+									<div class="correcto">Estoy mal</div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<br> <div class="errorbox-good">
+				<div class="ss-item  ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_3">3.- ¿Cuál de las siguientes alternativas refleja, al menos, uno de los objetivos del dpto. de RRHH de la empresa? 
+				</label>
+				<label class="ss-q-help" for="entry_3"></label>
+				<ul class="ss-choices">
+					<li class="ss-choice-item">
+						<div>Estoy mal</div><label class="ss-choice-label"><input type="radio" name="entry.3.group" value="Ampliar la cartera de productos con la fabricación de plaguicidas. " class="ss-q-radio" id="group_3_1">
+				Ampliar la cartera de productos con la fabricación de plaguicidas. </label></li> 
+					<li class="ss-choice-item">
+						<div>Estoy mal</div><label class="ss-choice-label"><input type="radio" name="entry.3.group" value="Obtener 5 técnicos especialistas en los procesos químicos relacionados con los nuevos productos plaguicidas. * " class="ss-q-radio" id="group_3_2">
+				Obtener 5 técnicos especialistas en los procesos químicos relacionados con los nuevos productos plaguicidas. * </label></li> 
+					<li class="ss-choice-item">
+						<div class="correcto">Estoy mal</div><label class="ss-choice-label"><input type="radio" name="entry.3.group" value="Las alternativas a y b son correctas. " class="ss-q-radio" id="group_3_3">
+				Las alternativas a y b son correctas. </label></li>
+				</ul></div></div></div>
+				<br>
+				<input type="hidden" name="pageNumber" value="0">
+				<input type="hidden" name="backupCache" value="">
+
+
+				<div class="ss-item ss-navigate"><div class="ss-form-entry">
+					<input id="boton_envio" type="submit" name="submit" value="Terminar el Ejercicio"></div></div>
+
+				<div id="felicidades">
+					<h3>Muy bien!</h3>
+					<p>Has terminado el ejercicio, &eacute;chale un vistazo a tus respuestas a ver que tal</p>
+				</div>
+
+			</form>
+
+			<div class="page_links">
+				<a class='prev' href="pagina4.html">volver a la página 4</a>
+				<a class='next' href="ejercicio2.html">Ir al Ejercicio 2</a>	
+			</div>
+
+		</div>
+
+  		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
+
+	</body>
+</html>	
+
+

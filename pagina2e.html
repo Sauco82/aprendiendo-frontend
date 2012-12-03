@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>PRÁCTICA No 2: TÉCNICAS AUXILIARES DEL PROCESO DE DIRECCIÓN ESTRATÉGICA DE RRHH.</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="interaction.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.conboton').click(muestraEnTabla);
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="contexto"></div>
+			<div class="contenido">
+				<h1>Descripción de técnicas</h1>
+				
+				<h2>Matrices: Modelo de Odiorne</h2>
+
+				<div class="intro">
+					<p>Según la distribución de los empleados en cada cuadrante de la matriz, es posible valorar si el grupo humano constituye una fortaleza o una debilidad de la empresa con vistas a lograr sus objetivos.</p>
+					<p>Asimismo se podrá determinar los objetivos y estrategias de RRHH que son necesarias.</p>
+				</div>
+
+				<div id="tabla_odiorne">
+					<div id="cuadrante1"></div>
+					<div id="cuadrante2"></div>
+					<div id="cuadrante3"></div>
+					<div id="cuadrante4"></div>
+				</div>
+
+				<table id="ejemplos">
+					<tr>
+						<th class="cuadrante">Cuadrante</th>
+						<th>Rendimiento</th>
+						<th>Potencial</th>
+						<th class="conboton"></th>
+					</tr>
+					<tr>
+						<td data-posicion="2" class="cuadrante"><span>1</span></td>
+						<td>8</td>
+						<td>7</td>
+						<td class="conboton"><a href="#">Mostrar en la tabla</a></td>
+					</tr>
+					<tr>
+						<td data-posicion="4" class="cuadrante"><span>2</span></td>
+						<td>2</td>
+						<td>7</td>
+						<td class="conboton"><a href="#">Mostrar en la tabla</a></td>
+					</tr>
+					<tr>
+						<td data-posicion="1" class="cuadrante"><span>3</span></td>
+						<td>7</td>
+						<td>5</td>
+						<td class="conboton"><a href="#">Mostrar en la tabla</a></td>
+					</tr>
+					<tr>
+						<td data-posicion="3" class="cuadrante"><span>4</span></td>
+						<td>4</td>
+						<td>2</td>
+						<td class="conboton"><a href="#">Mostrar en la tabla</a></td>
+					</tr>
+				</table>
+
+				<ul id="ejercicios">
+					<li>
+						<span data-posicion="1" class="payo">5</span>
+						<span>8</span>
+						<span>3</span>
+					</li>
+					<li>
+						<span data-posicion="2" class="payo">6</span>
+						<span>8</span>
+						<span>8</span>
+					</li>
+					<li>
+						<span data-posicion="4" class="payo">7</span>
+						<span>3</span>
+						<span>7</span>
+					</li>
+					<li>
+						<span data-posicion="3" class="payo">8</span>
+						<span>3</span>
+						<span>1</span>
+					</li>
+					<li>
+						<span data-posicion="1" class="payo">9</span>
+						<span>5</span>
+						<span>5</span>
+					</li>
+					<li>
+						<span data-posicion="2" class="payo">10</span>
+						<span>8</span>
+						<span>6</span>
+					</li>
+					<li>
+						<span data-posicion="4" class="payo">11</span>
+						<span>2</span>
+						<span>10</span>
+					</li>
+					<li>
+						<span data-posicion="1" class="payo">12</span>
+						<span>6</span>
+						<span>3</span>
+					</li>
+				</ul>	
+
+
+				<div class="page_links">
+					<a class="prev" href="pagina2c.html">Odiorne 3/4</a> 
+					<a class="next" href="pagina3.html">Modelo de Legnick-Hall</a>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+</html>	

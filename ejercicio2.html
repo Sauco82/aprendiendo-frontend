@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>PRÁCTICA No 2: TÉCNICAS AUXILIARES DEL PROCESO DE DIRECCIÓN ESTRATÉGICA DE RRHH.</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="interaction.js"></script>
+		<script type="text/javascript">
+			function envia(form){
+				numero_de_preguntas = 1;
+				if (valida(numero_de_preguntas)){
+					form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dGVmMHRXckR4eXozX0EyLWlQbi1DalE6MQ&amp;ifq';
+					muestraSoluciones();
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Ejercicio 1</h1>
+			<p class="intro">Risus sit dolor nunc nascetur adipiscing dolor placerat sed, magna ac? Amet phasellus habitasse porttitor pellentesque arcu amet magna ac, vut dictumst, natoque. In pulvinar sed non a porta mus turpis rhoncus, lundium cursus a, est auctor eros aliquet nisi sed etiam etiam adipiscing rhoncus mattis tristique? Natoque, integer a, enim</p>
+
+			<form target="fake-target" action="" onsubmit="envia(this);" method="POST" id="ss-form">
+				<br>
+				<div class="errorbox-good">
+				<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">Tu nombre
+				</label>
+				<label class="ss-q-help" for="entry_0"></label>
+				<input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0"></div></div></div>
+				<br> <div class="errorbox-good">
+				<div class="ss-item  ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_2">cuanto es uno + dos
+				</label>
+				<label class="ss-q-help" for="entry_2"></label>
+
+				<ul class="ss-choices">
+					<li class="ss-choice-item"><label class="ss-choice-label">
+						<input type="radio" name="entry.2.group" value="uno" class="ss-q-radio" id="group_2_1">
+				uno</label>
+				<div class="correcto">sdmknfdslkjdgk</div>
+				</li> 
+						<li class="ss-choice-item"><label class="ss-choice-label">
+							<input type="radio" name="entry.2.group" value="dos" class="ss-q-radio" id="group_2_2">
+						dos</label><div>sdmknfdslkjdgk</div></li> 
+						<li class="ss-choice-item"><label class="ss-choice-label">
+							<input type="radio" name="entry.2.group" value="tres" class="ss-q-radio" id="group_2_3">
+					tres</label><div>sdmknfdslkjdgk</div></li>
+					</ul>
+				</div></div></div>
+					<br>
+					<input type="hidden" name="pageNumber" value="0">
+					<input type="hidden" name="backupCache" value="">
+
+
+					<div class="ss-item ss-navigate"><div class="ss-form-entry">
+					<input type="submit" name="submit" value="Submit"></div></div>
+			</form>
+
+			<div class="page_links">
+				<a class='prev' href="pagina4.html">volver a la página 4</a>
+				<a class='next' href="ejercicio2.html">Ir al Ejercicio 2</a>	
+			</div>
+
+		</div>
+
+  		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
+
+	</body>
+</html>	
+
+
