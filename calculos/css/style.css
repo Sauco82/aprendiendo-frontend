@@ -123,7 +123,27 @@ span.rendimiento_potencial {font-weight:normal;}
 	padding:20px;
 }
 
+.importante{
+	background:#fff3c3;
+	padding:20px;
+}
+
 .ejemplo p{font-size:15px;}
+
+
+.elemento_destacado{overflow: hidden;margin-bottom: 15px;}
+
+.elemento_destacado strong{float:left;}
+.elemento_destacado strong{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+	width: 50px;
+	clear: left;
+}
+.elemento_destacado p{
+	margin-left: 60px;
+}
 
 /** Introduccion interactiva Odiorne **/
 #tabla_odiorne{
@@ -344,3 +364,94 @@ ul.ss-choices{
 	text-align: center;
 	
 }
+
+/*========== Ejercicio del segundo tema ==========*/
+table#hoteles, table.medias_moviles { border-collapse: collapse;}
+table#hoteles td,table#hoteles th,table.medias_moviles td,table.medias_moviles th{
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+}
+
+	table#hoteles th.valores{width: 210px;}
+	table.medias_moviles th{width: 200px;}
+	table.medias_moviles th.valores{width: 150px;}
+	table#hoteles th.valores span{font-weight: normal;}
+
+	table#hoteles td.hotel{
+		text-align: left;
+		color:#666;
+		font-size: 80%;
+	}
+
+	table#hoteles tr.suma th,table#hoteles tr.promedio th{
+		text-align: left;
+		color:#444;
+		font-size: 80%;	
+	}
+
+	table#hoteles tr.suma td,table#hoteles tr.suma th{
+		background:#aaa;
+	}
+
+	table#hoteles tr.promedio td,table#hoteles tr.promedio th{
+		background:#0099d4;
+		color:white;
+	}
+
+
+
+
+
+.cuenta{
+	float:left;
+	min-width: 30%;
+	padding: 15px 0 15px 45px;
+	height: 50px;
+}
+.dividendo,.divisor{display: block;}
+.dividendo{
+	border-bottom: 2px solid white;
+	padding-bottom: 5px;
+}
+.divisor{
+	padding-top: 5px;	
+}
+.resultado{
+	float:left;
+	height: 77px;
+	line-height: 77px;
+}
+
+.flecha{
+	position:relative;
+	overflow: hidden;
+}
+
+.flecha .cuenta{
+	padding:15px;
+	background:#0099d4;
+	color:white;
+	width: 126px;
+	height: 42px;
+}
+
+.flecha:after{
+	position:absolute;
+	content: ' ';
+	height: 0;
+	width: 0;
+	border: 38px solid transparent;
+	border-left-color: #0099d4;
+	right:-16%;
+	top:0%;
+}
+
+table.medias_moviles td.sinbordes,table.medias_moviles th.sinbordes{border:0;}
+
+table.medias_moviles td.result{
+	background:#0099d4;
+	color:white;
+	font-weight: bold;
+}
+
+table.medias_moviles td.sumandos{background:#BEE5F7;}
