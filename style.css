@@ -121,10 +121,10 @@ span.rendimiento_potencial {font-weight:normal;}
 	position:relative;
 	float:right;
 	width: 550px;
-	height: 348px;
+	height: 358px;
 	padding:50px;
 	margin-bottom: 50px;
-	background: url(grafico_odiorne_interactivo.png) 0 0 no-repeat;
+	background: url(grafico_odiorne_interactivo.png) 10px 0 no-repeat;
 }
 
 	#tabla_odiorne div#cuadrante1,#tabla_odiorne div#cuadrante2,#tabla_odiorne div#cuadrante3,#tabla_odiorne div#cuadrante4{
@@ -139,14 +139,16 @@ span.rendimiento_potencial {font-weight:normal;}
 	#tabla_odiorne div#cuadrante4{ top:225px; left:319px;}
 
 	#tabla_odiorne div#cuadrante1 span,#tabla_odiorne div#cuadrante2 span,#tabla_odiorne div#cuadrante3 span,#tabla_odiorne div#cuadrante4 span{
-		background:url(payo.png);
-		float:left;
-		width: 63px;
+		background: url(payo.png) no-repeat 50% 0;
 		height: 52px;
 		padding-top: 5px;
 		text-align: center;
 		color:white;
 		font-size: 18px;
+		width: 100%;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
 	}
 
 
