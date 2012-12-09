@@ -37,3 +37,11 @@ function muestraSoluciones(){
 	$("#boton_envio").hide();
 	$("#terminado").show();
 }
+
+function cambia_ejemplo(parte,that){
+	$(".ejemplos").hide();
+	$(parte).show();
+	$('.control_ejemplos a').removeClass().addClass('desactivado');
+	$(that).removeClass('desactivado').addClass('activo');
+	return false;
+}
