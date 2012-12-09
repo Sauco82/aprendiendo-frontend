@@ -7,9 +7,14 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script src="interaction.js"></script>
 		<script type="text/javascript">
+			$().ready(
+				function(){$('#felicidades').hide();}
+			);
+
 			function envia(form){
-				numero_de_preguntas = 23;
-				if (valida(numero_de_preguntas)){
+				var numero_de_preguntas = 23;
+				$('.warning').remove();
+				if (valida(numero_de_preguntas) && validaDNI($('#dni').val())){
 					form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dHJ0d2dyRkRUbzR2M29NS2RpeEpEUHc6MQ&amp;ifq';
 					muestraSoluciones();
 				} else if (!valida(numero_de_preguntas)) {
