@@ -155,18 +155,18 @@ table td,table th{
 	border:0;
 }
 
-table#ejemplos{
+table.ejemplos{
 	border-collapse:collapse;
 	text-align: center;
 	margin: 70px 0 0 0px;
 }
 
-table#ejemplos th{	
+table.ejemplos th{	
 	border-bottom: 1px solid #aaa;
 	font-weight:normal;
 	font-size
 }
-table#ejemplos td{	
+table.ejemplos td{	
 	line-height: 60px;
 	height: 60px;
 	width: 90px;
@@ -174,18 +174,18 @@ table#ejemplos td{
 	font-size:20px;
 }
 
-	table#ejemplos td.cuadrante,table#ejemplos th.cuadrante{
+	table.ejemplos td.cuadrante,table.ejemplos th.cuadrante{
 		display: none;
 	}
 
-	table#ejemplos td.conboton{
+	table.ejemplos td.conboton{
 		width: 190px
 	}
-		table#ejemplos td.conboton a{			
+		table.ejemplos td.conboton a{			
 			font-size: 14px;
 			padding: 5px 20px;
 		}
-		table#ejemplos td.conboton.azul a,table#ejemplos td.conboton.azul a:hover{
+		table.ejemplos td.conboton.azul a,table.ejemplos td.conboton.azul a:hover{
 			background:#0099d4;
 			text-shadow: 1px 1px 0 #008abf;
 			font-weight: bold;
@@ -216,9 +216,24 @@ ul#ejercicios{
 		}
 
 
+.control_ejemplos{margin-top: 20px;}
+.control_ejemplos a{
+	padding: 5px 35px;
+}
+
+.control_ejemplos a.activo{
+	background:#0099D4;
+	text-shadow: 1px 1px 0 #666;
+}
+.control_ejemplos a.desactivado{
+	background:#aaa;
+	text-shadow: 1px 1px 0 #666;
+}
+
+.control_ejemplos a.activo:hover,.control_ejemplos a.desactivado:hover{background:#11aaf5;}
 
 /* Efectos para enlaces y botones, etc */ 
-table#ejemplos td.conboton a, .page_links a{
+table.ejemplos td.conboton a, .page_links a,.control_ejemplos a{
 	cursor:pointer;
 	background:#d4aa00;
 	-webkit-border-radius: 3px;
@@ -230,9 +245,19 @@ table#ejemplos td.conboton a, .page_links a{
 	font-weight: normal;
 }
 
-table#ejemplos td.conboton a:hover, .page_links a:hover{
+table.ejemplos td.conboton a:hover, .page_links a:hover{
 	background:#ffce06
 }
+
+table.ejemplos td.con_select{
+	padding: 1px 40px 1px 1px;	
+}
+
+table.ejemplos td.con_select.bien{background: url(bien_mal.png?v3) no-repeat 170px 25px;}
+table.ejemplos td.con_select.mal{background: url(bien_mal.png?v3) no-repeat 170px -139px;}
+
+
+
 
 .page_links a.prev:hover{background:#aaa;}
 
