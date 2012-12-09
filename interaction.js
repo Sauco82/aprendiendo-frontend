@@ -12,7 +12,6 @@ function muestraEnTabla(){
 }
 
 function corrige(){
-	
 	posicion=($(this).parent().parent().children(".cuadrante").attr("data-posicion"));
 	seleccionado=$(this).val();
 	$(this).parent().removeClass('bien').removeClass('mal');
