@@ -15,7 +15,7 @@
 				var numero_de_preguntas = 15;
 				$('.warning').remove();
 				if (valida(numero_de_preguntas) && validaDNI($('#dni').val())){
-					form.action='https://docs.google.com/spreadsheet/formResponse?pli=1&amp;formkey=dHh1RVNOWHI3cERLcGZlSWROaXV3ckE6MQ&amp;ifq';
+					form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dHh1RVNOWHI3cERLcGZlSWROaXV3ckE6MQ&ifq';
 					muestraSoluciones();
 				} else if (!valida(numero_de_preguntas)) {
 					$("#boton_envio").before("<p class='warning'>Faltan preguntas por responder</p>");
@@ -137,7 +137,7 @@
 			<div class="errorbox-good">
 				<div class="ss-item ss-item-required ss-text">
 					<div class="ss-form-entry">
-					<label class="ss-q-title" for="entry_0">Escribe tu DNI
+					<label class="ss-q-title" for="entry_0">Escribe tu DNI (Ej. 12345678x)
 						<span class="ss-required-asterisk"></span></label>
 					<label class="ss-q-help" for="entry_0">
 					</label>
