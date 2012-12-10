@@ -26,8 +26,15 @@
 		</script>
 	</head>
 
-	<body>
-		<div class="container">
+	<body id="ejercicio">
+		<div class="container libro">
+			<ul class="menu">
+				<li><a href="examen.html">Examen</a></li>
+				<li class="activo"><a href="ejercicio1.html">Ejercicios</a></li>
+				<li><a href="pagina3.html">Modelo de Lengnick-Hall</a></li>
+				<li><a href="pagina2.html">Modelo de Odiorne</a></li>
+				<li><a href="index.html">Introducci&oacute;n</a></li>
+			</ul>
 			<h1>Ejercicio 2</h1>
 			<h2>Empresa Yakara. S.A.</h2>
 			<p class="intro">La empresa “YAKARA, S.A.” viene obteniendo grandes beneficios desde que decidió implantar un departamento de I+D en la estructura organizativa, dotándolo de los recursos necesarios para el desarrollo de nuevos productos y tecnologías de producción. En la planificación estratégica que actualmente está llevando a cabo, se ha llegado a un balance económico muy favorable para una nueva inversión. No obstante, se preguntan si estarán en una buena situación respecto a sus RRHH para afrontar los nuevos objetivos. Las expectativas de crecimiento para el futuro de la empresa YAKARA, S.A. son las siguientes:</p>
@@ -35,7 +42,8 @@
 			<p>2.- Ampliar los servicios que ofrece el departamento de logística, de tal manera que les permita ampliar su radio de acción en el contexto nacional. Esta ampliación de los servicios implica crear  6 puestos de trabajo.</p>
 			<p>Una investigación del mercado laboral externo a la empresa ha puesto de manifiesto que existe suficiente mano de obra para cubrir los puestos de operarios y de logística. No obstante, el perfil que abunda para el puesto de operario reúne, sobre todo, el potencial requerido para desempeñarlo. Esto supondría, en el caso de necesitar contratar a nuevos operarios, un doble coste, pues primero habría que seleccionar y después, formar. Asimismo, una investigación del mercado laboral interno de la empresa indica la existencia de operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</p>
 			<p>Se ha evaluado el rendimiento de los operarios, así como el potencial necesario para el desarrollo de las nuevas competencias requeridas para el desempeño de este puesto y de los nuevos puestos que se van a crear en el departamento de logística. Los datos de estas evaluaciones en una escala de 10 puntos son los siguientes:</p>
-			<table>
+			<div class="ejercicio_izquierda">
+				<table>
 					<tr>
 						<th>Plantilla actual</th>
 						<th>Rendimiento actual en el puesto de operario</th>
@@ -138,823 +146,825 @@
 						<th>9</th>
 						<th>9</th>
 					</tr>
-		</table>
-
-			<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
-
-				<br>
-				<div class="errorbox-good">
-					<div class="ss-item ss-item-required ss-text">
-						<div class="ss-form-entry">
-							<label class="ss-q-title" for="entry_0">Escribe tu DNI (Ej. 12345678x)
-								<span class="ss-required-asterisk"></span>
-							</label>
-							<label class="ss-q-help" for="entry_0"></label>
-							<input type="text" name="entry.0.single" value="" class="ss-q-short" id="dni">
-						</div>
-					</div>
-				</div>
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry"><label class="ss-q-title" for="entry_1">1.- ¿Cuál de las siguientes alternativas refleja, al menos, uno de los objetivos generales de la empresa?
-					</label>
-					<label class="ss-q-help" for="entry_1"></label>
-					
-						<ul class="ss-choices">
-							<li class="ss-choice-item">
-								<label class="ss-choice-label">
-									<input type="radio" name="entry.1.group" value="Reducir el número de operarios necesarios de 16 a 10." class="ss-q-radio" id="group_1_1">
-									Reducir el número de operarios necesarios de 16 a 10.
-								</label>
-								<div>Reducir el número de operarios necesarios es una necesidad de personal que se deriva de los objetivos generales de la empresa. Es necesario reducir el número de operarios porque la empresa va a introducir una nueva tecnología que permite reducir la carga de trabajo y, por tanto, el número de empleados necesarios. Lograr esa reducción de operarios es una función de RRHH.</div>
-							</li> 
-							<li class="ss-choice-item">
-								<label class="ss-choice-label">
-									<input type="radio" name="entry.1.group" value="Ampliar los servicios que ofrece el departamento de logística." class="ss-q-radio" id="group_1_2">
-									Ampliar los servicios que ofrece el departamento de logística.
-								</label>
-								<div class="correcto">Ampliar los servicios que ofrece el departamento de logística es una expectativa de crecimiento por parte de la empresa y, por tanto, un objetivo empresarial de cara al futuro.</div>
-							</li> 
-							<li class="ss-choice-item">
-								<label class="ss-choice-label">
-									<input type="radio" name="entry.1.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_1_3">
-									Las alternativas a y b son correctas.
-								</label>
-								<div >La alternativa “b” es correcta: ampliar los servicios que ofrece el departamento de logística es una expectativa de crecimiento por parte de la empresa y, por 	tanto, un objetivo empresarial de cara al futuro ,pero la alternativa “a” es incorrecta: reducir el número de operarios necesarios es una necesidad de personal que se deriva de 	los objetivos generales de la empresa</div>
-							</li>
-				
-						</ul>
-					</div>
-				</div>
+				</table>
 			</div>
+			<div class="ejercicio_derecha">
+				<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
 
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry"><label class="ss-q-title" for="entry_2">2.- ¿Cuál de las siguientes alternativas refleja, al menos, una de las necesidades de RRHH de la empresa?</label>
-					<label class="ss-q-help" for="entry_2"></label>
-				
-						<ul class="ss-choices">
-							<li class="ss-choice-item">
-								<label class="ss-choice-label">
-									<input type="radio" name="entry.2.group" value="Ampliar la plantilla del departamento de logística." class="ss-q-radio" id="group_2_1">
-								Ampliar la plantilla del departamento de logística.
-							</label>
-							<div class="correcto">Para que la empresa pueda ampliar su radio de acción necesita ampliar la plantilla del Dpto. de Logística. Lograr esta ampliación es una de las necesidades de RRHH que tiene la empresa de cara al logro de sus objetivos</div>
-							</li>
-
-							<li class="ss-choice-item">
-								<label class="ss-choice-label">
-									<input type="radio" name="entry.2.group" value="Lograr la presencia de la empresa en los mercados externos al contexto nacional." class="ss-q-radio" id="group_2_2">
-								Lograr la presencia de la empresa en los mercados externos al contexto nacional.
-							</label>
-							<div>Esta alternativa se refiere a un objetivo general de la empresa.</div>
-							</li>
-
-							<li class="ss-choice-item">
-								<label class="ss-choice-label">
-									<input type="radio" name="entry.2.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_2_3">
-								Las alternativas a y b son correctas.
-							</label>
-							<div>La alternativa “a” es correcta: la empresa necesita ampliar la plantilla de Dpto. de Logística, que es una necesidad de RR.HH; pero la “b” es incorrecta, ya que se refiere a un objetivo general de la empresa y no a una necesidad de RR.HH.</div>
-							</li>
-		
-						</ul>
-					</div>
-				</div>
-			</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_3">3.- ¿Cuántos empleados necesita la empresa para el puesto de operario?
-						</label>
-						<label class="ss-q-help" for="entry_3"></label>
-						
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.3.group" value="16" class="ss-q-radio" id="group_3_1">
-										16
-									</label>
-									<div>Este es el número de operarios que actualmente tiene la empresa, no el que necesita tener una vez se introduzcan los cambios previstos en este puesto.</div>
-								</li>
-
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.3.group" value="6" class="ss-q-radio" id="group_3_2">
-										6
-									</label>
-									<div>Este es el número de empleados que la empresa necesita para los nuevos puestos del Dpto. de Logística.</div>
-								</li> 
-
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.3.group" value="10" class="ss-q-radio" id="group_3_3">
-										10
-									</label>
-									<div class="correcto">En el enunciado del caso práctico se indica que la empresa necesita reducir el número de operarios de 16 a 10 operarios. Por tanto, la empresa necesita 10 operarios.</div>
-								</li>
-						
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_4">4.- ¿Cuál de las siguientes alternativas refleja las necesidades de RRHH para el puesto de logística?
-						</label>
-						<label class="ss-q-help" for="entry_4"></label>
-						
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.4.group" value="0" class="ss-q-radio" id="group_4_1">
-										0
-									</label>
-									<div>En el enunciado del caso práctico se indica que la empresa necesita crear 6 puestos de trabajo en el Dpto. de Logística con vistas a poder ampliar su radio de acción.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.4.group" value="6" class="ss-q-radio" id="group_4_2">
-										6
-									</label>
-									<div class="correcto"> En el enunciado del caso práctico se indica que la empresa necesita crear 6 puestos de trabajo en el Dpto. de Logística con vistas a poder ampliar su radio de acción.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.4.group" value="Depende de cuántos operarios puedan desempeñarlo." class="ss-q-radio" id="group_4_3">
-										Depende de cuántos operarios puedan desempeñarlo.
-									</label>
-									<div>En el enunciado del caso práctico se indica que la empresa necesita crear 6 puestos de trabajo en el Dpto. de Logística con vistas a poder ampliar su radio de acción.</div>
-								</li>
+							<br>
+							<div class="errorbox-good">
+								<div class="ss-item ss-item-required ss-text">
+									<div class="ss-form-entry">
+										<label class="ss-q-title" for="entry_0">Escribe tu DNI (Ej. 12345678x)
+											<span class="ss-required-asterisk"></span>
+										</label>
+										<label class="ss-q-help" for="entry_0"></label>
+										<input type="text" name="entry.0.single" value="" class="ss-q-short" id="dni">
+									</div>
+								</div>
+							</div>
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_1">1.- ¿Cuál de las siguientes alternativas refleja, al menos, uno de los objetivos generales de la empresa?
+								</label>
+								<label class="ss-q-help" for="entry_1"></label>
+								
+									<ul class="ss-choices">
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.1.group" value="Reducir el número de operarios necesarios de 16 a 10." class="ss-q-radio" id="group_1_1">
+												Reducir el número de operarios necesarios de 16 a 10.
+											</label>
+											<div>Reducir el número de operarios necesarios es una necesidad de personal que se deriva de los objetivos generales de la empresa. Es necesario reducir el número de operarios porque la empresa va a introducir una nueva tecnología que permite reducir la carga de trabajo y, por tanto, el número de empleados necesarios. Lograr esa reducción de operarios es una función de RRHH.</div>
+										</li> 
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.1.group" value="Ampliar los servicios que ofrece el departamento de logística." class="ss-q-radio" id="group_1_2">
+												Ampliar los servicios que ofrece el departamento de logística.
+											</label>
+											<div class="correcto">Ampliar los servicios que ofrece el departamento de logística es una expectativa de crecimiento por parte de la empresa y, por tanto, un objetivo empresarial de cara al futuro.</div>
+										</li> 
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.1.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_1_3">
+												Las alternativas a y b son correctas.
+											</label>
+											<div >La alternativa “b” es correcta: ampliar los servicios que ofrece el departamento de logística es una expectativa de crecimiento por parte de la empresa y, por 	tanto, un objetivo empresarial de cara al futuro ,pero la alternativa “a” es incorrecta: reducir el número de operarios necesarios es una necesidad de personal que se deriva de 	los objetivos generales de la empresa</div>
+										</li>
 							
-							</ul>
+									</ul>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
 
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_5">5.- ¿Cuál de las siguientes alternativas refleja las necesidades de RRHH, esto es, cuántos empleados en total necesita tener en plantilla la empresa?
-						</label>
-						<label class="ss-q-help" for="entry_5"></label>
-						
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.5.group" value="26" class="ss-q-radio" id="group_5_1">
-										26
-									</label>
-									<div>La empresa necesita 10 operarios y 6 empleados para el Dpto. de Logística, lo que suma 16 en total.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.5.group" value="10" class="ss-q-radio" id="group_5_2">
-										10
-									</label>
-									<div>Este es el número de operarios que necesita la empresa. La empresa necesita 10 operarios y 6 empleados para el Dpto. de Logística, lo que suma 16 en total.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.5.group" value="16" class="ss-q-radio" id="group_5_3">
-										16
-									</label>
-									<div class="correcto">La empresa necesita 10 operarios y 6 empleados para el Dpto. de Logística, lo que suma 16 en total.</div>
-								</li>
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_2">2.- ¿Cuál de las siguientes alternativas refleja, al menos, una de las necesidades de RRHH de la empresa?</label>
+								<label class="ss-q-help" for="entry_2"></label>
+							
+									<ul class="ss-choices">
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.2.group" value="Ampliar la plantilla del departamento de logística." class="ss-q-radio" id="group_2_1">
+											Ampliar la plantilla del departamento de logística.
+										</label>
+										<div class="correcto">Para que la empresa pueda ampliar su radio de acción necesita ampliar la plantilla del Dpto. de Logística. Lograr esta ampliación es una de las necesidades de RRHH que tiene la empresa de cara al logro de sus objetivos</div>
+										</li>
+
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.2.group" value="Lograr la presencia de la empresa en los mercados externos al contexto nacional." class="ss-q-radio" id="group_2_2">
+											Lograr la presencia de la empresa en los mercados externos al contexto nacional.
+										</label>
+										<div>Esta alternativa se refiere a un objetivo general de la empresa.</div>
+										</li>
+
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.2.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_2_3">
+											Las alternativas a y b son correctas.
+										</label>
+										<div>La alternativa “a” es correcta: la empresa necesita ampliar la plantilla de Dpto. de Logística, que es una necesidad de RR.HH; pero la “b” es incorrecta, ya que se refiere a un objetivo general de la empresa y no a una necesidad de RR.HH.</div>
+										</li>
 					
-							</ul>
+									</ul>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
 
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_6">6.- ¿Qué problema/s o amenaza/s plantea estas necesidades de personal de cara al logro de los objetivos de la empresa?
-						</label>
-						<label class="ss-q-help" for="entry_6"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.6.group" value="Escasez de los perfiles competenciales para el puesto de operario en el mercado laboral externo." class="ss-q-radio" id="group_6_1">
-										Escasez de los perfiles competenciales para el puesto de operario en el mercado laboral externo.
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_3">3.- ¿Cuántos empleados necesita la empresa para el puesto de operario?
 									</label>
-									<div>Esta alternativa es correcta. En el enunciado del caso práctico se indica que en el mercado laboral externo el perfil que abunda para este puesto reúne, sobre todo, el potencial requerido para desempeñarlo. Por tanto, escasean las personas que reúnan las competencias requeridas. Esto supondría, en el caso de necesitar contratar a nuevos operarios, un doble coste, pues primero habría que seleccionar y después, formar. No obstante, la alternativa “b” también es correcta.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.6.group" value="La antigüedad de algunos operarios." class="ss-q-radio" id="group_6_2">
-										La antigüedad de algunos operarios.
-									</label>
-									<div>Esta alternativa es correcta. En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa. No obstante, la alternativa “a” también es correcta.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.6.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_6_3">
-										Las alternativas a y b son correctas.
-									</label>
-									<div class="correcto">Ambas alternativas son correctas,; “a”:En el enunciado del caso práctico se indica que en el mercado laboral externo el perfil que abunda para este puesto reúne, sobre todo, el potencial requerido para desempeñarlo. Por tanto, escasean las personas que reúnan las competencias requeridas. Esto supondría, en el caso de necesitar contratar a nuevos operarios, un doble coste, pues primero habría que seleccionar y después, formar y “b”: En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</div>
-								</li>
-						
-							</ul>
-						</div>
-					</div>
-				</div>
+									<label class="ss-q-help" for="entry_3"></label>
+									
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.3.group" value="16" class="ss-q-radio" id="group_3_1">
+													16
+												</label>
+												<div>Este es el número de operarios que actualmente tiene la empresa, no el que necesita tener una vez se introduzcan los cambios previstos en este puesto.</div>
+											</li>
 
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_7">7.- Según el modelo de Odiorne y teniendo en cuenta el potencial para el puesto de operario, ¿cuál de los siguientes operarios es clasificable como empleado problema?
-						</label>
-						<label class="ss-q-help" for="entry_7"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.7.group" value="M" class="ss-q-radio" id="group_7_1">
-										M
-									</label>
-									<div class="correcto">En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.7.group" value="R" class="ss-q-radio" id="group_7_2">
-										R
-									</label>
-									<div>En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.7.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_7_3">
-										Las alternativas a y b son correctas.
-									</label>
-									<div>La alternativa “a” es correcta En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa. Y la alternativa “b” es incorrecta: En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</div>
-								</li>
-				
-							</ul>
-						</div>
-					</div>
-				</div>
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.3.group" value="6" class="ss-q-radio" id="group_3_2">
+													6
+												</label>
+												<div>Este es el número de empleados que la empresa necesita para los nuevos puestos del Dpto. de Logística.</div>
+											</li> 
 
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_8">8.- Según el modelo de Odiorne y teniendo en cuenta el potencial para el puesto de operario, ¿cuáles de los siguientes operarios es clasificable como empleado prescindible?
-						</label>
-						<label class="ss-q-help" for="entry_8"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.8.group" value="Q" class="ss-q-radio" id="group_8_1">
-										Q
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.3.group" value="10" class="ss-q-radio" id="group_3_3">
+													10
+												</label>
+												<div class="correcto">En el enunciado del caso práctico se indica que la empresa necesita reducir el número de operarios de 16 a 10 operarios. Por tanto, la empresa necesita 10 operarios.</div>
+											</li>
+									
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_4">4.- ¿Cuál de las siguientes alternativas refleja las necesidades de RRHH para el puesto de logística?
 									</label>
-									<div>Los empleados prescindibles presentan un bajo rendimiento y un bajo potencial. Q posee un bajo rendimiento (= 3) y un alto potencial (= 8). Es un empleado problema.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.8.group" value="R" class="ss-q-radio" id="group_8_2">
-										R
+									<label class="ss-q-help" for="entry_4"></label>
+									
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.4.group" value="0" class="ss-q-radio" id="group_4_1">
+													0
+												</label>
+												<div>En el enunciado del caso práctico se indica que la empresa necesita crear 6 puestos de trabajo en el Dpto. de Logística con vistas a poder ampliar su radio de acción.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.4.group" value="6" class="ss-q-radio" id="group_4_2">
+													6
+												</label>
+												<div class="correcto"> En el enunciado del caso práctico se indica que la empresa necesita crear 6 puestos de trabajo en el Dpto. de Logística con vistas a poder ampliar su radio de acción.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.4.group" value="Depende de cuántos operarios puedan desempeñarlo." class="ss-q-radio" id="group_4_3">
+													Depende de cuántos operarios puedan desempeñarlo.
+												</label>
+												<div>En el enunciado del caso práctico se indica que la empresa necesita crear 6 puestos de trabajo en el Dpto. de Logística con vistas a poder ampliar su radio de acción.</div>
+											</li>
+										
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_5">5.- ¿Cuál de las siguientes alternativas refleja las necesidades de RRHH, esto es, cuántos empleados en total necesita tener en plantilla la empresa?
 									</label>
-									<div class="correcto">Los empleados prescindibles presentan un bajo rendimiento y un bajo potencial. R posee un bajo rendimiento (= 4) y un bajo potencial (= 5). Es un empleado prescindible.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.8.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_8_3">
-										Las alternativas a y b son correctas.
+									<label class="ss-q-help" for="entry_5"></label>
+									
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.5.group" value="26" class="ss-q-radio" id="group_5_1">
+													26
+												</label>
+												<div>La empresa necesita 10 operarios y 6 empleados para el Dpto. de Logística, lo que suma 16 en total.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.5.group" value="10" class="ss-q-radio" id="group_5_2">
+													10
+												</label>
+												<div>Este es el número de operarios que necesita la empresa. La empresa necesita 10 operarios y 6 empleados para el Dpto. de Logística, lo que suma 16 en total.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.5.group" value="16" class="ss-q-radio" id="group_5_3">
+													16
+												</label>
+												<div class="correcto">La empresa necesita 10 operarios y 6 empleados para el Dpto. de Logística, lo que suma 16 en total.</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_6">6.- ¿Qué problema/s o amenaza/s plantea estas necesidades de personal de cara al logro de los objetivos de la empresa?
 									</label>
-									<div>La alternativa “b” es Los empleados prescindibles presentan un bajo rendimiento y un bajo potencial. R posee un bajo rendimiento (= 4) y un bajo potencial (= 5). Es un empleado prescindible. Y la alternativa “a” es incorrecta: Los empleados prescindibles presentan un bajo rendimiento y un bajo potencial. Q posee un bajo rendimiento (= 3) y un alto potencial (= 8). Es un empleado problema</div>
-								</li>
+									<label class="ss-q-help" for="entry_6"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.6.group" value="Escasez de los perfiles competenciales para el puesto de operario en el mercado laboral externo." class="ss-q-radio" id="group_6_1">
+													Escasez de los perfiles competenciales para el puesto de operario en el mercado laboral externo.
+												</label>
+												<div>Esta alternativa es correcta. En el enunciado del caso práctico se indica que en el mercado laboral externo el perfil que abunda para este puesto reúne, sobre todo, el potencial requerido para desempeñarlo. Por tanto, escasean las personas que reúnan las competencias requeridas. Esto supondría, en el caso de necesitar contratar a nuevos operarios, un doble coste, pues primero habría que seleccionar y después, formar. No obstante, la alternativa “b” también es correcta.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.6.group" value="La antigüedad de algunos operarios." class="ss-q-radio" id="group_6_2">
+													La antigüedad de algunos operarios.
+												</label>
+												<div>Esta alternativa es correcta. En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa. No obstante, la alternativa “a” también es correcta.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.6.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_6_3">
+													Las alternativas a y b son correctas.
+												</label>
+												<div class="correcto">Ambas alternativas son correctas,; “a”:En el enunciado del caso práctico se indica que en el mercado laboral externo el perfil que abunda para este puesto reúne, sobre todo, el potencial requerido para desempeñarlo. Por tanto, escasean las personas que reúnan las competencias requeridas. Esto supondría, en el caso de necesitar contratar a nuevos operarios, un doble coste, pues primero habría que seleccionar y después, formar y “b”: En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</div>
+											</li>
+									
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_7">7.- Según el modelo de Odiorne y teniendo en cuenta el potencial para el puesto de operario, ¿cuál de los siguientes operarios es clasificable como empleado problema?
+									</label>
+									<label class="ss-q-help" for="entry_7"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.7.group" value="M" class="ss-q-radio" id="group_7_1">
+													M
+												</label>
+												<div class="correcto">En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.7.group" value="R" class="ss-q-radio" id="group_7_2">
+													R
+												</label>
+												<div>En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.7.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_7_3">
+													Las alternativas a y b son correctas.
+												</label>
+												<div>La alternativa “a” es correcta En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa. Y la alternativa “b” es incorrecta: En el enunciado del caso práctico se indica que en el mercado laboral interno existen operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</div>
+											</li>
+							
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_8">8.- Según el modelo de Odiorne y teniendo en cuenta el potencial para el puesto de operario, ¿cuáles de los siguientes operarios es clasificable como empleado prescindible?
+									</label>
+									<label class="ss-q-help" for="entry_8"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.8.group" value="Q" class="ss-q-radio" id="group_8_1">
+													Q
+												</label>
+												<div>Los empleados prescindibles presentan un bajo rendimiento y un bajo potencial. Q posee un bajo rendimiento (= 3) y un alto potencial (= 8). Es un empleado problema.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.8.group" value="R" class="ss-q-radio" id="group_8_2">
+													R
+												</label>
+												<div class="correcto">Los empleados prescindibles presentan un bajo rendimiento y un bajo potencial. R posee un bajo rendimiento (= 4) y un bajo potencial (= 5). Es un empleado prescindible.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.8.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_8_3">
+													Las alternativas a y b son correctas.
+												</label>
+												<div>La alternativa “b” es Los empleados prescindibles presentan un bajo rendimiento y un bajo potencial. R posee un bajo rendimiento (= 4) y un bajo potencial (= 5). Es un empleado prescindible. Y la alternativa “a” es incorrecta: Los empleados prescindibles presentan un bajo rendimiento y un bajo potencial. Q posee un bajo rendimiento (= 3) y un alto potencial (= 8). Es un empleado problema</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_9">9.- Según el modelo de Odiorne, ¿cuáles de los siguientes empleados podría seguir desempeñando el puesto de operario?
+									</label>
+									<label class="ss-q-help" for="entry_9"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.9.group" value="B y Q." class="ss-q-radio" id="group_9_1">
+													B y Q.
+												</label>
+												<div class="correcto">Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. B y Q poseen un alto potencial (B = 7 y Q = 8). Por tanto, ambos operarios podrían desempeñar el puesto</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.9.group" value="C y K." class="ss-q-radio" id="group_9_2">
+													C y K.
+												</label>
+												<div>Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. Aunque K sí posee un alto potencial (= 8), C no lo posee (= 5). Por tanto, C no podría desempeñarlo.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.9.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_9_3">
+													Las alternativas a y b son correctas.
+												</label>
+												<div>Aunque la alternativa “a” es correcta:Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. B y Q poseen un alto potencial (B = 7 y Q = 8). Por tanto, ambos operarios podrían desempeñar el puesto.la alternativa “b” es incorrecta: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. Aunque K sí posee un alto potencial (= 8), C no lo posee (= 5). Por tanto, C no podría desempeñarlo.</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_10">10.- Según el modelo de Odiorne, ¿cuáles de los siguientes operarios podrían desempeñar el puesto de logística?
+									</label>
+									<label class="ss-q-help" for="entry_10"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.10.group" value="D y C." class="ss-q-radio" id="group_10_1">
+													D y C.
+												</label>
+												<div>Para poder desempeñar el puesto de logística es imprescindible poseer un alto potencial para este puesto, ya que el desempeño de este puesto requerirá de competencias distintas a las del puesto de operario. Aunque C sí posee un alto potencial para el puesto de logística (= 6), D no lo posee (= 4). Por tanto, no podría desempeñarlo</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.10.group" value="B y R." class="ss-q-radio" id="group_10_2">
+													B y R.
+												</label>
+												<div class="correcto">Para poder desempeñar el puesto de logística es imprescindible poseer un alto potencial para este puesto, ya que el desempeño de este puesto requerirá de competencias distintas a las del puesto de operario. Ambos operarios poseen un alto potencial para el puesto de logística (B = 9 y R = 7). Por tanto, ambos podrían desempeñarlo.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.10.group" value="Las alternativas a y b son correctas. " class="ss-q-radio" id="group_10_3">
+													Las alternativas a y b son correctas.
+												</label>
+												<div>Aunque la alternativa “b” es correcta: para poder desempeñar el puesto de logística es imprescindible poseer un alto potencial para este puesto, ya que el desempeño de este puesto requerirá de competencias distintas a las del puesto de operario. Ambos operarios poseen un alto potencial para el puesto de logística (B = 9 y R = 7). Por tanto, ambos podrían desempeñarlo.Y la alternativa “a” es incorrecta:Para poder desempeñar el puesto de logística es imprescindible poseer un alto potencial para este puesto, ya que el desempeño de este puesto requerirá de competencias distintas a las del puesto de operario. Aunque C sí posee un alto potencial para el puesto de logística (= 6), D no lo posee (= 4). Por tanto, no podría desempeñarlo</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_11">11.- Según el modelo de Odiorne, ¿cuáles de los siguientes empleados podrían desempeñar el puesto de operario?
+									</label>
+									<label class="ss-q-help" for="entry_11"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.11.group" value="M e I." class="ss-q-radio" id="group_11_1">
+													M e I.
+												</label>
+												<div>Esta alternativa es correcta. Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. M e I poseen un alto potencial para este puesto (M = 7  y  I = 8). Por tanto, ambos podrían desempeñarlo. No obstante, la alternativa “b” también es correcta por los motivos señalados en “b”.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.11.group" value="P y Q." class="ss-q-radio" id="group_11_2">
+													P y Q.
+												</label>
+												<div>Esta alternativa es correcta. Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. P y Q poseen un alto potencial para este puesto (P = 9 y K = 8). Por tanto, ambos podrían desempeñarlo. No obstante, la alternativa “a” también es correcta por los motivos señalados en “a”.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.11.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_11_3">
+													Las alternativas a y b son correctas.
+												</label>
+												<div class="correcto">Las alternativas “a” y “b” son correctas.“a”: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. M e I poseen un alto potencial para este puesto (M = 7  y  I = 8). Por tanto, ambos podrían desempeñarlo . Y “b”: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. P y Q poseen un alto potencial para este puesto (P = 9 y K = 8). Por tanto, ambos podrían desempeñarlo</div>
+											</li>
+							
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_12">12.- Según el modelo de Odiorne, ¿cuáles de los siguientes empleados no podrían desempeñar el puesto de operario?
+									</label>
+									<label class="ss-q-help" for="entry_12"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.12.group" value="R y E." class="ss-q-radio" id="group_12_1">
+													R y E.
+												</label>
+												<div class="correcto">Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. R y E poseen un bajo potencial (R = 5, E = 5) para el puesto de operario. Por tanto, no podrían desempeñarlo.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.12.group" value="R y P." class="ss-q-radio" id="group_12_2">
+													R y P.
+												</label>
+												<div>Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. Aunque R posee un bajo potencial (= 5) para el puesto de operario, P posee un alto potencial (= 9), por lo que sí podría desempeñarlo.) </div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.12.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_12_3">
+													Las alternativas a y b son correctas.
+												</label>
+												<div>Aunque la alternativa “a” es correcta: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. R y E poseen un bajo potencial (R = 5, E = 5) para el puesto de operario. Por tanto, no podrían desempeñarlo la “b” es incorrecta: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. Aunque R posee un bajo potencial (= 5) para el puesto de operario, P posee un alto potencial (= 9), por lo que sí podría desempeñarlo.</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_13">13.- Según el modelo de Odiorne, ¿cuál de los siguientes empleados no podría desempeñar ninguno de los puestos del supuesto práctico?
+									</label>
+									<label class="ss-q-help" for="entry_13"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.13.group" value="R" class="ss-q-radio" id="group_13_1">
+													R
+												</label>
+												<div>R posee un bajo potencial para el puesto de de operario (= 5), pero posee un alto potencial para el puesto de logística (= 7). Por tanto, podría desempeñarlo.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.13.group" value="S" class="ss-q-radio" id="group_13_2">
+													S
+												</label>
+												<div class="correcto">S posee un bajo potencial para los dos puestos (Operario = 3, Logística = 4). Por tanto, no podría desempeñar ninguno de los dos.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.13.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_13_3">
+												Las alternativas a y b son correctas.</label>
+												<div>Aunque la alternativa “b” es correcta: S posee un bajo potencial para los dos puestos (Operario = 3, Logística = 4). Por tanto, no podría desempeñar ninguno de los dos. La alternativa “a” es incorrecta R posee un bajo potencial para el puesto de de operario (= 5), pero posee un alto potencial para el puesto de logística (= 7). Por tanto, podría desempeñarlo.</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_14">14.- ¿Cuál es el grado de disponibilidad externa de personas con el perfil profesional necesario para el puesto de logística?
+									</label>
+									<label class="ss-q-help" for="entry_14"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.14.group" value="Alta, entre 6 y 10 en una escala de 1 a 10." class="ss-q-radio" id="group_14_1">
+													Alta, entre 6 y 10 en una escala de 1 a 10.
+												</label>
+												<div class="correcto">En el enunciado del caso práctico se indica que en el mercado laboral externo existe suficiente mano de obra para cubrir los puestos de logística.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.14.group" value="Alta, entre 5 y 10 en una escala de 1 a 10." class="ss-q-radio" id="group_14_2">
+													Alta, entre 5 y 10 en una escala de 1 a 10.
+												</label>
+												<div>Una disponibilidad externa alta en una escala de 1 a 10, comprendería una puntuación de 6 a 10, no de 5 a 10.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.14.group" value="Baja, entre 1 y 4 en una escala de 1 a 10." class="ss-q-radio" id="group_14_3">
+													Baja, entre 1 y 4 en una escala de 1 a 10.
+												</label>
+												<div>En el enunciado del caso práctico se indica que en el mercado laboral externo existe suficiente mano de obra para cubrir los puestos de logística. Además, una disponibilidad externa baja en una escala de 1 a 10, comprendería una puntuación de 1 a 5, no de 1 a 4. </div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_15">15.-  Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿cuál de los siguientes operarios, entre otros, retendría en su actual puesto de trabajo? (Preste atención a la pregunta. No se pregunta cuál podría ser retenido, sino cuál concretamente retendría usted, teniendo en cuenta, además de su potencial, la disponibilidad interna y externa de RRHH y las necesidades de RRHH de la empresa de cara al logro de sus objetivos en el futuro).
+									</label>
+									<label class="ss-q-help" for="entry_15"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.15.group" value="M" class="ss-q-radio" id="group_15_1">
+													M
+												</label>
+												<div class="correcto">Para desempeñar el puesto de operario es imprescindible poseer un alto potencial. De lo contrario, el empleado no podría desarrollar las competencias necesarias para desempeñar las nuevas tareas, ni adaptarse a la nueva tecnología. M posee un alto potencial (= 7) para este puesto, por lo que podría desempeñarlo. Esto es importante, pues de tener que contratar a muchos operarios, los costes de personal se elevarían demasiado. Por ello, a la empresa le interesa conseguir los operarios que necesita del mercado laboral interno. Si no puede conseguir todos los que necesita, al menos, sí parte de ellos.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.15.group" value="C" class="ss-q-radio" id="group_15_2">
+													C
+												</label>
+												<div>Para desempeñar el puesto de operario es imprescindible poseer un alto potencial. De lo contrario, el empleado no podría desarrollar las competencias necesarias para desempeñar las nuevas tareas, ni adaptarse a la nueva tecnología. C posee un bajo potencial para el puesto de operario (= 5), por lo que no podría desempeñarlo.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.15.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_15_3">
+													Las alternativas a y b son correctas.
+												</label>
+												<div>Aunque la alternativa “a” es correcta:Para desempeñar el puesto de operario es imprescindible poseer un alto potencial. De lo contrario, el empleado no podría desarrollar las competencias necesarias para desempeñar las nuevas tareas, ni adaptarse a la nueva tecnología. M posee un alto potencial (= 7) para este puesto, por lo que podría desempeñarlo. Esto es importante, pues de tener que contratar a muchos operarios, los costes de personal se elevarían demasiado. Por ello, a la empresa le interesa conseguir los operarios que necesita del mercado laboral interno. Si no puede conseguir todos los que necesita, al menos, sí parte de ellos. La alternativa “b” es incorrecta Para desempeñar el puesto de operario es imprescindible poseer un alto potencial. De lo contrario, el empleado no podría desarrollar las competencias necesarias para desempeñar las nuevas tareas, ni adaptarse a la nueva tecnología. C posee un bajo potencial para el puesto de operario (= 5), por lo que no podría desempeñarlo.</div>
+											</li>
+							
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_16">16.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿cuál de los siguientes operarios, entre otros, trasladaría o seleccionaría usted para ocupar un puesto de logística? (Preste atención a la pregunta. No se pregunta cuál podría ser trasladado, sino cuál concretamente trasladaría usted, teniendo en cuenta, además de su potencial, la disponibilidad interna y externa de RRHH y las necesidades de RRHH de la empresa de cara al logro de sus objetivos en el futuro).
+									</label>
+									<label class="ss-q-help" for="entry_16"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.16.group" value="I" class="ss-q-radio" id="group_16_1">
+													I
+												</label>
+												<div>I ya ha sido ubicado en el puesto de operario, ya que posee un alto potencial (= 8) para desempeñarlo y a la empresa le sale más rentable ubicarlo en ese puesto.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.16.group" value="C" class="ss-q-radio" id="group_16_2">
+													C
+												</label>
+												<div class="correcto">C no ha sido ubicado en el puesto de operario, pues no posee un alto potencial (= 5) para desempeñarlo. Sin embargo, posee un alto potencial para el de logística (= 6), por lo que podría desempeñarlo. Además, es un operario con mucha antigüedad, por lo que en el caso de tener que pensar en su salida de la empresa, supondría incrementar los costes laborales.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.16.group" value="D" class="ss-q-radio" id="group_16_3">
+													D
+												</label>
+												<div>D no ha sido ubicado en el puesto de operario, pues no posee potencial para ese puesto (= 3). Sin embargo, tampoco posee un alto potencial para el puesto de logística (= 4), por lo que no podría desempeñarlo. El rendimiento en este caso no se considera, pues hace referencia al rendimiento en el puesto de operario.</div>
+											</li>
+							
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_17">17.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿cuál de los siguientes operarios, entre otros, trasladaría o seleccionaría usted para ocupar un puesto de logística? (Preste atención a la pregunta. No se pregunta cuál podría ser trasladado, sino cuál concretamente trasladaría usted, teniendo en cuenta, además de su potencial, la disponibilidad interna y externa de RRHH y las necesidades de RRHH de la empresa de cara al logro de sus objetivos en el futuro).
+									</label>
+									<label class="ss-q-help" for="entry_17"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.17.group" value="G" class="ss-q-radio" id="group_17_1">
+													G
+												</label>
+												<div>G no ha sido ubicado en el puesto de operario, pues no posee potencial para ese puesto (= 3), pero tampoco posee un alto potencial para el puesto de logística (= 3), por lo que no podría desempeñarlo. El rendimiento en este caso no se considera, pues hace referencia al rendimiento en el puesto de operario.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.17.group" value="R" class="ss-q-radio" id="group_17_2">
+													R
+												</label>
+												<div class="correcto">R no ha sido ubicado en el puesto de operario, pues no posee potencial para ese puesto (= 5), pero sí posee potencial para el puesto de logística (= 7), por lo que podría desempeñarlo. Además, es un operario con mucha antigüedad, por lo que en el caso de tener que pensar en su salida de la empresa, supondría incrementar los costes laborales.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.17.group" value="K" class="ss-q-radio" id="group_17_3">
+													K
+												</label>
+												<div>K ha sido ubicado en el puesto de operario, pues posee potencial para desempeñarlo (= 8) y a la empresa le sale más rentable ubicarlo en ese puesto.</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_18">18.- En función del análisis de la disponibilidad interna de RRHH de la empresa, ¿cuál de las siguientes alternativas refleja la disponibilidad de RRHH para el puesto de operario?
+									</label>
+									<label class="ss-q-help" for="entry_18"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.18.group" value="7 empleados." class="ss-q-radio" id="group_18_1">
+													7 empleados.
+												</label>
+												<div class="correcto">Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios B, I, K, O, M, P, Q, constituyen la disponibilidad interna, que suman en total 7 empleados.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.18.group" value="4 empleados." class="ss-q-radio" id="group_18_2">
+													4 empleados.
+												</label>
+												<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios B, I, K, O, M, P, Q, constituyen la disponibilidad interna, que suman en total 7 empleados.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.18.group" value="10 empleados." class="ss-q-radio" id="group_18_3">
+													10 empleados.
+												</label>
+												<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios B, I, K, O, M, P, Q, constituyen la disponibilidad interna, que suman en total 7 empleados.</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_19">19. En función del análisis de la disponibilidad interna de RRHH de la empresa, ¿cuál de las siguientes alternativas refleja la disponibilidad de RRHH para el puesto de logística?
+									</label>
+									<label class="ss-q-help" for="entry_19"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.19.group" value="3 empleados." class="ss-q-radio" id="group_19_1">
+													3 empleados.
+												</label>
+												<div class="correcto">Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios C, E, R, constituyen la disponibilidad interna, que suman en total 3 empleados.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.19.group" value="6 empleados." class="ss-q-radio" id="group_19_2">
+													6 empleados.
+												</label>
+												<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios C, E, R, constituyen la disponibilidad interna, que suman en total 3 empleados.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.19.group" value="2 empleados." class="ss-q-radio" id="group_19_3">
+													2 empleados.
+												</label>
+												<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios C, E, R, constituyen la disponibilidad interna, que suman en total 3 empleados.</div>
+											</li>
+							
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_20">20.- ¿Cuál es la disponibilidad interna total de RRHH?
+									</label>
+									<label class="ss-q-help" for="entry_20"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.20.group" value="11 empleados." class="ss-q-radio" id="group_20_1">
+													11 empleados.
+												</label>
+												<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) la empresa dispone de 7 operarios y 3 empleados para logística, que suman en total 10 empleados.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.20.group" value="10 empleados." class="ss-q-radio" id="group_20_2">
+													10 empleados.
+												</label>
+												<div class="correcto">Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) la empresa dispone de 7 operarios y 3 empleados para logística, que suman en total 10 empleados</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.20.group" value="7 empleados." class="ss-q-radio" id="group_20_3">
+													7 empleados.
+												</label>
+												<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) la empresa dispone de 7 operarios y 3 empleados para logística, que suman en total 10 empleados.</div>
+											</li>
+							
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_21">21.- ¿Cuál de las siguientes alternativas refleja el número total de empleados que hay que conseguir del mercado laboral externo o, si fuera posible, de otros departamentos de la empresa no contemplados en el supuesto práctico?
+									</label>
+									<label class="ss-q-help" for="entry_21"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.21.group" value="6 empleados." class="ss-q-radio" id="group_21_1">
+													6 empleados.
+												</label>
+												<div class="correcto">La empresa necesita 10 operarios y dispone internamente de 7. Asimismo, necesita 6 empleados para logística y dispone internamente de 3. Por lo que debe conseguir 6 empleados (3 operarios y 3 para logística) del mercado laboral externo o, si fuera posible, del mercado laboral interno no contemplado en el caso práctico.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.21.group" value="7 empleados." class="ss-q-radio" id="group_21_2">
+													7 empleados.
+												</label>
+												<div>La empresa necesita 10 operarios y dispone internamente de 7. Asimismo, necesita 6 empleados para logística y dispone internamente de 3. Por lo que debe conseguir 6 empleados (3 operarios y 3 para logística) del mercado laboral externo o, si fuera posible, del mercado laboral interno no contemplado en el caso práctico.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.21.group" value="0 empleados." class="ss-q-radio" id="group_21_3">
+													0 empleados.
+												</label>
+												<div>La empresa necesita 10 operarios y dispone internamente de 7. Asimismo, necesita 6 empleados para logística y dispone internamente de 3. Por lo que debe conseguir 6 empleados (3 operarios y 3 para logística) del mercado laboral externo o, si fuera posible, del mercado laboral interno no contemplado en el caso práctico.</div>
+											</li>
+							
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_22">22.- Siguiendo el modelo de Lengnick-Hall, si las expectativas de crecimiento de la empresa se ha estimado en 8 puntos y el grado de preparación en materia de RRHH se ha estimado en 7 puntos, ¿en cuál de las siguientes opciones estratégica se sitúa la empresa?
+									</label>
+									<label class="ss-q-help" for="entry_22"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.22.group" value="Expansión." class="ss-q-radio" id="group_22_1">
+													Expansión.
+												</label>
+												<div class="correcto">Dado que las expectativas de crecimiento son altas (= 8) y el grado de preparación en materia de RRHH es alto (= 7), la opción estratégica es Expansión.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.22.group" value="Productividad." class="ss-q-radio" id="group_22_2">
+													Productividad.
+												</label>
+												<div>Para que esta alternativa fuera correcta, las expectativas de crecimiento deberían ser bajas (entre 1 y 5). Dado que las expectativas de crecimiento son altas (= 8) y el grado de preparación en materia de RRHH es alto (= 7), la opción estratégica es Expansión.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.22.group" value="Desarrollo." class="ss-q-radio" id="group_22_3">
+													Desarrollo.
+												</label>
+												<div>Para que esta alternativa fuera correcta, el grado de preparación en materia de RRHH debería ser bajo (entre 1 y 5). Dado que las expectativas de crecimiento son altas (= 8) y que el grado de preparación en materia de RRHH es alto (= 7), la opción estratégica es Expansión.</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_23">23.- Dada la situación de la empresa según el modelo de Lengnick-Hall, ¿cuál de las siguientes alternativas podría seguir la empresa con vistas a conseguir sus objetivos?
+									</label>
+									<label class="ss-q-help" for="entry_23"></label>
+										<ul class="ss-choices">
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.23.group" value="Invertir fuertemente en RRHH para favorecer la efectiva implantación de la estrategia." class="ss-q-radio" id="group_23_1">
+													Invertir fuertemente en RRHH para favorecer la efectiva implantación de la estrategia.
+												</label>
+												<div>La empresa cuenta con un alto grado de preparación de sus RRHH. Por lo que, más que invertir fuertemente en ellos, lo que debería hacer es analizar cómo distribuirlos o gestionarlos eficientemente para sostener el crecimiento.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.23.group" value="Diversificar hacia negocios con alto potencial de crecimiento que pudieran estar basados en la adquisición de nuevas competencias y capacidades de la empresa." class="ss-q-radio" id="group_23_2">
+													Diversificar hacia negocios con alto potencial de crecimiento que pudieran estar basados en la adquisición de nuevas competencias y capacidades de la empresa.
+												</label>
+												<div>La empresa ya tiene altas expectativas de crecimiento y posee los RRHH necesarios para realizar ese crecimiento. Por tanto, lo que debería hacer es analizar cómo distribuir sus RRHH o cómo gestionarlos eficientemente para sostener el crecimiento.</div>
+											</li> 
+											<li class="ss-choice-item">
+												<label class="ss-choice-label">
+													<input type="radio" name="entry.23.group" value="Distribuir eficientemente los RRHH disponibles, tal como se ha previsto tal el análisis efectuado, con vistas a lograr sus objetivos y sostener el crecimiento. " class="ss-q-radio" id="group_23_3">
+												Distribuir eficientemente los RRHH disponibles, tal como se ha previsto tal el análisis efectuado, con vistas a lograr sus objetivos y sostener el crecimiento.
+												</label>
+												<div class="correcto">La empresa tiene altas expectativas de crecimiento y posee los RRHH necesarios para realizar ese crecimiento. Por tanto, lo que debería hacer es analizar cómo distribuir sus RRHH o cómo gestionarlos eficientemente para sostener el crecimiento.</div>
+											</li>
+								
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br>
+							<input type="hidden" name="pageNumber" value="0">
+							<input type="hidden" name="backupCache" value="">
+
+
+							<div class="ss-item ss-navigate"><div class="ss-form-entry">
+								<input id="boton_envio" type="submit" name="submit" value="Terminar el Ejercicio"></div></div>
 					
-							</ul>
-						</div>
-					</div>
-				</div>
+							<div id="felicidades">
+								<h3>Muy bien!</h3>
+								<p>Has terminado el ejercicio, &eacute;chale un vistazo a tus respuestas a ver que tal</p>
+							</div>
 
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_9">9.- Según el modelo de Odiorne, ¿cuáles de los siguientes empleados podría seguir desempeñando el puesto de operario?
-						</label>
-						<label class="ss-q-help" for="entry_9"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.9.group" value="B y Q." class="ss-q-radio" id="group_9_1">
-										B y Q.
-									</label>
-									<div class="correcto">Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. B y Q poseen un alto potencial (B = 7 y Q = 8). Por tanto, ambos operarios podrían desempeñar el puesto</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.9.group" value="C y K." class="ss-q-radio" id="group_9_2">
-										C y K.
-									</label>
-									<div>Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. Aunque K sí posee un alto potencial (= 8), C no lo posee (= 5). Por tanto, C no podría desempeñarlo.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.9.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_9_3">
-										Las alternativas a y b son correctas.
-									</label>
-									<div>Aunque la alternativa “a” es correcta:Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. B y Q poseen un alto potencial (B = 7 y Q = 8). Por tanto, ambos operarios podrían desempeñar el puesto.la alternativa “b” es incorrecta: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. Aunque K sí posee un alto potencial (= 8), C no lo posee (= 5). Por tanto, C no podría desempeñarlo.</div>
-								</li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_10">10.- Según el modelo de Odiorne, ¿cuáles de los siguientes operarios podrían desempeñar el puesto de logística?
-						</label>
-						<label class="ss-q-help" for="entry_10"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.10.group" value="D y C." class="ss-q-radio" id="group_10_1">
-										D y C.
-									</label>
-									<div>Para poder desempeñar el puesto de logística es imprescindible poseer un alto potencial para este puesto, ya que el desempeño de este puesto requerirá de competencias distintas a las del puesto de operario. Aunque C sí posee un alto potencial para el puesto de logística (= 6), D no lo posee (= 4). Por tanto, no podría desempeñarlo</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.10.group" value="B y R." class="ss-q-radio" id="group_10_2">
-										B y R.
-									</label>
-									<div class="correcto">Para poder desempeñar el puesto de logística es imprescindible poseer un alto potencial para este puesto, ya que el desempeño de este puesto requerirá de competencias distintas a las del puesto de operario. Ambos operarios poseen un alto potencial para el puesto de logística (B = 9 y R = 7). Por tanto, ambos podrían desempeñarlo.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.10.group" value="Las alternativas a y b son correctas. " class="ss-q-radio" id="group_10_3">
-										Las alternativas a y b son correctas.
-									</label>
-									<div>Aunque la alternativa “b” es correcta: para poder desempeñar el puesto de logística es imprescindible poseer un alto potencial para este puesto, ya que el desempeño de este puesto requerirá de competencias distintas a las del puesto de operario. Ambos operarios poseen un alto potencial para el puesto de logística (B = 9 y R = 7). Por tanto, ambos podrían desempeñarlo.Y la alternativa “a” es incorrecta:Para poder desempeñar el puesto de logística es imprescindible poseer un alto potencial para este puesto, ya que el desempeño de este puesto requerirá de competencias distintas a las del puesto de operario. Aunque C sí posee un alto potencial para el puesto de logística (= 6), D no lo posee (= 4). Por tanto, no podría desempeñarlo</div>
-								</li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_11">11.- Según el modelo de Odiorne, ¿cuáles de los siguientes empleados podrían desempeñar el puesto de operario?
-						</label>
-						<label class="ss-q-help" for="entry_11"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.11.group" value="M e I." class="ss-q-radio" id="group_11_1">
-										M e I.
-									</label>
-									<div>Esta alternativa es correcta. Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. M e I poseen un alto potencial para este puesto (M = 7  y  I = 8). Por tanto, ambos podrían desempeñarlo. No obstante, la alternativa “b” también es correcta por los motivos señalados en “b”.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.11.group" value="P y Q." class="ss-q-radio" id="group_11_2">
-										P y Q.
-									</label>
-									<div>Esta alternativa es correcta. Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. P y Q poseen un alto potencial para este puesto (P = 9 y K = 8). Por tanto, ambos podrían desempeñarlo. No obstante, la alternativa “a” también es correcta por los motivos señalados en “a”.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.11.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_11_3">
-										Las alternativas a y b son correctas.
-									</label>
-									<div class="correcto">Las alternativas “a” y “b” son correctas.“a”: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. M e I poseen un alto potencial para este puesto (M = 7  y  I = 8). Por tanto, ambos podrían desempeñarlo . Y “b”: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. P y Q poseen un alto potencial para este puesto (P = 9 y K = 8). Por tanto, ambos podrían desempeñarlo</div>
-								</li>
-				
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_12">12.- Según el modelo de Odiorne, ¿cuáles de los siguientes empleados no podrían desempeñar el puesto de operario?
-						</label>
-						<label class="ss-q-help" for="entry_12"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.12.group" value="R y E." class="ss-q-radio" id="group_12_1">
-										R y E.
-									</label>
-									<div class="correcto">Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. R y E poseen un bajo potencial (R = 5, E = 5) para el puesto de operario. Por tanto, no podrían desempeñarlo.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.12.group" value="R y P." class="ss-q-radio" id="group_12_2">
-										R y P.
-									</label>
-									<div>Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. Aunque R posee un bajo potencial (= 5) para el puesto de operario, P posee un alto potencial (= 9), por lo que sí podría desempeñarlo.) </div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.12.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_12_3">
-										Las alternativas a y b son correctas.
-									</label>
-									<div>Aunque la alternativa “a” es correcta: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. R y E poseen un bajo potencial (R = 5, E = 5) para el puesto de operario. Por tanto, no podrían desempeñarlo la “b” es incorrecta: Para poder desempeñar el puesto de operario es imprescindible poseer un alto potencial para este puesto, pues la introducción de la nueva tecnología y de las nuevas tareas requiere de nuevas competencias en el puesto. Aunque R posee un bajo potencial (= 5) para el puesto de operario, P posee un alto potencial (= 9), por lo que sí podría desempeñarlo.</div>
-								</li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_13">13.- Según el modelo de Odiorne, ¿cuál de los siguientes empleados no podría desempeñar ninguno de los puestos del supuesto práctico?
-						</label>
-						<label class="ss-q-help" for="entry_13"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.13.group" value="R" class="ss-q-radio" id="group_13_1">
-										R
-									</label>
-									<div>R posee un bajo potencial para el puesto de de operario (= 5), pero posee un alto potencial para el puesto de logística (= 7). Por tanto, podría desempeñarlo.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.13.group" value="S" class="ss-q-radio" id="group_13_2">
-										S
-									</label>
-									<div class="correcto">S posee un bajo potencial para los dos puestos (Operario = 3, Logística = 4). Por tanto, no podría desempeñar ninguno de los dos.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.13.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_13_3">
-									Las alternativas a y b son correctas.</label>
-									<div>Aunque la alternativa “b” es correcta: S posee un bajo potencial para los dos puestos (Operario = 3, Logística = 4). Por tanto, no podría desempeñar ninguno de los dos. La alternativa “a” es incorrecta R posee un bajo potencial para el puesto de de operario (= 5), pero posee un alto potencial para el puesto de logística (= 7). Por tanto, podría desempeñarlo.</div>
-								</li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_14">14.- ¿Cuál es el grado de disponibilidad externa de personas con el perfil profesional necesario para el puesto de logística?
-						</label>
-						<label class="ss-q-help" for="entry_14"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.14.group" value="Alta, entre 6 y 10 en una escala de 1 a 10." class="ss-q-radio" id="group_14_1">
-										Alta, entre 6 y 10 en una escala de 1 a 10.
-									</label>
-									<div class="correcto">En el enunciado del caso práctico se indica que en el mercado laboral externo existe suficiente mano de obra para cubrir los puestos de logística.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.14.group" value="Alta, entre 5 y 10 en una escala de 1 a 10." class="ss-q-radio" id="group_14_2">
-										Alta, entre 5 y 10 en una escala de 1 a 10.
-									</label>
-									<div>Una disponibilidad externa alta en una escala de 1 a 10, comprendería una puntuación de 6 a 10, no de 5 a 10.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.14.group" value="Baja, entre 1 y 4 en una escala de 1 a 10." class="ss-q-radio" id="group_14_3">
-										Baja, entre 1 y 4 en una escala de 1 a 10.
-									</label>
-									<div>En el enunciado del caso práctico se indica que en el mercado laboral externo existe suficiente mano de obra para cubrir los puestos de logística. Además, una disponibilidad externa baja en una escala de 1 a 10, comprendería una puntuación de 1 a 5, no de 1 a 4. </div>
-								</li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_15">15.-  Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿cuál de los siguientes operarios, entre otros, retendría en su actual puesto de trabajo? (Preste atención a la pregunta. No se pregunta cuál podría ser retenido, sino cuál concretamente retendría usted, teniendo en cuenta, además de su potencial, la disponibilidad interna y externa de RRHH y las necesidades de RRHH de la empresa de cara al logro de sus objetivos en el futuro).
-						</label>
-						<label class="ss-q-help" for="entry_15"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.15.group" value="M" class="ss-q-radio" id="group_15_1">
-										M
-									</label>
-									<div class="correcto">Para desempeñar el puesto de operario es imprescindible poseer un alto potencial. De lo contrario, el empleado no podría desarrollar las competencias necesarias para desempeñar las nuevas tareas, ni adaptarse a la nueva tecnología. M posee un alto potencial (= 7) para este puesto, por lo que podría desempeñarlo. Esto es importante, pues de tener que contratar a muchos operarios, los costes de personal se elevarían demasiado. Por ello, a la empresa le interesa conseguir los operarios que necesita del mercado laboral interno. Si no puede conseguir todos los que necesita, al menos, sí parte de ellos.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.15.group" value="C" class="ss-q-radio" id="group_15_2">
-										C
-									</label>
-									<div>Para desempeñar el puesto de operario es imprescindible poseer un alto potencial. De lo contrario, el empleado no podría desarrollar las competencias necesarias para desempeñar las nuevas tareas, ni adaptarse a la nueva tecnología. C posee un bajo potencial para el puesto de operario (= 5), por lo que no podría desempeñarlo.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.15.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_15_3">
-										Las alternativas a y b son correctas.
-									</label>
-									<div>Aunque la alternativa “a” es correcta:Para desempeñar el puesto de operario es imprescindible poseer un alto potencial. De lo contrario, el empleado no podría desarrollar las competencias necesarias para desempeñar las nuevas tareas, ni adaptarse a la nueva tecnología. M posee un alto potencial (= 7) para este puesto, por lo que podría desempeñarlo. Esto es importante, pues de tener que contratar a muchos operarios, los costes de personal se elevarían demasiado. Por ello, a la empresa le interesa conseguir los operarios que necesita del mercado laboral interno. Si no puede conseguir todos los que necesita, al menos, sí parte de ellos. La alternativa “b” es incorrecta Para desempeñar el puesto de operario es imprescindible poseer un alto potencial. De lo contrario, el empleado no podría desarrollar las competencias necesarias para desempeñar las nuevas tareas, ni adaptarse a la nueva tecnología. C posee un bajo potencial para el puesto de operario (= 5), por lo que no podría desempeñarlo.</div>
-								</li>
-				
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_16">16.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿cuál de los siguientes operarios, entre otros, trasladaría o seleccionaría usted para ocupar un puesto de logística? (Preste atención a la pregunta. No se pregunta cuál podría ser trasladado, sino cuál concretamente trasladaría usted, teniendo en cuenta, además de su potencial, la disponibilidad interna y externa de RRHH y las necesidades de RRHH de la empresa de cara al logro de sus objetivos en el futuro).
-						</label>
-						<label class="ss-q-help" for="entry_16"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.16.group" value="I" class="ss-q-radio" id="group_16_1">
-										I
-									</label>
-									<div>I ya ha sido ubicado en el puesto de operario, ya que posee un alto potencial (= 8) para desempeñarlo y a la empresa le sale más rentable ubicarlo en ese puesto.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.16.group" value="C" class="ss-q-radio" id="group_16_2">
-										C
-									</label>
-									<div class="correcto">C no ha sido ubicado en el puesto de operario, pues no posee un alto potencial (= 5) para desempeñarlo. Sin embargo, posee un alto potencial para el de logística (= 6), por lo que podría desempeñarlo. Además, es un operario con mucha antigüedad, por lo que en el caso de tener que pensar en su salida de la empresa, supondría incrementar los costes laborales.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.16.group" value="D" class="ss-q-radio" id="group_16_3">
-										D
-									</label>
-									<div>D no ha sido ubicado en el puesto de operario, pues no posee potencial para ese puesto (= 3). Sin embargo, tampoco posee un alto potencial para el puesto de logística (= 4), por lo que no podría desempeñarlo. El rendimiento en este caso no se considera, pues hace referencia al rendimiento en el puesto de operario.</div>
-								</li>
-				
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_17">17.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿cuál de los siguientes operarios, entre otros, trasladaría o seleccionaría usted para ocupar un puesto de logística? (Preste atención a la pregunta. No se pregunta cuál podría ser trasladado, sino cuál concretamente trasladaría usted, teniendo en cuenta, además de su potencial, la disponibilidad interna y externa de RRHH y las necesidades de RRHH de la empresa de cara al logro de sus objetivos en el futuro).
-						</label>
-						<label class="ss-q-help" for="entry_17"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.17.group" value="G" class="ss-q-radio" id="group_17_1">
-										G
-									</label>
-									<div>G no ha sido ubicado en el puesto de operario, pues no posee potencial para ese puesto (= 3), pero tampoco posee un alto potencial para el puesto de logística (= 3), por lo que no podría desempeñarlo. El rendimiento en este caso no se considera, pues hace referencia al rendimiento en el puesto de operario.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.17.group" value="R" class="ss-q-radio" id="group_17_2">
-										R
-									</label>
-									<div class="correcto">R no ha sido ubicado en el puesto de operario, pues no posee potencial para ese puesto (= 5), pero sí posee potencial para el puesto de logística (= 7), por lo que podría desempeñarlo. Además, es un operario con mucha antigüedad, por lo que en el caso de tener que pensar en su salida de la empresa, supondría incrementar los costes laborales.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.17.group" value="K" class="ss-q-radio" id="group_17_3">
-										K
-									</label>
-									<div>K ha sido ubicado en el puesto de operario, pues posee potencial para desempeñarlo (= 8) y a la empresa le sale más rentable ubicarlo en ese puesto.</div>
-								</li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_18">18.- En función del análisis de la disponibilidad interna de RRHH de la empresa, ¿cuál de las siguientes alternativas refleja la disponibilidad de RRHH para el puesto de operario?
-						</label>
-						<label class="ss-q-help" for="entry_18"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.18.group" value="7 empleados." class="ss-q-radio" id="group_18_1">
-										7 empleados.
-									</label>
-									<div class="correcto">Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios B, I, K, O, M, P, Q, constituyen la disponibilidad interna, que suman en total 7 empleados.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.18.group" value="4 empleados." class="ss-q-radio" id="group_18_2">
-										4 empleados.
-									</label>
-									<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios B, I, K, O, M, P, Q, constituyen la disponibilidad interna, que suman en total 7 empleados.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.18.group" value="10 empleados." class="ss-q-radio" id="group_18_3">
-										10 empleados.
-									</label>
-									<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios B, I, K, O, M, P, Q, constituyen la disponibilidad interna, que suman en total 7 empleados.</div>
-								</li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_19">19. En función del análisis de la disponibilidad interna de RRHH de la empresa, ¿cuál de las siguientes alternativas refleja la disponibilidad de RRHH para el puesto de logística?
-						</label>
-						<label class="ss-q-help" for="entry_19"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.19.group" value="3 empleados." class="ss-q-radio" id="group_19_1">
-										3 empleados.
-									</label>
-									<div class="correcto">Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios C, E, R, constituyen la disponibilidad interna, que suman en total 3 empleados.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.19.group" value="6 empleados." class="ss-q-radio" id="group_19_2">
-										6 empleados.
-									</label>
-									<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios C, E, R, constituyen la disponibilidad interna, que suman en total 3 empleados.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.19.group" value="2 empleados." class="ss-q-radio" id="group_19_3">
-										2 empleados.
-									</label>
-									<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) los operarios C, E, R, constituyen la disponibilidad interna, que suman en total 3 empleados.</div>
-								</li>
-				
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_20">20.- ¿Cuál es la disponibilidad interna total de RRHH?
-						</label>
-						<label class="ss-q-help" for="entry_20"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.20.group" value="11 empleados." class="ss-q-radio" id="group_20_1">
-										11 empleados.
-									</label>
-									<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) la empresa dispone de 7 operarios y 3 empleados para logística, que suman en total 10 empleados.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.20.group" value="10 empleados." class="ss-q-radio" id="group_20_2">
-										10 empleados.
-									</label>
-									<div class="correcto">Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) la empresa dispone de 7 operarios y 3 empleados para logística, que suman en total 10 empleados</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.20.group" value="7 empleados." class="ss-q-radio" id="group_20_3">
-										7 empleados.
-									</label>
-									<div>Según el análisis efectuado y la reubicación de los técnicos disponibles entre los dos puestos de trabajo (operarios y logística) la empresa dispone de 7 operarios y 3 empleados para logística, que suman en total 10 empleados.</div>
-								</li>
-				
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_21">21.- ¿Cuál de las siguientes alternativas refleja el número total de empleados que hay que conseguir del mercado laboral externo o, si fuera posible, de otros departamentos de la empresa no contemplados en el supuesto práctico?
-						</label>
-						<label class="ss-q-help" for="entry_21"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.21.group" value="6 empleados." class="ss-q-radio" id="group_21_1">
-										6 empleados.
-									</label>
-									<div class="correcto">La empresa necesita 10 operarios y dispone internamente de 7. Asimismo, necesita 6 empleados para logística y dispone internamente de 3. Por lo que debe conseguir 6 empleados (3 operarios y 3 para logística) del mercado laboral externo o, si fuera posible, del mercado laboral interno no contemplado en el caso práctico.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.21.group" value="7 empleados." class="ss-q-radio" id="group_21_2">
-										7 empleados.
-									</label>
-									<div>La empresa necesita 10 operarios y dispone internamente de 7. Asimismo, necesita 6 empleados para logística y dispone internamente de 3. Por lo que debe conseguir 6 empleados (3 operarios y 3 para logística) del mercado laboral externo o, si fuera posible, del mercado laboral interno no contemplado en el caso práctico.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.21.group" value="0 empleados." class="ss-q-radio" id="group_21_3">
-										0 empleados.
-									</label>
-									<div>La empresa necesita 10 operarios y dispone internamente de 7. Asimismo, necesita 6 empleados para logística y dispone internamente de 3. Por lo que debe conseguir 6 empleados (3 operarios y 3 para logística) del mercado laboral externo o, si fuera posible, del mercado laboral interno no contemplado en el caso práctico.</div>
-								</li>
-				
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_22">22.- Siguiendo el modelo de Lengnick-Hall, si las expectativas de crecimiento de la empresa se ha estimado en 8 puntos y el grado de preparación en materia de RRHH se ha estimado en 7 puntos, ¿en cuál de las siguientes opciones estratégica se sitúa la empresa?
-						</label>
-						<label class="ss-q-help" for="entry_22"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.22.group" value="Expansión." class="ss-q-radio" id="group_22_1">
-										Expansión.
-									</label>
-									<div class="correcto">Dado que las expectativas de crecimiento son altas (= 8) y el grado de preparación en materia de RRHH es alto (= 7), la opción estratégica es Expansión.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.22.group" value="Productividad." class="ss-q-radio" id="group_22_2">
-										Productividad.
-									</label>
-									<div>Para que esta alternativa fuera correcta, las expectativas de crecimiento deberían ser bajas (entre 1 y 5). Dado que las expectativas de crecimiento son altas (= 8) y el grado de preparación en materia de RRHH es alto (= 7), la opción estratégica es Expansión.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.22.group" value="Desarrollo." class="ss-q-radio" id="group_22_3">
-										Desarrollo.
-									</label>
-									<div>Para que esta alternativa fuera correcta, el grado de preparación en materia de RRHH debería ser bajo (entre 1 y 5). Dado que las expectativas de crecimiento son altas (= 8) y que el grado de preparación en materia de RRHH es alto (= 7), la opción estratégica es Expansión.</div>
-								</li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br> <div class="errorbox-good">
-				<div class="ss-item  ss-radio">
-					<div class="ss-form-entry">
-						<label class="ss-q-title" for="entry_23">23.- Dada la situación de la empresa según el modelo de Lengnick-Hall, ¿cuál de las siguientes alternativas podría seguir la empresa con vistas a conseguir sus objetivos?
-						</label>
-						<label class="ss-q-help" for="entry_23"></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.23.group" value="Invertir fuertemente en RRHH para favorecer la efectiva implantación de la estrategia." class="ss-q-radio" id="group_23_1">
-										Invertir fuertemente en RRHH para favorecer la efectiva implantación de la estrategia.
-									</label>
-									<div>La empresa cuenta con un alto grado de preparación de sus RRHH. Por lo que, más que invertir fuertemente en ellos, lo que debería hacer es analizar cómo distribuirlos o gestionarlos eficientemente para sostener el crecimiento.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.23.group" value="Diversificar hacia negocios con alto potencial de crecimiento que pudieran estar basados en la adquisición de nuevas competencias y capacidades de la empresa." class="ss-q-radio" id="group_23_2">
-										Diversificar hacia negocios con alto potencial de crecimiento que pudieran estar basados en la adquisición de nuevas competencias y capacidades de la empresa.
-									</label>
-									<div>La empresa ya tiene altas expectativas de crecimiento y posee los RRHH necesarios para realizar ese crecimiento. Por tanto, lo que debería hacer es analizar cómo distribuir sus RRHH o cómo gestionarlos eficientemente para sostener el crecimiento.</div>
-								</li> 
-								<li class="ss-choice-item">
-									<label class="ss-choice-label">
-										<input type="radio" name="entry.23.group" value="Distribuir eficientemente los RRHH disponibles, tal como se ha previsto tal el análisis efectuado, con vistas a lograr sus objetivos y sostener el crecimiento. " class="ss-q-radio" id="group_23_3">
-									Distribuir eficientemente los RRHH disponibles, tal como se ha previsto tal el análisis efectuado, con vistas a lograr sus objetivos y sostener el crecimiento.
-									</label>
-									<div class="correcto">La empresa tiene altas expectativas de crecimiento y posee los RRHH necesarios para realizar ese crecimiento. Por tanto, lo que debería hacer es analizar cómo distribuir sus RRHH o cómo gestionarlos eficientemente para sostener el crecimiento.</div>
-								</li>
-					
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<br>
-				<input type="hidden" name="pageNumber" value="0">
-				<input type="hidden" name="backupCache" value="">
-
-
-				<div class="ss-item ss-navigate"><div class="ss-form-entry">
-					<input id="boton_envio" type="submit" name="submit" value="Terminar el Ejercicio"></div></div>
-		
-				<div id="felicidades">
-					<h3>Muy bien!</h3>
-					<p>Has terminado el ejercicio, &eacute;chale un vistazo a tus respuestas a ver que tal</p>
-				</div>
-
-			</form>
+						</form>
+			</div>
 
 			<div class="page_links">
 				<a class='prev' href="ejercicio1.html">Ejercicio 1</a>
