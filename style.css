@@ -64,7 +64,7 @@ span.rendimiento_potencial {font-weight:normal;}
 	float:left;	
 }
 .cuatro_columnas .primera,.cuatro_columnas .segunda,.cuatro_columnas .tercera{margin-right: 33px}
-
+img{margin:0 auto;display: block;}
 .cuatro_columnas img,.img_contexto{
 	height: 200px;
 	margin: 30px auto 10px auto;
@@ -81,6 +81,26 @@ span.rendimiento_potencial {font-weight:normal;}
 		font-size: 13px;
 		font-weight: bold;
 	}
+
+ol.lh{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+	ol.lh li{
+		margin-top: 10px;
+		padding: 0 0 0 200px;
+		min-height: 90px;
+	}
+	ol.lh li.desarrollo1{background: url(LH_desarrollo_01.png) no-repeat;}
+	ol.lh li.desarrollo2{background: url(LH_desarrollo_02.png) no-repeat;}
+	ol.lh li.desarrollo3{background: url(LH_desarrollo_03.png) no-repeat;}
+	ol.lh li.productividad_01{background: url(LH_productividad_01.png) no-repeat;}
+	ol.lh li.productividad_02{background: url(LH_productividad_02.png) no-repeat;padding: 40px 0 10px 200px;}
+	ol.lh li.productividad_03{background: url(LH_productividad_03.png) no-repeat;padding: 40px 0 10px 200px;}
+	ol.lh li.productividad_04{background: url(LH_productividad_04.png) no-repeat;padding: 20px 0 0 200px;}
+	ol.lh li.redireccion_01{background: url(LH_redireccion_01.png) no-repeat;padding: 15px 0 0 200px;}
+	ol.lh li.redireccion_02{background: url(LH_redireccion_02.png) no-repeat;padding: 15px 0 0 200px;}
 
 .page_links{
 	padding-top: 50px;
