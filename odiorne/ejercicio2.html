@@ -27,6 +27,8 @@
 	</head>
 
 	<body id="ejercicio">
+		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
+
 		<div class="container libro">
 			<ul class="menu">
 				<li><a href="examen.html">Examen</a></li>
@@ -43,12 +45,13 @@
 			<p>Una investigación del mercado laboral externo a la empresa ha puesto de manifiesto que existe suficiente mano de obra para cubrir los puestos de operarios y de logística. No obstante, el perfil que abunda para el puesto de operario reúne, sobre todo, el potencial requerido para desempeñarlo. Esto supondría, en el caso de necesitar contratar a nuevos operarios, un doble coste, pues primero habría que seleccionar y después, formar. Asimismo, una investigación del mercado laboral interno de la empresa indica la existencia de operarios con una alta antigüedad, concretamente, los operarios: C, M, P, R, y E. Esto supondría, en el caso de tener que pensar en la salida de todos ellos, de un desembolso económico considerable para la empresa.</p>
 			<p>Se ha evaluado el rendimiento de los operarios, así como el potencial necesario para el desarrollo de las nuevas competencias requeridas para el desempeño de este puesto y de los nuevos puestos que se van a crear en el departamento de logística. Los datos de estas evaluaciones en una escala de 10 puntos son los siguientes:</p>
 			<div class="ejercicio_izquierda">
+				
 				<table>
 					<tr>
-						<th>Plantilla actual</th>
-						<th>Rendimiento actual en el puesto de operario</th>
-						<th>Potencial para el puesto de operario</th>
-						<th>Potencial para el puesto de logistica</th>
+						<th></th>
+						<th><strong>RAO:</strong></th>
+						<th><strong>PPO:</strong></th>
+						<th><strong>PPL:</strong></th>
 					</tr>
 					<tr>
 						<th>Operario A</th>
@@ -147,6 +150,11 @@
 						<th>9</th>
 					</tr>
 				</table>
+				<ul>
+					<li><strong>RAO:</strong>Rendimiento actual en el puesto de operario</li>
+					<li><strong>PPO:</strong>Potencial para el puesto de operario</li>
+					<li><strong>PPL:</strong>Potencial para el puesto de logistica</li>
+				</ul>
 			</div>
 			<div class="ejercicio_derecha">
 				<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
@@ -973,8 +981,7 @@
 
 		</div>
 
-  		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
-
+  		
 	</body>
 </html>	
 

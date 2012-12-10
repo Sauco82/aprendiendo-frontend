@@ -27,6 +27,7 @@
 	</head>
 
 	<body id="ejercicio">
+		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
 		<div class="container libro">
 			<ul class="menu">
 				<li class="activo"><a href="examen.html">Examen</a></li>
@@ -40,13 +41,15 @@
 			<p class="intro"> “El Sol de Andalucía, S/A” es una empresa dedicada a la producción y distribución de frutos secos. Sus ventajas competitivas residen en la calidad, diversificación y envasado de productos, por lo que su posición competitiva en este mercado es bastante buena, situándose entre las primeras en el ranking nacional. En estos momentos, la dirección se ha planteado ampliar su radio de acción, ganando nuevos mercados fuera de este contexto, introduciendo, además, nuevas estrategias de comercialización del producto. La empresa cuenta en el momento actual con 12 comerciales. Para lograr los nuevos objetivos, necesita ampliar la plantilla hasta obtener un total de 16 comerciales, requiriendo habilidades específicas para la implantación de las nuevas estrategias de comercialización, por parte de, al menos, 5 de ellos. Asimismo, necesitaría obtener a 4 empleados que tengan conocimientos en investigación de mercados y de marketing, a la par que un profundo conocimiento de la misión, cultura y políticas de la empresa y una amplia visión sobre los procesos de producción, gestión y tecnológicos de la misma. Finalmente, también necesitaría ampliar la plantilla del departamento de logística, concretamente con 4 nuevos transportistas.</p>
 			<p>Se ha evaluado el rendimiento de los comerciales, así como el potencial necesario para desarrollar las competencias requeridas por las nuevas estrategias de comercialización. También se ha evaluado el potencial de estos comerciales, en relación con las competencias que se requieren para los nuevos puestos de investigación de mercados y marketing, así como de logística (transportista). Los datos de estas evaluaciones en una escala del 1 al 10 son los siguientes:</p>
 
-			<table>
+			<div class="ejercicio_izquierda">
+				<table>
+					
 					<tr>
 						<th>Plantilla comerciales</th>
-						<th>Rendimiento en el Puesto de Comercial</th>
-						<th>Potencial puesto de Comercial</th>
-						<th>Potencial Puesto de Investigación de Mercados</th>
-						<th>Potencial Puesto de Logística</th>
+						<th>RPC:</th>
+						<th>PPC:</th>
+						<th>PPI:</th>
+						<th>PPL:</th>
 					</tr>
 					<tr>
 						<th>1.- Pedro</th>
@@ -132,507 +135,514 @@
 						<th>5</th>
 						<th>7</th>
 					</tr>
-		</table>
-
-		<p>Una investigación del mercado laboral externo indica que, actualmente, existe en el mercado personas con las competencias requeridas para ocupar el puesto de comercial. En cuanto al puesto de investigador de mercado y marketing, también existen personas con las competencias requeridas, si bien se debe tener en cuenta el desconocimiento de estas personas sobre la actividad específica y el funcionamiento de la empresa. Finalmente, también existen suficientes personas con las competencias necesarias para desempeñar el puesto de logística. </p>
-		<p>Por otra parte, una investigación del mercado laboral interno indica que los comerciales que presentan un bajo rendimiento y un bajo potencial, están altamente desmotivados con su trabajo, pues no acaban de identificarse con las tareas a desarrollar y los resultados del trabajo no son lo suficientemente satisfactorios.</p>
-
-			<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
-
-
-			<br>
-			<div class="errorbox-good">
-				<div class="ss-item ss-item-required ss-text">
-					<div class="ss-form-entry">
-					<label class="ss-q-title" for="entry_0">Escribe tu DNI (Ej. 12345678x)
-						<span class="ss-required-asterisk"></span></label>
-					<label class="ss-q-help" for="entry_0">
-					</label>
-					<input type="text" name="entry.0.single" value="" class="ss-q-short" id="dni">
-				</div>
-			</div>
-		</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry">
-					<label class="ss-q-title" for="entry_1">1.- ¿Cuál de las siguientes alternativas refleja, al menos, uno de los objetivos generales de la empresa? 
-					</label>
-					<label class="ss-q-help" for="entry_1"></label>
-
-					<ul class="ss-choices">
-						<li class="ss-choice-item">
-							<label class="ss-choice-label">
-								<input type="radio" name="entry.1.group" value="Ampliar la plantilla actual de comerciales." class="ss-q-radio" id="group_1_1">
-								Ampliar la plantilla actual de comerciales.
-							</label>
-						</li> 
-						<li class="ss-choice-item">
-							<label class="ss-choice-label">
-								<input type="radio" name="entry.1.group" value="Introducir nuevas estrategias de comercialización del producto." class="ss-q-radio" id="group_1_2">
-								Introducir nuevas estrategias de comercialización del producto.
-							</label>
-						</li> 
-						<li class="ss-choice-item">
-							<label class="ss-choice-label">
-								<input type="radio" name="entry.1.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_1_3">
-								Las alternativas a y b son correctas.
-							</label>
-						</li>
-
-					</ul>
-				</div>
-			</div>
-		</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_2">2.- ¿Cuál de las siguientes alternativas refleja, al menos, uno de los objetivos de RRHH de la empresa? 
-				</label>
-				<label class="ss-q-help" for="entry_2"></label>
-
-					<ul class="ss-choices">
-						<li class="ss-choice-item">
-							<label class="ss-choice-label">
-								<input type="radio" name="entry.2.group" value="Ampliar la plantilla del departamento de logística." class="ss-q-radio" id="group_2_1">
-								Ampliar la plantilla del departamento de logística.
-							</label>
-						</li> 
-						<li class="ss-choice-item">
-							<label class="ss-choice-label">
-								<input type="radio" name="entry.2.group" value="Lograr la presencia de la empresa en los mercados externos al contexto nacional." class="ss-q-radio" id="group_2_2">
-								Lograr la presencia de la empresa en los mercados externos al contexto nacional.
-							</label>
-						</li> 
-						<li class="ss-choice-item">
-							<label class="ss-choice-label">
-								<input type="radio" name="entry.2.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_2_3">
-								Las alternativas a y b son correctas.
-							</label>
-						</li>
-
-					</ul>
-				</div>
-			</div>
-		</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_3">3.- Según el modelo de Odiorne y teniendo en cuenta el potencial para el puesto de investigación de mercados, ¿cuáles de los siguientes operarios es clasificable como empleado problema? 
-				</label>
-				<label class="ss-q-help" for="entry_3"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.3.group" value="2, Rafael." class="ss-q-radio" id="group_3_1">
-							2, Rafael.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.3.group" value="4,  Beatriz." class="ss-q-radio" id="group_3_2">
-							4,  Beatriz.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.3.group" value="Las alternativas a y b son incorrectas." class="ss-q-radio" id="group_3_3">
-							Las alternativas a y b son incorrectas.
-						</label>
-					</li>
-
+				</table>
+				<ul>
+					<li><strong>RPC:</strong>Rendimiento en el Puesto de Comercial</li>
+					<li><strong>PPC:</strong>Potencial puesto de Comercial</li>
+					<li><strong>PPI:</strong>Potencial Puesto de Investigación de Mercados</li>
+					<li><strong>PPL:</strong>Potencial Puesto de Logística</li>
 				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_4">4.-  Según el modelo de Odiorne y teniendo en cuenta el potencial para el puesto de comercial, ¿qué tipo de empleado sería el operario 12.- Teresa? 
-				</label>
-				<label class="ss-q-help" for="entry_4"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.4.group" value="Problema" class="ss-q-radio" id="group_4_1">
-							Problema
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.4.group" value="Prescindible" class="ss-q-radio" id="group_4_2">
-							Prescindible
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.4.group" value="Al límite." class="ss-q-radio" id="group_4_3">
-							Al límite.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_5">5.- Según el modelo de Odiorne, ¿cuál de los siguientes comerciales, entre otros, podría desempeñar el puesto de investigación de mercado?
-				</label>
-				<label class="ss-q-help" for="entry_5"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.5.group" value="1, Pedro." class="ss-q-radio" id="group_5_1">
-							1, Pedro.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.5.group" value="7, Pablo." class="ss-q-radio" id="group_5_2">
-							7, Pablo.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.5.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_5_3">
-							Las alternativas a y b son correctas.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_6">6.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿qué comercial retendría usted en su actual puesto de trabajo?
-				</label>
-				<label class="ss-q-help" for="entry_6"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.6.group" value="3, Carmen." class="ss-q-radio" id="group_6_1">
-							3, Carmen.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.6.group" value="5, Diego." class="ss-q-radio" id="group_6_2">
-							5, Diego.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.6.group" value="1, Pedro." class="ss-q-radio" id="group_6_3">
-							1, Pedro.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_7">7.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿Cuál de los siguientes comerciales, entre otros,  seleccionaría para ocupar un puesto de Investigación de Mercados y Marketing?
-				</label>
-				<label class="ss-q-help" for="entry_7"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.7.group" value="4, Beatriz." class="ss-q-radio" id="group_7_1">
-							4, Beatriz.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.7.group" value="5, Diego." class="ss-q-radio" id="group_7_2">
-							5, Diego.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.7.group" value="7, Pablo" class="ss-q-radio" id="group_7_3">
-							7, Pablo
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_8">8.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿Cuál de los siguientes comerciales, entre otros,  seleccionaría para ocupar un puesto de Logística?
-				</label>
-				<label class="ss-q-help" for="entry_8"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.8.group" value="3, Carmen." class="ss-q-radio" id="group_8_1">
-							3, Carmen.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.8.group" value="2, Rafael." class="ss-q-radio" id="group_8_2">
-							2, Rafael.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.8.group" value="1, Pedro." class="ss-q-radio" id="group_8_3">
-							1, Pedro.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_9">9.- Dada la información disponible, ¿Cuál de los siguientes comerciales no podríamos ubicar en ninguno de los puestos del supuesto práctico?
-				</label>
-				<label class="ss-q-help" for="entry_9"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.9.group" value="2, Rafael." class="ss-q-radio" id="group_9_1">
-							2, Rafael.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.9.group" value="10, David. " class="ss-q-radio" id="group_9_2">
-							10, David. 
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.9.group" value="Todos los comerciales se pueden reubicar entre los tres puestos disponibles." class="ss-q-radio" id="group_9_3">
-							Todos los comerciales se pueden reubicar entre los tres puestos disponibles.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_10">10.- ¿Cuál de las siguientes alternativas refleja las necesidades de RRHH para el puesto de comercial? 
-				</label>
-				<label class="ss-q-help" for="entry_10"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.10.group" value="21 empleados." class="ss-q-radio" id="group_10_1">
-							21 empleados.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.10.group" value="16 empleados." class="ss-q-radio" id="group_10_2">
-							16 empleados.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.10.group" value="24 empleados." class="ss-q-radio" id="group_10_3">
-							24 empleados.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_11">11.- En función del análisis de la disponibilidad interna y externa de RRHH de la empresa, ¿cuál de las siguientes alternativas refleja la disponibilidad de RRHH para el puesto de Logística?
-				</label>
-				<label class="ss-q-help" for="entry_11"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.11.group" value="8 empleados." class="ss-q-radio" id="group_11_1">
-							8 empleados.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.11.group" value="4 empleados." class="ss-q-radio" id="group_11_2">
-							4 empleados.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.11.group" value="2 empleados." class="ss-q-radio" id="group_11_3">
-							2 empleados.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_12">12.- En función del análisis de la disponibilidad interna y externa de RRHH de la empresa, ¿cuál de las siguientes alternativas refleja el número total de empleados que hay que conseguir del mercado laboral externo o, si fuera posible, de otros departamentos de la empresa no contemplados en el supuesto práctico?
-				</label>
-				<label class="ss-q-help" for="entry_12"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.12.group" value="12 empleados." class="ss-q-radio" id="group_12_1">
-							12 empleados.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.12.group" value="17 empleados." class="ss-q-radio" id="group_12_2">
-							17 empleados.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.12.group" value="No hay necesidad de conseguir más empleados." class="ss-q-radio" id="group_12_3">
-							No hay necesidad de conseguir más empleados.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_13">13.- ¿Cuál de los siguientes procesos debería ponerse en marcha para lograr que los comerciales que se mantienen en plantilla desarrollen adecuadamente sus puestos?
-				</label>
-				<label class="ss-q-help" for="entry_13"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.13.group" value="Evaluación del rendimiento y mejoras retributivas." class="ss-q-radio" id="group_13_1">
-							Evaluación del rendimiento y mejoras retributivas.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.13.group" value="Programas de formación." class="ss-q-radio" id="group_13_2">
-							Programas de formación.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.13.group" value="Evaluación de competencias y redistribución del trabajo en función de las competencias." class="ss-q-radio" id="group_13_3">
-							Evaluación de competencias y redistribución del trabajo en función de las competencias.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_14">14.- Siguiendo el modelo de Lengnick-Hall, si las expectativas de crecimiento de la empresa se ha estimado en 8 puntos y el grado de preparación en materia de RRHH se ha estimado en 5 puntos, ¿en cuál de las siguientes opciones estratégica se sitúa la empresa?
-				</label>
-				<label class="ss-q-help" for="entry_14"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.14.group" value="Expansión." class="ss-q-radio" id="group_14_1">
-							Expansión.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.14.group" value="Productividad." class="ss-q-radio" id="group_14_2">
-							Productividad.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.14.group" value="Desarrollo." class="ss-q-radio" id="group_14_3">
-							Desarrollo.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br> <div class="errorbox-good">
-			<div class="ss-item  ss-radio">
-				<div class="ss-form-entry"><label class="ss-q-title" for="entry_15">15.- Dada la situación de la empresa según el modelo de Lengnick-Hall, ¿cuál de las siguientes alternativas podría seguir la empresa con vistas a conseguir sus objetivos?
-				</label>
-				<label class="ss-q-help" for="entry_15"></label>
-			
-				<ul class="ss-choices">
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.15.group" value="Invertir fuertemente en RRHH para favorecer la efectiva implantación de la estrategia." class="ss-q-radio" id="group_15_1">
-							Invertir fuertemente en RRHH para favorecer la efectiva implantación de la estrategia.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.15.group" value="Planificar la reconversión del negocio, dado que no puede seguir creciendo y tampoco dispone de suficientes RRHH." class="ss-q-radio" id="group_15_2">
-							Planificar la reconversión del negocio, dado que no puede seguir creciendo y tampoco dispone de suficientes RRHH.
-						</label>
-					</li> 
-					<li class="ss-choice-item">
-						<label class="ss-choice-label">
-							<input type="radio" name="entry.15.group" value="Diversificar hacia negocios con alto potencial de crecimiento que pudieran estar basados en la adquisición de nuevas competencias y capacidades de la empresa." class="ss-q-radio" id="group_15_3">
-							Diversificar hacia negocios con alto potencial de crecimiento que pudieran estar basados en la adquisición de nuevas competencias y capacidades de la empresa.
-						</label>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</div>
-
-			<br>
-			<input type="hidden" name="pageNumber" value="0">
-			<input type="hidden" name="backupCache" value="">
-
-
-			<div class="ss-item ss-navigate"><div class="ss-form-entry">
-				<input id="boton_envio" type="submit" name="submit" value="Terminar el Exámen"></div></div>
-
-			<div id="felicidades">
-					<h3>Muy bien!</h3>
-					<p>Has terminado el exámen, tendrás tu nota cuando la profesora tenga los datos de todos tus compañeros</p>
+				
+				<p>Una investigación del mercado laboral externo indica que, actualmente, existe en el mercado personas con las competencias requeridas para ocupar el puesto de comercial. En cuanto al puesto de investigador de mercado y marketing, también existen personas con las competencias requeridas, si bien se debe tener en cuenta el desconocimiento de estas personas sobre la actividad específica y el funcionamiento de la empresa. Finalmente, también existen suficientes personas con las competencias necesarias para desempeñar el puesto de logística. </p>
+				<p>Por otra parte, una investigación del mercado laboral interno indica que los comerciales que presentan un bajo rendimiento y un bajo potencial, están altamente desmotivados con su trabajo, pues no acaban de identificarse con las tareas a desarrollar y los resultados del trabajo no son lo suficientemente satisfactorios.</p>
 			</div>
 
-			</form>
+			<div class="ejercicio_derecha">
+				<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
+							<br>
+							<div class="errorbox-good">
+								<div class="ss-item ss-item-required ss-text">
+									<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_0">Escribe tu DNI (Ej. 12345678x)
+										<span class="ss-required-asterisk"></span></label>
+									<label class="ss-q-help" for="entry_0">
+									</label>
+									<input type="text" name="entry.0.single" value="" class="ss-q-short" id="dni">
+								</div>
+							</div>
+						</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_1">1.- ¿Cuál de las siguientes alternativas refleja, al menos, uno de los objetivos generales de la empresa? 
+									</label>
+									<label class="ss-q-help" for="entry_1"></label>
+
+									<ul class="ss-choices">
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.1.group" value="Ampliar la plantilla actual de comerciales." class="ss-q-radio" id="group_1_1">
+												Ampliar la plantilla actual de comerciales.
+											</label>
+										</li> 
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.1.group" value="Introducir nuevas estrategias de comercialización del producto." class="ss-q-radio" id="group_1_2">
+												Introducir nuevas estrategias de comercialización del producto.
+											</label>
+										</li> 
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.1.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_1_3">
+												Las alternativas a y b son correctas.
+											</label>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_2">2.- ¿Cuál de las siguientes alternativas refleja, al menos, uno de los objetivos de RRHH de la empresa? 
+								</label>
+								<label class="ss-q-help" for="entry_2"></label>
+
+									<ul class="ss-choices">
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.2.group" value="Ampliar la plantilla del departamento de logística." class="ss-q-radio" id="group_2_1">
+												Ampliar la plantilla del departamento de logística.
+											</label>
+										</li> 
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.2.group" value="Lograr la presencia de la empresa en los mercados externos al contexto nacional." class="ss-q-radio" id="group_2_2">
+												Lograr la presencia de la empresa en los mercados externos al contexto nacional.
+											</label>
+										</li> 
+										<li class="ss-choice-item">
+											<label class="ss-choice-label">
+												<input type="radio" name="entry.2.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_2_3">
+												Las alternativas a y b son correctas.
+											</label>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_3">3.- Según el modelo de Odiorne y teniendo en cuenta el potencial para el puesto de investigación de mercados, ¿cuáles de los siguientes operarios es clasificable como empleado problema? 
+								</label>
+								<label class="ss-q-help" for="entry_3"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.3.group" value="2, Rafael." class="ss-q-radio" id="group_3_1">
+											2, Rafael.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.3.group" value="4,  Beatriz." class="ss-q-radio" id="group_3_2">
+											4,  Beatriz.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.3.group" value="Las alternativas a y b son incorrectas." class="ss-q-radio" id="group_3_3">
+											Las alternativas a y b son incorrectas.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_4">4.-  Según el modelo de Odiorne y teniendo en cuenta el potencial para el puesto de comercial, ¿qué tipo de empleado sería el operario 12.- Teresa? 
+								</label>
+								<label class="ss-q-help" for="entry_4"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.4.group" value="Problema" class="ss-q-radio" id="group_4_1">
+											Problema
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.4.group" value="Prescindible" class="ss-q-radio" id="group_4_2">
+											Prescindible
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.4.group" value="Al límite." class="ss-q-radio" id="group_4_3">
+											Al límite.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_5">5.- Según el modelo de Odiorne, ¿cuál de los siguientes comerciales, entre otros, podría desempeñar el puesto de investigación de mercado?
+								</label>
+								<label class="ss-q-help" for="entry_5"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.5.group" value="1, Pedro." class="ss-q-radio" id="group_5_1">
+											1, Pedro.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.5.group" value="7, Pablo." class="ss-q-radio" id="group_5_2">
+											7, Pablo.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.5.group" value="Las alternativas a y b son correctas." class="ss-q-radio" id="group_5_3">
+											Las alternativas a y b son correctas.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_6">6.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿qué comercial retendría usted en su actual puesto de trabajo?
+								</label>
+								<label class="ss-q-help" for="entry_6"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.6.group" value="3, Carmen." class="ss-q-radio" id="group_6_1">
+											3, Carmen.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.6.group" value="5, Diego." class="ss-q-radio" id="group_6_2">
+											5, Diego.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.6.group" value="1, Pedro." class="ss-q-radio" id="group_6_3">
+											1, Pedro.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_7">7.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿Cuál de los siguientes comerciales, entre otros,  seleccionaría para ocupar un puesto de Investigación de Mercados y Marketing?
+								</label>
+								<label class="ss-q-help" for="entry_7"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.7.group" value="4, Beatriz." class="ss-q-radio" id="group_7_1">
+											4, Beatriz.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.7.group" value="5, Diego." class="ss-q-radio" id="group_7_2">
+											5, Diego.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.7.group" value="7, Pablo" class="ss-q-radio" id="group_7_3">
+											7, Pablo
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_8">8.- Teniendo en cuenta los objetivos de la empresa, las necesidades de RRHH que se derivan de ellos y la situación interna y externa que en materia de RRHH presenta la empresa, ¿Cuál de los siguientes comerciales, entre otros,  seleccionaría para ocupar un puesto de Logística?
+								</label>
+								<label class="ss-q-help" for="entry_8"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.8.group" value="3, Carmen." class="ss-q-radio" id="group_8_1">
+											3, Carmen.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.8.group" value="2, Rafael." class="ss-q-radio" id="group_8_2">
+											2, Rafael.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.8.group" value="1, Pedro." class="ss-q-radio" id="group_8_3">
+											1, Pedro.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_9">9.- Dada la información disponible, ¿Cuál de los siguientes comerciales no podríamos ubicar en ninguno de los puestos del supuesto práctico?
+								</label>
+								<label class="ss-q-help" for="entry_9"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.9.group" value="2, Rafael." class="ss-q-radio" id="group_9_1">
+											2, Rafael.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.9.group" value="10, David. " class="ss-q-radio" id="group_9_2">
+											10, David. 
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.9.group" value="Todos los comerciales se pueden reubicar entre los tres puestos disponibles." class="ss-q-radio" id="group_9_3">
+											Todos los comerciales se pueden reubicar entre los tres puestos disponibles.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_10">10.- ¿Cuál de las siguientes alternativas refleja las necesidades de RRHH para el puesto de comercial? 
+								</label>
+								<label class="ss-q-help" for="entry_10"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.10.group" value="21 empleados." class="ss-q-radio" id="group_10_1">
+											21 empleados.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.10.group" value="16 empleados." class="ss-q-radio" id="group_10_2">
+											16 empleados.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.10.group" value="24 empleados." class="ss-q-radio" id="group_10_3">
+											24 empleados.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_11">11.- En función del análisis de la disponibilidad interna y externa de RRHH de la empresa, ¿cuál de las siguientes alternativas refleja la disponibilidad de RRHH para el puesto de Logística?
+								</label>
+								<label class="ss-q-help" for="entry_11"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.11.group" value="8 empleados." class="ss-q-radio" id="group_11_1">
+											8 empleados.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.11.group" value="4 empleados." class="ss-q-radio" id="group_11_2">
+											4 empleados.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.11.group" value="2 empleados." class="ss-q-radio" id="group_11_3">
+											2 empleados.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_12">12.- En función del análisis de la disponibilidad interna y externa de RRHH de la empresa, ¿cuál de las siguientes alternativas refleja el número total de empleados que hay que conseguir del mercado laboral externo o, si fuera posible, de otros departamentos de la empresa no contemplados en el supuesto práctico?
+								</label>
+								<label class="ss-q-help" for="entry_12"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.12.group" value="12 empleados." class="ss-q-radio" id="group_12_1">
+											12 empleados.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.12.group" value="17 empleados." class="ss-q-radio" id="group_12_2">
+											17 empleados.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.12.group" value="No hay necesidad de conseguir más empleados." class="ss-q-radio" id="group_12_3">
+											No hay necesidad de conseguir más empleados.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_13">13.- ¿Cuál de los siguientes procesos debería ponerse en marcha para lograr que los comerciales que se mantienen en plantilla desarrollen adecuadamente sus puestos?
+								</label>
+								<label class="ss-q-help" for="entry_13"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.13.group" value="Evaluación del rendimiento y mejoras retributivas." class="ss-q-radio" id="group_13_1">
+											Evaluación del rendimiento y mejoras retributivas.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.13.group" value="Programas de formación." class="ss-q-radio" id="group_13_2">
+											Programas de formación.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.13.group" value="Evaluación de competencias y redistribución del trabajo en función de las competencias." class="ss-q-radio" id="group_13_3">
+											Evaluación de competencias y redistribución del trabajo en función de las competencias.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_14">14.- Siguiendo el modelo de Lengnick-Hall, si las expectativas de crecimiento de la empresa se ha estimado en 8 puntos y el grado de preparación en materia de RRHH se ha estimado en 5 puntos, ¿en cuál de las siguientes opciones estratégica se sitúa la empresa?
+								</label>
+								<label class="ss-q-help" for="entry_14"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.14.group" value="Expansión." class="ss-q-radio" id="group_14_1">
+											Expansión.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.14.group" value="Productividad." class="ss-q-radio" id="group_14_2">
+											Productividad.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.14.group" value="Desarrollo." class="ss-q-radio" id="group_14_3">
+											Desarrollo.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br> <div class="errorbox-good">
+							<div class="ss-item  ss-radio">
+								<div class="ss-form-entry"><label class="ss-q-title" for="entry_15">15.- Dada la situación de la empresa según el modelo de Lengnick-Hall, ¿cuál de las siguientes alternativas podría seguir la empresa con vistas a conseguir sus objetivos?
+								</label>
+								<label class="ss-q-help" for="entry_15"></label>
+							
+								<ul class="ss-choices">
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.15.group" value="Invertir fuertemente en RRHH para favorecer la efectiva implantación de la estrategia." class="ss-q-radio" id="group_15_1">
+											Invertir fuertemente en RRHH para favorecer la efectiva implantación de la estrategia.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.15.group" value="Planificar la reconversión del negocio, dado que no puede seguir creciendo y tampoco dispone de suficientes RRHH." class="ss-q-radio" id="group_15_2">
+											Planificar la reconversión del negocio, dado que no puede seguir creciendo y tampoco dispone de suficientes RRHH.
+										</label>
+									</li> 
+									<li class="ss-choice-item">
+										<label class="ss-choice-label">
+											<input type="radio" name="entry.15.group" value="Diversificar hacia negocios con alto potencial de crecimiento que pudieran estar basados en la adquisición de nuevas competencias y capacidades de la empresa." class="ss-q-radio" id="group_15_3">
+											Diversificar hacia negocios con alto potencial de crecimiento que pudieran estar basados en la adquisición de nuevas competencias y capacidades de la empresa.
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+							<br>
+							<input type="hidden" name="pageNumber" value="0">
+							<input type="hidden" name="backupCache" value="">
+
+
+							<div class="ss-item ss-navigate"><div class="ss-form-entry">
+								<input id="boton_envio" type="submit" name="submit" value="Terminar el Exámen"></div></div>
+
+							<div id="felicidades">
+									<h3>Muy bien!</h3>
+									<p>Has terminado el exámen, tendrás tu nota cuando la profesora tenga los datos de todos tus compañeros</p>
+							</div>
+
+							</form>
+			</div>
 
 			<div class="page_links">
 				
@@ -641,7 +651,7 @@
 
 		</div>
 
-  		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
+  		
 
 	</body>
 </html>	

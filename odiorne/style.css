@@ -200,18 +200,18 @@ table td,table th{
 	border:0;
 }
 
-table.ejemplos{
+table.ejemplos, .libro .ejercicio_izquierda table{
 	border-collapse:collapse;
 	text-align: center;
 	margin: 70px 0 0 0px;
 }
 
-table.ejemplos th{	
+table.ejemplos th, .libro .ejercicio_izquierda table th{	
 	border-bottom: 1px solid #aaa;
 	font-weight:normal;
 	font-size
 }
-table.ejemplos td{	
+table.ejemplos td, .libro .ejercicio_izquierda table td{	
 	line-height: 60px;
 	height: 60px;
 	width: 90px;
@@ -318,7 +318,8 @@ table.ejemplos td.con_select.mal{background: url(bien_mal.png?v3) no-repeat 170p
 	overflow-y: scroll;
 }
 .libro .ejercicio_izquierda{width: 425px;margin-right: 50px;}
-
+.libro .ejercicio_izquierda table{width: 100%;}
+.libro .ejercicio_izquierda table td,.libro .ejercicio_izquierda table th{line-height: 20px;}
 
 .ss-q-title{
 	color: #333;
