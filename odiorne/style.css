@@ -310,14 +310,14 @@ table.ejemplos td.con_select.mal{background: url(bien_mal.png?v3) no-repeat 170p
 /* ==========   Formularios ===============*/
 
 .libro .ejercicio_izquierda, .libro .ejercicio_derecha{
-	float:left;
+	float:right;
 }
 .libro .ejercicio_derecha{
 	width: 625px;
 	height: 850px;
 	overflow-y: scroll;
 }
-.libro .ejercicio_izquierda{width: 425px;margin-right: 50px;}
+.libro .ejercicio_izquierda{width: 425px;margin-left: 50px;}
 .libro .ejercicio_izquierda table{width: 100%;}
 .libro .ejercicio_izquierda table td,.libro .ejercicio_izquierda table th{line-height: 20px;}
 
