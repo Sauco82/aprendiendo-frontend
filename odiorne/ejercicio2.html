@@ -156,7 +156,12 @@
 					<li><strong>PPO:</strong>Potencial para el puesto de operario</li>
 					<li><strong>PPL:</strong>Potencial para el puesto de logistica</li>
 				</ul>
-				<img src="grafico_lengnickhall_mini.png" alt="">
+				<img src="grafico_odiorne_mini_enblanco.png" id="odiorne" class="ejemplos" alt="">
+				<img src="grafico_lengnickhall_mini_enblanco.png" id="jarl" class="ejemplos" style="display:none" alt="">
+				<div class="control_ejemplos">
+					<a class="activo" href="#" onclick="cambia_ejemplo('#odiorne',this);return false;">Odiorne</a> 
+					<a class="desactivado" href="#" onclick="cambia_ejemplo('#jarl',this);return false;">Lengnick-Hall</a> 
+				</div>
 			</div>
 			<div class="ejercicio_derecha">
 				<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
