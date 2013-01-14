@@ -26,9 +26,7 @@
 				if (validaDNI($('#dni').val())){
 					form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dHh1RVNOWHI3cERLcGZlSWROaXV3ckE6MQ&ifq';
 					muestraSoluciones();
-				} else if (!validaDNI($('#dni').val())) {
-					$("#boton_envio").before("<p class='warning'>El DNI no es correcto</p>");
-				}
+				} 
 			}
 		</script>
 	</head>

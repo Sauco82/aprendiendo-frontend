@@ -19,9 +19,7 @@
 					muestraSoluciones();
 				} else if (!valida(numero_de_preguntas)) {
 					$("#boton_envio").before("<p class='warning'>Faltan preguntas por responder</p>");
-				} else if (!validaDNI($('#dni').val())) {
-					$("#boton_envio").before("<p class='warning'>El DNI no es correcto</p>");
-				}
+				} 
 			}
 		</script>
 	</head>
