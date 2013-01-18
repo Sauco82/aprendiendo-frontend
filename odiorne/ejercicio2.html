@@ -14,7 +14,7 @@
 			function envia(form){
 				var numero_de_preguntas = 23;
 				$('.warning').remove();
-				if (valida(numero_de_preguntas) && validaDNI($('#dni').val())){
+				if (valida(numero_de_preguntas)){
 					form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dHJ0d2dyRkRUbzR2M29NS2RpeEpEUHc6MQ&amp;ifq';
 					muestraSoluciones();
 				} else if (!valida(numero_de_preguntas)) {

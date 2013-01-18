@@ -23,10 +23,8 @@
 			function envia(form){
 				var numero_de_preguntas = 15;
 				$('.warning').remove();
-				if (validaDNI($('#dni').val())){
-					form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dHh1RVNOWHI3cERLcGZlSWROaXV3ckE6MQ&ifq';
-					muestraSoluciones();
-				} 
+				form.action='https://docs.google.com/spreadsheet/formResponse?formkey=dHh1RVNOWHI3cERLcGZlSWROaXV3ckE6MQ&ifq';
+				muestraSoluciones();
 			}
 		</script>
 	</head>
