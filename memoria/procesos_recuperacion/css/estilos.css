@@ -1,0 +1,19 @@
+h2,h3{
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+#menu{
+	margin-top: 20px;
+}
+	.navbar{font-size: 14px}
+
+.hero{
+	text-align: center;
+	padding-bottom:40px;
+}
+
+.nav-stacked .nav-header{
+	padding:0;
+}
