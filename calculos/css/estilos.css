@@ -1,0 +1,21 @@
+h2,h3{
+	font-weight: normal;
+	font-style: italic;
+}
+
+ul{
+	list-style: none;
+}
+
+#menu{
+	margin-top: 20px;
+}
+	.navbar{font-size: 14px}
+
+.hero{
+	padding-bottom:40px;
+}
+
+.nav-stacked .nav-header{
+	padding:0;
+}
