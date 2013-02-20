@@ -26,9 +26,9 @@ table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
 .marco_del_ejemplo .datos{width:260px; margin: 0px 50px;}
 .marco_del_ejemplo .formulas{width:440px;margin: 0px 20px;}
 
-.rango{padding: 20px; text-align: center; font-size: 24px;}
+.rango{padding: 40px 20px 20px 20px; text-align: center; font-size: 24px;}
 
-.cuenta{margin:0 auto;}
+
 .cuenta .nombre, .cuenta .igual, .cuenta .fraccion, .cuenta .resultado{float:left;}
 .cuenta .nombre, .cuenta .igual, .cuenta .resultado{line-height: 60px; vertical-align: center;}
 .cuenta .nombre{width: 145px; text-align: right;}
@@ -36,12 +36,26 @@ table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
 .cuenta .fraccion{width:200px;}
 .cuenta .resultado{width:40px;}
 
+.cuenta_margenes{ overflow: hidden; display: block}
+.cuenta_margenes .cuenta{margin:0 auto; width: 520px}
+.cuenta_margenes .cuenta .nombre{width: 245px; }
+.cuenta_margenes .cuenta .fraccion{width:250px;}
+
+.cuenta_margenes_ejemplo{ overflow: hidden; display: block}
+.cuenta_margenes_ejemplo .cuenta{margin:0 auto; width: 270px}
+.cuenta_margenes_ejemplo .cuenta .fraccion{width:200px;}
+
+
 .dividendo,.divisor{display: block; text-align: center; line-height: 28px}
 .dividendo{border-bottom: 2px solid #888;padding-bottom: 5px;}
 .divisor{padding-top: 5px;	line-height: 30px}
 .resultado{float:left;height: 77px;line-height: 77px;font-weight: bold;}
 
 table.datos td.sumandos{background:#BEE5F7;}
+
+
+
+
 
 
 /* Media queries */
