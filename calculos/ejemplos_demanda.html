@@ -99,6 +99,7 @@
 				<tr>
 					<th>Número de camas (X)</th>
 					<th>Número de camareros de habitación (Y)</th>
+					<th>X * Y</th>
 				</tr>
 				<tr>
 					<td></td>
@@ -156,53 +157,92 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>92</td>
+					<td>8</td>
+					<td>736</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>350</td>
+					<td>12</td>
+					<td>4200</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>35</td>
+					<td>3</td>
+					<td>105</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>63</td>
+					<td>6</td>
+					<td>384</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>48</td>
+					<td>3</td>
+					<td>144</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>55</td>
+					<td>4</td>
+					<td>220</td>
 				</tr>
 				<tr>
-					<td></td>
+					<td>Suma</td>
+					<td>2034</td>
+					<td>108</td>
+					<td>19834</td>
+				</tr>
+				<tr>
+					<td>Promedio</td>
 					<td></td>
 					<td></td>
 					<td></td>
 				</tr>
 			</table>
+		<hr>
+		<p>Para la realización del coeficiente necesitaríamos:</p>
+    	  <ul>
+      		<li><strong>1:</strong> Saber la Covarianza de X (número de camas) e Y(número de camareros/as), para ello hay que calcular:</li>
+      		<ul>
+      			<li>Las medias marginales de X e Y</li>
+      			<li>El producto de cada X por cada Y</li>
+      			<li>Hacer la fórmula</li>
+      		</ul>
+	      	<li><strong>2:</strong> Hallar las desviaciones típicas de X e Y. En este caso nos las dan de modo que</li>
+	      	<ul>
+	      		<li>Desviación típica de X. Sdx = 115,1408</li>
+	      		<li>Desviación típica de Y. Sdy = 3,4268</li>
+	      	</ul>
+	      	<li><strong>3:</strong> Completar la fórmula</li>
+	      </ul>
+
+	      <p>De modo que el coeficiente de correlación obtenido es de R = 0,876. Que es un coeficiente muy significativo, así que podemos utilizar el análisis de regresión</p>
+	      <ul>
+	      	<li><strong>4:</strong> Predecir el número de camareros de habitaciones. Se puede hacer, como hemos visto antes, de 2 maneras</li>
+	      	<ul>
+	      		<li>Si conocemos A y B podemos aplicar la fórmula para las puntuaciones directas</li>
+	      		<li>A través de la fórmula para las puntuaciones típicas. Donde:</li>
+	      		<ul>
+	      			<li><strong>Zy:</strong> número de camareros/as de habitaciones que se necesitará en el hotel en puntuaciones típicas</li>
+	      			<li><strong>Rxy:</strong> coeficiente de correlación entre el número de camas (x) y el número de camareros/as de habitaciones (y) que actualmenre existen en los diversos hoteles analizados</li>
+	      			<li><strong>Zx:</strong> número de camas al que se quiere ampliar la capacidad del hotel en puntuaciones típicas</li>
+	      		</ul>
+	      	</ul>
+	      	<li><strong>5:</strong> -0,1947668 es el número de camareros de habitaciones que es necesario tener en plantilla pero en puntuaciones típicas, hace falta pasarlas a puntuaciones directas</li>
+	      	<li>El resultado (6,5 aprox) nos indica que hay que tener en plantilla 6 ó 7 camareros de habitaciones. Como actualmente tenemos 3, habrá que contratar 3 ó 4 más, depende del juicio administrativo</li>
+	      </ul>
 
         </div>
       </div>
 
-
+      
       <hr>
+
 
       <footer>
         <p class="pull-right"><a href="#">Volver arriba</a></p>
