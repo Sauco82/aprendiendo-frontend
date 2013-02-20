@@ -7,12 +7,6 @@
     <link href="css/estilos.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(function(){
-          // carousel demo
-          $('.carousel').carousel();
-        })
-    </script>
   </head>
   <body>
 
@@ -93,69 +87,65 @@
 		<h2>Medias M&oacute;viles</h2>
 		<p>Estas medias <strong>consisten en una serie de medias calculadas a lo largo del tiempo</strong>, de forma que en el cálculo de cada una se usan el número de valores que indique el “Rango”. El Rango es el número de años que comprende la serie histórica, por ejemplo, si la serie histórica del nivel de empleo se ha tomado sobre los 3 últimos años, el rango es 3.</p>
 		<p>Dado que se entiende que las últimas observaciones poseen mayor capacidad de predicción que las primeras, <strong>el pronóstico de las necesidades de personal en el futuro es la última media móvil calculada</strong>.</p>
-		<p>Esta última media se calcula de la siguiente forma:</p>
-		<ul>
-			<li>Si <strong>el rango es 3</strong>, la media se calcula sobre los 3 últimos valores de la serie histórica.</li>
-			<li>Seg&uacute;n el ejemplo, <strong>(12+7+13/3)</strong></li>
-			<li>Por tanto la última <strong>media móvil es 10,6</strong>.</li>
-		</ul>
-		<hr>
-		<table class="medias_moviles">
-			<tr>
-				<th class="valores">Serie Historica anual</th>
-				<th class="sinbordes" ></th>
-				<th class="valores">Medias Moviles: Rango 3</th>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td  class="sinbordes" rowspan="7"></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>13</td>
-				<td>12</td>
-			</tr>
-			<tr>
-				<td>16</td>
-				<td>11.3</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>11.3</td>
-			</tr>
-			<tr>
-				<td>13</td>
-				<td>12.3</td>
-			</tr>
-			<tr>
-				<td>19</td>
-				<td>12.3</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>12</td>
-			</tr>
-			<tr>
-				<td class="sumandos">12</td>
-				<td  class="sinbordes" rowspan="3">
-					<div class="flecha">
-						<div class="cuenta">
-							<span class="dividendo">12+7+13</span>
-							<span class="divisor">3</span>
-						</div>
+		<p>Veamos como calcular la media móvil para un rango de 3 y la siguiente serie hist&oacute;rica:</p>
+		<hr>		
+
+		<div class="marco_del_ejemplo">
+			<table class="datos">
+				<tr>
+					<th>Año</th>
+					<th class="valores">Serie Historica anual</th>
+				</tr>
+				<tr>
+					<td>2006</td>
+					<td>16</td>
+				</tr>
+				<tr>
+					<td>2007</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>2008</td>
+					<td>13</td>
+				</tr>
+				<tr>
+					<td>2009</td>
+					<td>19</td>
+				</tr>
+				<tr>
+					<td>2010</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td class="sumandos">2011</td>
+					<td class="sumandos">12</td>
+				</tr>
+				<tr>
+					<td class="sumandos">2012</td>
+					<td class="sumandos">7</td>
+				</tr>
+				<tr>
+					<td class="sumandos">2013</td>
+					<td class="sumandos">13</td>
+				</tr>
+			</table>
+
+			<div class="formulas">
+				<p class="rango"><strong>Rango</strong> = 3</p>
+				<div class="cuenta">
+					<strong class="nombre">Medias Móviles</strong>
+					<span class="igual">=</span>
+					<div class="fraccion">
+						<span class="dividendo">12+7+13</span>
+						<span class="divisor">3</span>
 					</div>
-				</td>
-				<td>8</td>
-			</tr>
-			<tr>
-				<td class="sumandos">7</td>
-				<td class="result">10.6</td>
-			</tr>
-			<tr>
-				<td class="sumandos">13</td>
-				<td></td>
-			</tr>
-		</table>
+					<span class="igual">=</span>
+					<span class="resultado">10.6</span>
+				</div>
+			</div>	
+		</div>
+
+		
 
 		<hr>
 		<h2>Críticas y ventajas</h2>

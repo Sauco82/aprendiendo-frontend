@@ -15,26 +15,63 @@ ul{list-style: none;}
 
 .siguiente {overflow: hidden; margin-top: 40px;}
 
+table th{font-weight: normal; font-style: italic;}
+table td,table th{text-align: center;border-bottom: 1px solid #aaa;}
+table tr.suma td,table tr.suma th{background:#aaa;}
+table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
 
-/*========== Ejercicio del segundo tema ==========*/
-table#hoteles, table.medias_moviles { border-collapse: collapse;}
-table#hoteles td,table#hoteles th,table.medias_moviles td,table.medias_moviles th{text-align: center;border-bottom: 1px solid #aaa;}
-table#hoteles th.valores{width: 210px;}
-table.medias_moviles th{width: 200px;}
-table.medias_moviles th.valores{width: 150px;}
-table#hoteles th.valores span{font-weight: normal;}
-table#hoteles td.hotel{text-align: left;color:#666;font-size: 80%;}
-table#hoteles tr.suma th,table#hoteles tr.promedio th{text-align: left;color:#444;font-size: 80%;	}
-table#hoteles tr.suma td,table#hoteles tr.suma th{background:#aaa;}
-table#hoteles tr.promedio td,table#hoteles tr.promedio th{background:#0099d4;color:white;}
-.cuenta{float:left;min-width: 30%;padding: 15px 0 15px 45px;height: 50px;}
-.dividendo,.divisor{display: block;}
-.dividendo{border-bottom: 2px solid white;padding-bottom: 5px;}
-.divisor{padding-top: 5px;	}
-.resultado{float:left;height: 77px;line-height: 77px;}
-.flecha{position:relative;overflow: hidden;}
-.flecha .cuenta{padding:15px;background:#0099d4;color:white;width: 126px;height: 42px;}
-.flecha:after{position:absolute;content: ' ';height: 0;width: 0;border: 38px solid transparent;border-left-color: #0099d4;right:-16%;top:0%;}
-table.medias_moviles td.sinbordes,table.medias_moviles th.sinbordes{border:0;}
-table.medias_moviles td.result{background:#0099d4;color:white;font-weight: bold;}
-table.medias_moviles td.sumandos{background:#BEE5F7;}
+
+.marco_del_ejemplo{overflow: hidden;}
+.marco_del_ejemplo .datos, .marco_del_ejemplo .formulas{float:left;}
+.marco_del_ejemplo .datos{width:260px; margin: 0px 50px;}
+.marco_del_ejemplo .formulas{width:440px;margin: 0px 20px;}
+
+.rango{padding: 40px 20px 20px 20px; text-align: center; font-size: 24px;}
+
+
+.cuenta .nombre, .cuenta .igual, .cuenta .fraccion, .cuenta .resultado{float:left;}
+.cuenta .nombre, .cuenta .igual, .cuenta .resultado{line-height: 60px; vertical-align: center;}
+.cuenta .nombre{width: 145px; text-align: right;}
+.cuenta .igual{width: 25px; text-align: center;}
+.cuenta .fraccion{width:200px;}
+.cuenta .resultado{width:40px;}
+
+.cuenta_margenes{ overflow: hidden; display: block}
+.cuenta_margenes .cuenta{margin:0 auto; width: 520px}
+.cuenta_margenes .cuenta .nombre{width: 245px; }
+.cuenta_margenes .cuenta .fraccion{width:250px;}
+
+.cuenta_margenes_ejemplo{ overflow: hidden; display: block}
+.cuenta_margenes_ejemplo .cuenta{margin:0 auto; width: 270px}
+.cuenta_margenes_ejemplo .cuenta .fraccion{width:200px;}
+
+
+.dividendo,.divisor{display: block; text-align: center; line-height: 28px}
+.dividendo{border-bottom: 2px solid #888;padding-bottom: 5px;}
+.divisor{padding-top: 5px;	line-height: 30px}
+.resultado{float:left;height: 77px;line-height: 77px;font-weight: bold;}
+
+table.datos td.sumandos{background:#BEE5F7;}
+
+
+
+
+
+
+/* Media queries */
+@media  (min-width: 980px) and (max-width: 1200px) {  
+	.marco_del_ejemplo .datos{margin: 0px;}
+	.marco_del_ejemplo .formulas{width:420px;margin: 0px 0px 0px 20px;}
+	.cuenta .fraccion{width:180px;}
+}
+ 
+@media (min-width: 768px) and (max-width: 979px) {  
+	.marco_del_ejemplo .datos{margin: 0px;}
+	.marco_del_ejemplo .formulas{width:250px;margin: 0px 0px 0px 20px;}	
+	.cuenta .fraccion{width:180px;}
+	.cuenta .nombre{ display: block;}
+}
+ 
+@media (max-width: 767px) { 
+	.affix{display: none}
+}
