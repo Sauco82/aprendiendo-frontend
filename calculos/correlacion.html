@@ -71,14 +71,15 @@
 
     
     <div class="container marketing">
+
       <div class="row">       
-          <ul class="menu_lateral nav nav-tabs nav-stacked affix span3">
-			<li class="active"><a href="tendencias.html">An&aacute;lisis de tendencias </a></li>
-			<li><a href="medias.html">Medias Moviles </a></li>
-      <li><a href="margenes.html">Análisis de márgenes o ratios</a></li>
-			<li><a href="correlacion.html">Análisis de correlación-regresión </a></li>
-			<li><a href="ejemplos_demanda.html">Ejemplos </a></li>
-          </ul>
+        <ul class="menu_lateral nav nav-tabs nav-stacked affix span3">
+          <li><a href="tendencias.html">Analisis de tendencias </a></li>
+          <li><a href="medias.html">Medias M&oacute;viles </a></li>
+          <li><a href="margenes.html">Análisis de márgenes o ratios</a></li>
+          <li class="active"><a href="correlacion.html">Análisis de correlación-regresión </a></li>
+          <li><a href="ejemplos_demanda.html">Ejemplos </a></li>
+        </ul>
 
         <div class="span9 offset3">
 
@@ -89,45 +90,34 @@
 				<small>de personal en una planificación de efectivos</small>
 			</h1>
 		</div>
-
-		<h2>An&aacute;lisis de tendencias</h2>
-		<p>El análisis de tendencias se utiliza como primera aproximación a la previsión de la demanda de mano de obra, tanto para toda la plantilla como para otras categorías profesionales.</p>
-		<p><strong>Se basa en las necesidades anteriores de empleados para predecir las necesidades futuras</strong>, para ello se toma una serie de por ejemplo 3 ó 5 últimos años y observar las tendencias en el nivel de empleo, para así estimar las necesidades para los próximos años en el caso de aceptar estas tendencias como válidas.</p>
-		<p><strong>Estas tendencias del nivel de empleo pueden ser al alza, a la baja u otras</strong></p>
-
-		<div id="myCarousel" class="carousel slide">
-			<!-- Carousel items -->
-			<div class="carousel-inner">
-				<div class="active item">
-					<img  src="img/alalza.png">
-				</div>
-			    <div class="item">
-					<img  class="active" src="img/alabaja.png">
-			    </div>
-			    <div class="item">
-					<img  class="active" src="img/nodefinida.png">
-			    </div>
-			</div>
-			<!-- Carousel nav -->
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		<h2>Análisis de correlación-regresión</h2>
+		<p>Se centra en el grado de correlación entre 2 variables:</p>
+		<div class="elemento_destacado">
+			<strong>X:</strong>
+			<p>La Serie histórica del nivel de empleo.</p>
 		</div>
+
+		<div class="elemento_destacado">
+			<strong>Y:</strong>
+			<p>Algún indicador de actividad tales como nivel de producción, volumen de ventas, volumen de trabajo, etc. Es una variable causal del nivel de empleo, esta variable causal depende del tipo de actividad de la empresa</p>
+		</div>
+
+		<p>Una vez elegidas las variables hay que obtener el coeficiente de correlación de Pearson entre ellas. Se hace dividiendo la covarianza de ambas variables entre el producto de las desviaciones típicas de cada variable.</p>
+		<p class="importante">Es importante tener en cuenta que la validez de esta técnica depende del coeficiente de correlación entre la variable causal (el indicador de actividad) y la variable a predecir (nivel de empleo). Si esta correlación no es válida, no se puede aplicar este análisis con esas variables.</p>	
+		<hr>
+
+		<p>Aunque en ocasiones la parábola puede ofrecer coeficientes de correlación mejores entre la variable causal y el nivel de empleo su fórmula es compleja de modo que sólo vamos a ver el modelo lineal para la representación de las relaciones entre estas variables que es el modelo más simple</p>
+
+		<p>Los valores A y B nos indican un punto que nos sirve para determinar la inclinación de la recta pudiendo resolver la ecuación si sabemos la variable causal, es decir, en el ejemplo, si sabemos el volumen de ventas objetivo</p>
+		<p>La ecuación de la recta en puntuaciones <strong>directas</strong> es:</p>
+		<p>La ecuación de la recta en puntuaciones <strong>tipicas</strong> es:</p>
+
+		<hr>
+		<h2>Críticas y ventajas</h2>
+		<p>Aunque de las tres técnicas vistas es la más precisa también presenta inconvenientes ya que la correlación no es realista, pues supone que todos los demás factores y todas las circunstancias que rodean a la empresa permanecen inalterables, lo cual raramente se da en la realidad</p>
+		<p>No obstante, puede llegar a ofrecer una estimación de gran poder predictivo</p>
 		
-		<p>Cuando se estiman las necesidades de personal a corto plazo se pueden tomar las últimas 10 o 12 observaciones de la serie histórica ya que tienen mayor capacidad de predicción que las primeras.</p>  
-
-    <hr>
-		<h2>Cr&iacute;ticas y ventajas</h2>
-
-		<p>La principal <strong>crítica</strong> es que se sólo se basa en los niveles de empleo pasados para predecir el nivel de empleo futuro ignorando</p>
-		<ul>
-			<li>Factores de la organización: volumen de producción o de ventas que la empresa desee tener en el futuro</li>
-			<li>Factores del entorno externo </li>
-		</ul>
-
-		<p>Su <strong>ventaja</strong> es que aún así puede ser útil como primera estimación o para un plazo corto.</p>	
-
-    <hr>
-		<p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="medias.html">Medias M&oacute;viles »</a></p>
+		<p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="ejemplos_demanda.html">Ejemplos »</a></p>
 
         </div>
       </div>

@@ -71,14 +71,15 @@
 
     
     <div class="container marketing">
+
       <div class="row">       
-          <ul class="menu_lateral nav nav-tabs nav-stacked affix span3">
-			<li class="active"><a href="tendencias.html">An&aacute;lisis de tendencias </a></li>
-			<li><a href="medias.html">Medias Moviles </a></li>
-      <li><a href="margenes.html">Análisis de márgenes o ratios</a></li>
-			<li><a href="correlacion.html">Análisis de correlación-regresión </a></li>
-			<li><a href="ejemplos_demanda.html">Ejemplos </a></li>
-          </ul>
+        <ul class="menu_lateral nav nav-tabs nav-stacked affix span3">
+          <li><a href="tendencias.html">Analisis de tendencias </a></li>
+          <li class="active"><a href="medias.html">Medias M&oacute;viles </a></li>
+          <li><a href="margenes.html">Análisis de márgenes o ratios</a></li>
+          <li><a href="correlacion.html">Análisis de correlación-regresión </a></li>
+          <li><a href="ejemplos_demanda.html">Ejemplos </a></li>
+        </ul>
 
         <div class="span9 offset3">
 
@@ -89,45 +90,80 @@
 				<small>de personal en una planificación de efectivos</small>
 			</h1>
 		</div>
-
-		<h2>An&aacute;lisis de tendencias</h2>
-		<p>El análisis de tendencias se utiliza como primera aproximación a la previsión de la demanda de mano de obra, tanto para toda la plantilla como para otras categorías profesionales.</p>
-		<p><strong>Se basa en las necesidades anteriores de empleados para predecir las necesidades futuras</strong>, para ello se toma una serie de por ejemplo 3 ó 5 últimos años y observar las tendencias en el nivel de empleo, para así estimar las necesidades para los próximos años en el caso de aceptar estas tendencias como válidas.</p>
-		<p><strong>Estas tendencias del nivel de empleo pueden ser al alza, a la baja u otras</strong></p>
-
-		<div id="myCarousel" class="carousel slide">
-			<!-- Carousel items -->
-			<div class="carousel-inner">
-				<div class="active item">
-					<img  src="img/alalza.png">
-				</div>
-			    <div class="item">
-					<img  class="active" src="img/alabaja.png">
-			    </div>
-			    <div class="item">
-					<img  class="active" src="img/nodefinida.png">
-			    </div>
-			</div>
-			<!-- Carousel nav -->
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-		</div>
-		
-		<p>Cuando se estiman las necesidades de personal a corto plazo se pueden tomar las últimas 10 o 12 observaciones de la serie histórica ya que tienen mayor capacidad de predicción que las primeras.</p>  
-
-    <hr>
-		<h2>Cr&iacute;ticas y ventajas</h2>
-
-		<p>La principal <strong>crítica</strong> es que se sólo se basa en los niveles de empleo pasados para predecir el nivel de empleo futuro ignorando</p>
+		<h2>Medias M&oacute;viles</h2>
+		<p>Estas medias <strong>consisten en una serie de medias calculadas a lo largo del tiempo</strong>, de forma que en el cálculo de cada una se usan el número de valores que indique el “Rango”. El Rango es el número de años que comprende la serie histórica, por ejemplo, si la serie histórica del nivel de empleo se ha tomado sobre los 3 últimos años, el rango es 3.</p>
+		<p>Dado que se entiende que las últimas observaciones poseen mayor capacidad de predicción que las primeras, <strong>el pronóstico de las necesidades de personal en el futuro es la última media móvil calculada</strong>.</p>
+		<p>Esta última media se calcula de la siguiente forma:</p>
 		<ul>
-			<li>Factores de la organización: volumen de producción o de ventas que la empresa desee tener en el futuro</li>
-			<li>Factores del entorno externo </li>
+			<li>Si <strong>el rango es 3</strong>, la media se calcula sobre los 3 últimos valores de la serie histórica.</li>
+			<li>Seg&uacute;n el ejemplo, <strong>(12+7+13/3)</strong></li>
+			<li>Por tanto la última <strong>media móvil es 10,6</strong>.</li>
 		</ul>
+		<hr>
+		<table class="medias_moviles">
+			<tr>
+				<th class="valores">Serie Historica anual</th>
+				<th class="sinbordes" ></th>
+				<th class="valores">Medias Moviles: Rango 3</th>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td  class="sinbordes" rowspan="7"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>16</td>
+				<td>11.3</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>11.3</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>12.3</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>12.3</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td class="sumandos">12</td>
+				<td  class="sinbordes" rowspan="3">
+					<div class="flecha">
+						<div class="cuenta">
+							<span class="dividendo">12+7+13</span>
+							<span class="divisor">3</span>
+						</div>
+					</div>
+				</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td class="sumandos">7</td>
+				<td class="result">10.6</td>
+			</tr>
+			<tr>
+				<td class="sumandos">13</td>
+				<td></td>
+			</tr>
+		</table>
+
+		<hr>
+		<h2>Críticas y ventajas</h2>
+		<p>El inconveniente de la técnica es que <strong>ignora los datos que sobrepasen el periodo de tiempo elegido</strong>, de modo que el pronóstico depende únicamente de los 3 últimos valores de la Serie histórica ignorando al resto de valores.</p>		
 
 		<p>Su <strong>ventaja</strong> es que aún así puede ser útil como primera estimación o para un plazo corto.</p>	
 
-    <hr>
-		<p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="medias.html">Medias M&oacute;viles »</a></p>
+		<p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="margenes.html">Análisis de márgenes o ratios »</a></p>
 
         </div>
       </div>
