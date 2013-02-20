@@ -86,21 +86,23 @@
 		</div>
 		<h2>Análisis de correlación-regresión</h2>
 		<p>Se centra en el grado de correlación entre 2 variables:</p>
-		<div class="elemento_destacado">
-			<strong>X:</strong>
-			<p>La Serie histórica del nivel de empleo.</p>
-		</div>
+    <div class="row">
+  		<div class="span4 well">
+  			<h3>X:</h3>
+  			<p>La Serie histórica del <strong>nivel de empleo</strong>.</p>
+  		</div>
 
-		<div class="elemento_destacado">
-			<strong>Y:</strong>
-			<p>Algún indicador de actividad tales como nivel de producción, volumen de ventas, volumen de trabajo, etc. Es una variable causal del nivel de empleo, esta variable causal depende del tipo de actividad de la empresa</p>
-		</div>
+  		<div class="span4 well">
+  			<h3>Y:</h3>
+  			<p>Algún indicador de actividad tales como nivel de producción, volumen de ventas, volumen de trabajo, etc. </p>
+        <p>Es una <strong>variable causal</strong> del nivel de empleo, esta variable causal depende del tipo de actividad de la empresa</p>
+  		</div>
+    </div>
 
 		<p>Una vez elegidas las variables hay que obtener el coeficiente de correlación de Pearson entre ellas. Se hace dividiendo la covarianza de ambas variables entre el producto de las desviaciones típicas de cada variable.</p>
-		<p class="importante">Es importante tener en cuenta que la validez de esta técnica depende del coeficiente de correlación entre la variable causal (el indicador de actividad) y la variable a predecir (nivel de empleo). Si esta correlación no es válida, no se puede aplicar este análisis con esas variables.</p>	
-		<hr>
+		<p class="alert alert-warning">Es importante tener en cuenta que la validez de esta técnica depende del coeficiente de correlación entre la variable causal (el indicador de actividad) y la variable a predecir (nivel de empleo). Si esta correlación no es válida, no se puede aplicar este análisis con esas variables.</p>	
 
-		<p>Aunque en ocasiones la parábola puede ofrecer coeficientes de correlación mejores entre la variable causal y el nivel de empleo su fórmula es compleja de modo que sólo vamos a ver el modelo lineal para la representación de las relaciones entre estas variables que es el modelo más simple</p>
+		<p>Aunque en ocasiones la parábola puede ofrecer coeficientes de correlación mejores entre la variable causal y el nivel de empleo su fórmula es compleja, de modo que sólo vamos a ver el modelo lineal para la representación de las relaciones entre estas variables que es el modelo más simple</p>
 
 		<p>Los valores A y B nos indican un punto que nos sirve para determinar la inclinación de la recta pudiendo resolver la ecuación si sabemos la variable causal, es decir, en el ejemplo, si sabemos el volumen de ventas objetivo</p>
 		<p>La ecuación de la recta en puntuaciones <strong>directas</strong> es:</p>
