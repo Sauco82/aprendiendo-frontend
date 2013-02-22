@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Previsi&oacute;n de oferta y demanda</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/estilos.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+          // carousel demo
+          $('.carousel').carousel();
+        })
+    </script>
+  </head>
+  <body>
+
+    <div id="menu" class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse">
+               <div class="navbar-inner">
+
+                  <a class="brand" href="#">Previsi&oacute;n de oferta y demanda</a>
+
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+                  
+
+                  <div class="nav-collapse collapse pull-right">
+                  
+                    <ul class="nav ">
+                      <li><a href="#">&Iacute;ndice</a></li>
+                  
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Prev. de la Demanda<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li class="nav-header">Previsi&oacute;n de la Demanda</li>
+                          <li><a href="tendencias.html">Analisis de tendencias</a></li>
+                          <li><a href="medias.html">Medias Moviles</a></li>
+                          <li><a href="margenes.html">Análisis de márgenes o ratios</a></li>
+                          <li><a href="correlacion.html">Análisis de correlación-regresión</a></li>
+                          <li><a href="ejemplos_demanda.html">Ejemplos</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Prev. de la Oferta <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li class="nav-header">Previsi&oacute;n de la Oferta</li>
+                          <li><a href="transicion.html">Matriz de transición</a></li>
+                          <li><a href="markov.html">Cadenas de Markov</a></li>
+                          <li><a href="ejemplos_oferta.html">Ejemplos</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li><a href="">Examen</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+
+
+
+    
+    <div class="container marketing">
+      <div class="row">       
+          <ul class="menu_lateral nav nav-tabs nav-stacked affix span3">
+      <li class="active"><a href="transicion.html">Matriz de transición</a></li>
+      <li><a href="markov.html">Cadenas de Markov</a></li>
+      <li><a href="ejemplos_oferta.html">Ejemplos</a></li>
+          </ul>
+
+        <div class="span9 offset3">
+
+      		<div class="hero">
+      			<h1>
+      				Previsi&oacute;n de la oferta
+      				<br>
+      				<small>de personal en una planificación de efectivos</small>
+      			</h1>
+      		</div>
+
+      		<h2>Matriz de transición</h2>
+          <p>Ésta técnica, aplicada al análisis de movimientos de personal, permite observar la información relativa a las diferentes categorías profesionales y ayuda a conocer las probabilidades que tienen los empleados de cambiar de un puesto, o categoría profesional, a otro</p>
+          <p>Estas probabilidades de trasvase entre puestos se calculan abarcando el tiempo entre dos momentos temporales y afectan a:</p>
+          <ul>
+            <li><strong>1.</strong> Promociones</li>
+            <li><strong>2.</strong> Bajas</li>
+            <li><strong>3.</strong> Nuevas contrataciones</li>
+            <li><strong>4.</strong> Trabajadores que permanecen en sus puestos (Índice de supervivencia)</li>
+          </ul>
+
+          <hr>
+          <p>Las probabilidades de trasvase se reflejan en la tabla en forma de proporciones con valores entre 0 (probabilidad nula) y 1 (probabilidad absoluta) de forma que la suma de los elementos de las filas y las columnas debe ser igual a 1.</p>
+          <p class="alert alert-warning">Cuando se aplica la técnica, las probabilidades de trasvase hacen referencia al número de empleados de cada categoría global, y no al global de empleados de la empresa, por lo que los elementos de las columnas no tienen porqué sumar 1.</p> 
+          <p>Estas proporciones se basan en datos históricos de la empresa relacionados con los movimientos de personal</p>
+          <p>La tabla en la que se reflejan las proporciones admite dos lecturas:</p>
+          <p>La tabla en la que se reflejan las proporciones admite dos lecturas:</p>
+          <ul>
+            <li><strong>1.</strong> Una lectura por filas que responde a la pregunta ¿Cuál es el destino profesional del colevtivo “i”?</li>
+            <li><strong>2.</strong> Una lectura por columnas que responde a la pregunta ¿De dónde proceden los elementos del conjunto “j”?</li>
+          </ul>
+
+          <table>
+            <tr>
+              <td></td>
+              <td>(a) Director de produccción</td>
+              <td>(b) Supervisor de producción</td>
+              <td>(c) Operarios</td>
+              <td>(d) Ajeno a la organización</td>
+            </tr>
+              <tr>
+              <td>(a) Director de producción</td>
+              <td>0,75</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0,25</td>
+            </tr>  
+            <tr>
+              <td>(b) supervisor de producción</td>
+              <td>0,2</td>
+              <td>0,7</td>
+              <td>0</td>
+              <td>0,1</td>
+            </tr>  
+            <tr>
+              <td>(c) Operarios</td>
+              <td>0</td>
+              <td>0,15</td>
+              <td>0,7</td>
+              <td>0,15</td>
+            </tr>  
+            <tr>
+              <td>(d) Ajeno a la organización</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+          </table>
+
+          <hr>
+          <p class="alert alert-warning">Cuando se realiza la lectura de una columna, los porcentajes indicados no son comparables entre si ya que se refieren a bases distintas (a sus colectivos profesionales). Por ello, en la lectura de la primera columna no podemos decir que el 95% de las necesidades están cubiertas ya que no podemos sumar el 75% de los directores de producción + el 20% de los supervisores, salvo en términos absolutos. Es decir, no sumando los porcentajes, sino las cantidades derivadas de esos porcentajes</p>
+          <p>El <strong>inconveniente</strong> de esta técnica es que no ofrece una estimación directa de la disponibilidad de mano de obra en el futuro, es decir, no nos indica el número de empleados que estarán disponibles en la organización. Para paliar este inconveniente, se complementa con las cadenas de Markov</p>
+
+          <p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="markov.html">Cadenas de Markov »</a></p> 
+          
+
+        </div>
+      </div>
+        <hr>
+        <footer>
+          <p class="pull-right"><a href="#">Volver arriba</a></p>
+          <p>© 2013 Sauco and Milius Inc. </p>
+        </footer>
+
+    </div>
+
+
