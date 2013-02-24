@@ -89,24 +89,77 @@
     <div class="row">
   		<div class="span4 well">
   			<h3>X:</h3>
-  			<p>La Serie histórica del <strong>nivel de empleo</strong>.</p>
+  			<p>La <strong>serie histórica del nivel de empleo</strong>.</p>
   		</div>
 
   		<div class="span4 well">
   			<h3>Y:</h3>
-  			<p>Algún indicador de actividad tales como nivel de producción, volumen de ventas, volumen de trabajo, etc. </p>
-        <p>Es una <strong>variable causal</strong> del nivel de empleo, esta variable causal depende del tipo de actividad de la empresa</p>
+  			<p><strong>Algún indicador de actividad</strong> tales como nivel de producción, volumen de ventas, volumen de trabajo, etc. </p>
+        <p>Es una variable causal del nivel de empleo que depende del tipo de actividad de la empresa</p>
   		</div>
     </div>
 
-		<p>Una vez elegidas las variables hay que obtener el coeficiente de correlación de Pearson entre ellas. Se hace dividiendo la covarianza de ambas variables entre el producto de las desviaciones típicas de cada variable.</p>
+		<p>Una vez elegidas las variables hay que obtener el coeficiente de <strong>correlación de Pearson</strong> entre ellas. Se hace dividiendo la covarianza de ambas variables entre el producto de las desviaciones típicas de cada variable.</p>
+    <div class="row">
+      <div class="span4 cuenta_correlacion">
+          <div class="cuenta">
+          <strong class="nombre">Rxy</strong>
+          <span class="igual">=</span>
+          <div class="fraccion">
+            <span class="dividendo">Cov (x, y)</span>
+            <span class="divisor">Sdx * Sdy</span>
+          </div>
+        </div>
+      </div>
+      <div class="span5">
+        
+      <p class="alert alert-info">
+        El resultado oscila entre -1 y 1. Cuanto más nos acerquemos a los extremos más relación hay (si el resultado es 0, no hay ninguna). Se acepta la existencia de correlación a partir de 0,4
+      </p>
+      </div>
+      
+    </div>
 		<p class="alert alert-warning">Es importante tener en cuenta que la validez de esta técnica depende del coeficiente de correlación entre la variable causal (el indicador de actividad) y la variable a predecir (nivel de empleo). Si esta correlación no es válida, no se puede aplicar este análisis con esas variables.</p>	
 
 		<p>Aunque en ocasiones la parábola puede ofrecer coeficientes de correlación mejores entre la variable causal y el nivel de empleo su fórmula es compleja, de modo que sólo vamos a ver el modelo lineal para la representación de las relaciones entre estas variables que es el modelo más simple</p>
 
 		<p>Los valores A y B nos indican un punto que nos sirve para determinar la inclinación de la recta pudiendo resolver la ecuación si sabemos la variable causal, es decir, en el ejemplo, si sabemos el volumen de ventas objetivo</p>
-		<p>La ecuación de la recta en puntuaciones <strong>directas</strong> es:</p>
-		<p>La ecuación de la recta en puntuaciones <strong>tipicas</strong> es:</p>
+
+    <div class="row">
+		<div class="span4 well">
+			<p>La ecuación de la recta en puntuaciones <strong>directas</strong> es:</p>
+			<p class="ecuacion">Y= A + B*X</p>
+			
+			<p class="detalles"><span data-toggle="collapse" data-target="#directas"> Detalles </span></p>
+			<div id="directas" class="collapse" >
+				<p><strong>Y:</strong> Variable que representa el nivel de empleo</p>
+				<p><strong>A:</strong> Valor del eje de ordenadas</p>
+				<p><strong>B:</strong> Valor del eje de abcisas</p>
+				<p><strong>X:</strong> Variable causal</p>
+			</div>
+		</div>
+
+		<div class="span4 well">
+			<p>La ecuación de la recta en puntuaciones <strong>tipicas</strong> es:</p>
+			<p class="ecuacion">Zy = Rxy * Zx</p>
+
+			<p class="detalles"><span data-toggle="collapse" data-target="#tipicas"> Detalles </span></p>
+			<div id="tipicas" class="collapse" >
+				<p><strong>Rxy:</strong> Coeficiente de correlación de Pearson entre las variables X e Y</p>
+				<div class="span4 cuenta_correlacion">
+			        <div class="cuenta">
+			          <strong class="nombre">Zx</strong>
+			          <span class="igual">=</span>
+			          <div class="fraccion">
+			            <span class="dividendo">X- (media de X)</span>
+			            <span class="divisor">Sdx</span>
+			          </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+    </div>
+    
 
 		<hr>
 		<h2>Críticas y ventajas</h2>
