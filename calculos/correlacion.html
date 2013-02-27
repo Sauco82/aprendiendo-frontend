@@ -15,7 +15,7 @@
         <div class="navbar navbar-inverse">
                <div class="navbar-inner">
 
-                  <a class="brand" href="#">Previsi&oacute;n de oferta y demanda</a>
+                  <a class="brand" href="index.html">Previsi&oacute;n de oferta y demanda</a>
 
                 <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -28,31 +28,29 @@
                   <div class="nav-collapse collapse pull-right">
                   
                     <ul class="nav ">
-                      <li><a href="#">&Iacute;ndice</a></li>
+                      <li><a href="index.html">&Iacute;ndice</a></li>
                   
                       <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Prev. de la Demanda<b class="caret"></b></a>
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"> Prev. de la Demanda<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li class="nav-header">Previsi&oacute;n de la Demanda</li>
                           <li><a href="tendencias.html">Analisis de tendencias</a></li>
                           <li><a href="medias.html">Medias Moviles</a></li>
                           <li><a href="margenes.html">Análisis de márgenes o ratios</a></li>
                           <li><a href="correlacion.html">Análisis de correlación-regresión</a></li>
-                          <li><a href="ejemplos_demanda.html">Ejemplos</a></li>
                         </ul>
                       </li>
 
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Prev. de la Oferta <b class="caret"></b></a>
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"> Prev. de la Oferta <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li class="nav-header">Previsi&oacute;n de la Oferta</li>
                           <li><a href="transicion.html">Matriz de transición</a></li>
                           <li><a href="markov.html">Cadenas de Markov</a></li>
-                          <li><a href="ejemplos_oferta.html">Ejemplos</a></li>
                         </ul>
                       </li>
                       
-                      <li><a href="">Examen</a></li>
+                      <li><a href="examen.html">Examen</a></li>
                       
                     </ul>
                   </div>
@@ -72,7 +70,6 @@
           <li><a href="medias.html">Medias M&oacute;viles </a></li>
           <li><a href="margenes.html">Análisis de márgenes o ratios</a></li>
           <li class="active"><a href="correlacion.html">Análisis de correlación-regresión </a></li>
-          <li><a href="ejemplos_demanda.html">Ejemplos </a></li>
         </ul>
 
         <div class="span9 offset3">
@@ -130,7 +127,7 @@
 			<p>La ecuación de la recta en puntuaciones <strong>directas</strong> es:</p>
 			<p class="ecuacion">Y= A + B*X</p>
 			
-			<p class="detalles"><span data-toggle="collapse" data-target="#directas"> Detalles </span></p>
+			<p class="detalles"><span class="btn btn-primary" data-toggle="collapse" data-target="#directas"> Detalles </span></p>
 			<div id="directas" class="collapse" >
 				<p><strong>Y:</strong> Variable que representa el nivel de empleo</p>
 				<p><strong>A:</strong> Valor del eje de ordenadas</p>
@@ -143,7 +140,7 @@
 			<p>La ecuación de la recta en puntuaciones <strong>tipicas</strong> es:</p>
 			<p class="ecuacion">Zy = Rxy * Zx</p>
 
-			<p class="detalles"><span data-toggle="collapse" data-target="#tipicas"> Detalles </span></p>
+			<p class="detalles"><span class="btn btn-primary" data-toggle="collapse" data-target="#tipicas"> Detalles </span></p>
 			<div id="tipicas" class="collapse" >
 				<p><strong>Rxy:</strong> Coeficiente de correlación de Pearson entre las variables X e Y</p>
 				<div class="span4 cuenta_correlacion">
@@ -159,9 +156,168 @@
 			</div>
 		</div>
     </div>
-    
-
 		<hr>
+    <h4>Ejemplo</h4>
+    
+    <p>El hotel Margarita quiere incrementar el número de clientes en el futuro. Para ello, es necesario ampliar su capacidad, esto es, el número de camas. En este sentido, la dirección ha establecido ampliar el número de camas de 80 a 110.</p>
+      <p>En la planificación de efectivos que ha emprendido el Dpto. de RRHH, se quiere estimar el número de camareros/as de habitaciones que serán necesarios.</p>
+    <p>Para realizar esta estimación, ha recogido información sobre el número de camareros/as de habitaciones que tienen en plantilla 15 hoteles de la zona que cuentan con diversa capacidad o número de camas.</p>
+    <table class="correlacion">
+      <tr>
+        <th></th>
+        <th>Número de camas (X)</th>
+        <th>Número de camareros de habitación (Y)</th>
+        <th>X * Y</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td>155</td>
+        <td>8</td>
+        <td>1240</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>200</td>
+        <td>9</td>
+        <td>1800</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>45</td>
+        <td>3</td>
+        <td>135</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>400</td>
+        <td>15</td>
+        <td>6000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>250</td>
+        <td>10</td>
+        <td>2500</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>60</td>
+        <td>6</td>
+        <td>360</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>125</td>
+        <td>8</td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>75</td>
+        <td>6</td>
+        <td>450</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>80</td>
+        <td>7</td>
+        <td>560</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>92</td>
+        <td>8</td>
+        <td>736</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>350</td>
+        <td>12</td>
+        <td>4200</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>35</td>
+        <td>3</td>
+        <td>105</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>63</td>
+        <td>6</td>
+        <td>384</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>48</td>
+        <td>3</td>
+        <td>144</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>55</td>
+        <td>4</td>
+        <td>220</td>
+      </tr>
+      <tr class="suma">
+        <td>Suma</td>
+        <td>2034</td>
+        <td>108</td>
+        <td>19834</td>
+      </tr>
+      <tr class="promedio">
+        <td>Promedio</td>
+        <td>2034/15 = 135´6</td>
+        <td>108/15 = 7´2</td>
+        <td></td>
+      </tr>
+    </table>
+    <hr>
+    <p>Para la realización del coeficiente necesitaríamos:</p>
+        <ul>
+          <li><strong>1:</strong> Saber la Covarianza de X (número de camas) e Y(número de camareros/as), para ello hay que calcular:</li>
+          <ul>
+            <li>Las medias marginales de X e Y</li>
+            <li>El producto de cada X por cada Y</li>
+            <li>Hacer la fórmula Cov(x,y) = 345,6385</li>
+          </ul>
+          <li><strong>2:</strong> Hallar las desviaciones típicas de X e Y. En este caso nos las dan de modo que</li>
+          <ul>
+            <li>Desviación típica de X (Sdx) = 115,1408</li>
+            <li>Desviación típica de Y (Sdy) = 3,4268</li>
+          </ul>
+          <li><strong>3:</strong> Completar la fórmula</li>
+        </ul>
+
+        <div class="cuenta_correlacion ejemplo well">
+          <div class="cuenta">
+          <strong class="nombre">Rxy</strong>
+          <span class="igual">=</span>
+          <div class="fraccion">
+            <span class="dividendo">345,6385</span>
+            <span class="divisor">115,1408 * 3,4268</span>
+          </div>
+          <span class="igual">=</span>
+          <span class="resultado">0.876</span>
+        </div>
+      </div>
+
+        <p>De modo que el coeficiente de correlación obtenido es de R = 0.876. Que es un coeficiente muy significativo, así que podemos utilizar el análisis de regresión</p>
+        <ul>
+          <li><strong>4:</strong> Predecir el número de camareros de habitaciones. Se puede hacer, como hemos visto antes, de 2 maneras</li>
+          <ul>
+            <li>Si conocemos A y B podemos aplicar la fórmula para las puntuaciones directas</li>
+            <li>A través de la fórmula para las puntuaciones típicas. Donde:</li>
+            <ul>
+              <li><strong>Zy:</strong> número de camareros/as de habitaciones que se necesitará en el hotel en puntuaciones típicas</li>
+              <li><strong>Rxy:</strong> coeficiente de correlación entre el número de camas (x) y el número de camareros/as de habitaciones (y) que actualmenre existen en los diversos hoteles analizados</li>
+              <li><strong>Zx:</strong> número de camas al que se quiere ampliar la capacidad del hotel en puntuaciones típicas</li>
+            </ul>
+          </ul>
+          <li><strong>5:</strong> -0,1947668 es el número de camareros de habitaciones que es necesario tener en plantilla pero en puntuaciones típicas, hace falta pasarlas a puntuaciones directas</li>
+          <li>El resultado (6,5 aprox) nos indica que hay que tener en plantilla 6 ó 7 camareros de habitaciones. Como actualmente tenemos 3, habrá que contratar 3 ó 4 más, depende del juicio administrativo</li>
+        </ul>
+
 		<h2>Críticas y ventajas</h2>
 		<p>Aunque de las tres técnicas vistas es la más precisa también presenta inconvenientes ya que la correlación no es realista, pues supone que todos los demás factores y todas las circunstancias que rodean a la empresa permanecen inalterables, lo cual raramente se da en la realidad</p>
 		<p>No obstante, puede llegar a ofrecer una estimación de gran poder predictivo</p>

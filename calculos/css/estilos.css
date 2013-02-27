@@ -20,6 +20,7 @@ table td,table th{text-align: center;border-bottom: 1px solid #aaa;}
 table tr.suma td,table tr.suma th{background:#aaa;}
 table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
 
+table.correlacion{width:100%;margin-top: 20px;}
 
 .marco_del_ejemplo{overflow: hidden;}
 .marco_del_ejemplo .datos, .marco_del_ejemplo .formulas{float:left;}
@@ -49,6 +50,8 @@ table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
 .cuenta_correlacion .cuenta{margin:20px auto 0 auto; width: 250px}
 .cuenta_correlacion .cuenta .nombre{width: 25px; }
 
+.cuenta_correlacion.ejemplo .cuenta {width: 330px;}
+
 .dividendo,.divisor{display: block; text-align: center; line-height: 28px}
 .dividendo{border-bottom: 2px solid #888;padding-bottom: 5px;}
 .divisor{padding-top: 5px;	line-height: 30px}
@@ -70,8 +73,7 @@ table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
 	font-size: 130%;
 	text-align: center;
 } 
-.detalles{text-align: center; color:#3a87ad;}
-.detalles:hover{text-decoration:underline;cursor:pointer}
+.detalles{text-align: center;}
 
 table.datos td.sumandos{background:#BEE5F7;}
 
