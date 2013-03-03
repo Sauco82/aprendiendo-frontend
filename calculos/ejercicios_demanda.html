@@ -7,11 +7,21 @@
     <link href="css/estilos.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/correccion.js"></script>
     <script>
-        $(function(){
-          // carousel demo
-          $('.popovers').popover();
-        })
+        $().ready(
+			function(){$('#felicidades').hide();}
+		);
+		function envia(form){
+			var numero_de_preguntas = 1;
+			$('.warning').remove();
+			if (valida(numero_de_preguntas)){
+				form.action='https://docs.google.com/forms/d/1srMv9Dl59A4cyKhH9QRagw_ri5ibZ9_6U-UAeubHIH8/formResponse';
+				muestraSoluciones();
+			} else if (!valida(numero_de_preguntas)) {
+				$("#esta_incompleto").show();
+			} 
+		}
     </script>
   </head>
   <body>
@@ -56,7 +66,7 @@
                         </ul>
                       </li>
 
-                      <li class="dropdown">
+                       <li class="dropdown active">
                         <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"> Ejercicios <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li class="nav-header">Ejercicios</li>
@@ -65,7 +75,7 @@
                         </ul>
                       </li>
                       
-                      <li class="active"><a href="examen.html">Examen</a></li>
+                      <li><a href="examen.html">Examen</a></li>
                       
                     </ul>
                   </div>
@@ -74,19 +84,49 @@
       </div>
     </div>
 
-
-
-    
     <div class="container marketing">
-      <div class="row">       
+      <div class="row"> 
+     	
+     	<ul class="menu_lateral nav nav-tabs nav-stacked affix span3">
+          <li class="active"><a href="ejercicios_demanda.html">Ejercicios de previsi&oacute;n de la Demanda</a></li>
+          <li><a href="ejercicios_oferta.html">Ejercicios de previsi&oacute;n de la Oferta</a></li>
+        </ul>
+
         <div class="span9 offset3">
       		<div class="hero">
       			<h1>
-      				Examen
+      				Ejercicios
       				<br>
-      				<small>No disponible todavia</small>
+      				<small>Previsi&oacute;n de la Demanda</small>
       			</h1>
       		</div>
+
+      		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
+
+      		<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
+		        <div class="errorbox-good">
+					<div dir="ltr" class="ss-item  ss-radio">
+						<div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1288492921"><div class="ss-q-title">El enunciado de la pregunta</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+							<ul class="ss-choices">
+								<li class="ss-choice-item correcta"><label><input type="radio" name="entry.399294581" value="Option 1" id="group_399294581_1" class="ss-q-radio" aria-label="Option 1"><label class="ss-choice-label" for="group_399294581_1">Option 1. lorem ut vel magnis! Sagittis elementum habitasse. Odio! Ac lundium! Pulvinar ultricies integer? Facilisis odio! Est et enim augue, purus sociis et, nisi porttitor, platea. Odio enim pulvinar velit integer dis, enim mauris ultricies ultrices elementum montes! Urna sagittis natoque lorem pellentesque mus, eu etiam integer mauris! Sed urna, eros nascetur sociis ut. Hac, aliquet. Magna integer ultricies integer amet et parturient a in aliquet adipiscing eros elit ridiculus, eu, adipiscing magna? Facilisis habitasse porttitor, tincidunt quis! Enim ridiculus in tincidunt et ut? Penatibus dapibus, tincidunt in, risus scelerisque mattis turpis, elementum ridi</label></label></li> 
+								<li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.399294581" value="Option 2" id="group_399294581_2" class="ss-q-radio" aria-label="Option 2"><label class="ss-choice-label" for="group_399294581_2">Option 2</label></label></li> 
+								<li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.399294581" value="Option 3" id="group_399294581_3" class="ss-q-radio" aria-label="Option 3"><label class="ss-choice-label" for="group_399294581_3">Option 3</label></label></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<p id="esta_incompleto" class='alert alert-error' style="display:none;">Faltan preguntas por responder</p>
+				<input id="boton_envio" class="btn btn-primary" type="submit" name="submit" value="Terminar el Ejercicio" />
+							
+				<div id="felicidades">
+					<h3>Muy bien!</h3>
+					<p>Has terminado el ejercicio, &eacute;chale un vistazo a tus respuestas a ver que tal</p>
+				</div>
+      		</form>
+
+
+
         </div>
       </div>
         <hr>

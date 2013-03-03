@@ -11,9 +11,6 @@ function muestraSoluciones(){
 	$('.incorrecta').addClass('alert alert-error');
 	$('.correcta').show();
 	$("input:checked").parent().parent().show();
-
-/*	$("#ss-form").addClass("esconde");
-	$("input:text").addClass("muestra");
-	$("#boton_envio").hide();
-	$("#terminado").show();*/
+	$('#esta_incompleto').hide();
+	$("#felicidades").show();
 }
