@@ -100,3 +100,44 @@ table tr.fila_popover td{border:0; padding-top: 10px;}
 @media (max-width: 767px) { 
 	.affix{display: none}
 }
+
+
+/* Formulario */
+
+
+
+.ss-q-title{
+	font-size: 19px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.ss-choices{overflow: hidden;}
+.ss-choice-item label input{
+	float:left;
+	clear:left;
+	width:40px;
+}
+.ss-choice-item label label{
+	margin-left:40px ;
+}
+
+#boton_envio{
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px 40px;
+	display: block;
+	margin: 0 auto;
+	border:none;
+	cursor:pointer;
+	background:#0099d4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:white;
+	text-shadow: 1px 1px 0 #007dae;
+	text-decoration: none;
+	font-weight: normal;
+}
+	#boton_envio:hover{background:#00b1f4;}
