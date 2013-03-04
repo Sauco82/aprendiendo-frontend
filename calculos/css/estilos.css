@@ -15,6 +15,7 @@ ul{list-style: none;}
 
 .siguiente {overflow: hidden; margin-top: 40px;}
 
+form table{width: 100%;margin-bottom: 40px;}
 table th{font-weight: normal; font-style: italic;}
 table td,table th{text-align: center;border-bottom: 1px solid #aaa;}
 table tr.suma td,table tr.suma th{background:#aaa;}
