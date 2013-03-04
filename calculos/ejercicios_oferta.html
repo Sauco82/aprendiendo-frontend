@@ -13,10 +13,10 @@
 			function(){$('#felicidades').hide();}
 		);
 		function envia(form){
-			var numero_de_preguntas = 1;
+			var numero_de_preguntas = 13;
 			$('.warning').remove();
 			if (valida(numero_de_preguntas)){
-				form.action='https://docs.google.com/forms/d/1srMv9Dl59A4cyKhH9QRagw_ri5ibZ9_6U-UAeubHIH8/formResponse';
+				form.action='https://docs.google.com/forms/d/18rKSTia9gdstZkKWO7kLvqnU9GLPHLbsf8ZsVuGr2NY/formResponse';
 				muestraSoluciones();
 			} else if (!valida(numero_de_preguntas)) {
 				$("#esta_incompleto").show();
@@ -103,27 +103,376 @@
 
       		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
 
-      		<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
-		        <div class="errorbox-good">
-					<div dir="ltr" class="ss-item  ss-radio">
-						<div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1288492921"><div class="ss-q-title">El enunciado de la pregunta</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item correcta"><label><input type="radio" name="entry.399294581" value="Option 1" id="group_399294581_1" class="ss-q-radio" aria-label="Option 1"><label class="ss-choice-label" for="group_399294581_1">Option 1. lorem ut vel magnis! Sagittis elementum habitasse. Odio! Ac lundium! Pulvinar ultricies integer? Facilisis odio! Est et enim augue, purus sociis et, nisi porttitor, platea. Odio enim pulvinar velit integer dis, enim mauris ultricies ultrices elementum montes! Urna sagittis natoque lorem pellentesque mus, eu etiam integer mauris! Sed urna, eros nascetur sociis ut. Hac, aliquet. Magna integer ultricies integer amet et parturient a in aliquet adipiscing eros elit ridiculus, eu, adipiscing magna? Facilisis habitasse porttitor, tincidunt quis! Enim ridiculus in tincidunt et ut? Penatibus dapibus, tincidunt in, risus scelerisque mattis turpis, elementum ridi</label></label></li> 
-								<li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.399294581" value="Option 2" id="group_399294581_2" class="ss-q-radio" aria-label="Option 2"><label class="ss-choice-label" for="group_399294581_2">Option 2</label></label></li> 
-								<li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.399294581" value="Option 3" id="group_399294581_3" class="ss-q-radio" aria-label="Option 3"><label class="ss-choice-label" for="group_399294581_3">Option 3</label></label></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+          <form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
 
-				<p id="esta_incompleto" class='alert alert-error' style="display:none;">Faltan preguntas por responder</p>
-				<input id="boton_envio" class="btn btn-primary" type="submit" name="submit" value="Terminar el Ejercicio" />
-							
-				<div id="felicidades">
-					<h3>Muy bien!</h3>
-					<p>Has terminado el ejercicio, &eacute;chale un vistazo a tus respuestas a ver que tal</p>
-				</div>
-      		</form>
+        <form action="https://docs.google.com/forms/d/18rKSTia9gdstZkKWO7kLvqnU9GLPHLbsf8ZsVuGr2NY/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1172765212"><div class="ss-q-title">Escribe tu nombre. <i>Ejemplo: Pérez Pérez, PEPE</i> <input type="text" name="entry.1172765212" value="" class="ss-q-short" id="entry_1172765212" dir="auto" aria-required="true">
+            <label for="itemView.getDomIdToLabel()" aria-label="(Campo obligatorio)"></label>
+          </div>
+          </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info">
+        <p>Entre las diversas sucursales de la empresa LA LECHERITA, S.A. se encuentra en plantilla los siguientes empleados:</p>
+        <table>
+          <tr>
+            <th>Puestos de trabajo</th>
+            <th>Número de empleados</th>
+          </tr>
+          <tr>
+            <td>Directivos de departamentos</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>Encargados de planta</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Supervisores</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>Jefes de contabilidad</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Administrativos</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td>Contables</td>
+            <td>37</td>
+          </tr>
+          <tr>
+            <td>Comerciales</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Operarios</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>Contrataciones externas</td>
+            <td>0</td>
+          </tr>
+        </table>
+        <p>Las probabilidades que acompañan a los movimientos de personal (supervivencia, promociones, rotación externa, selección externa) son las reflejadas en la siguiente matriz:</p>
+
+        <table>
+          <tr>
+            <td></td>
+            <td>a)</td>
+            <td>b)</td>
+            <td>c)</td>
+            <td>d)</td>
+            <td>e)</td>
+            <td>f)</td>
+            <td>g)</td>
+            <td>h)</td>
+            <td>i)</td>
+          </tr>
+          <tr>
+            <td>a) Directivos Departamentos</td>
+            <td>0,9</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0,1</td>
+          </tr>
+          <tr>
+            <td>b) Encargados de Planta</td>
+            <td>0,1</td>
+            <td>0,7</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0,2</td>
+          </tr>
+          <tr>
+            <td>c) Supervisores</td>
+            <td>0</td>
+            <td>0,4</td>
+            <td>0,6</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>d) Jefes de Contabilidad</td>
+            <td>0,1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0,8</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0,1</td>
+          </tr>
+          <tr>
+            <td>e) Administrativos</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0,9</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0,1</td>
+          </tr>
+          <tr>
+            <td>f) Contables</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0,3</td>
+            <td>0</td>
+            <td>0,7</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>g) Comerciales</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0,7</td>
+            <td>0</td>
+            <td>0,3</td>
+          </tr>
+          <tr>
+            <td>h) Operarios</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0,1</td>
+            <td>0,9</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>i) Contrataciones Externas</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_964555616"><div class="ss-q-title">1.- Dentro de 1 año, ¿cuál será el destino profesional de los Comerciales?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1917197250" value="El 70% permanece en la misma categoría y el 10% promociona a operarios" id="group_1917197250_1" class="ss-q-radio" aria-label="El 70% permanece en la misma categoría y el 10% promociona a operarios"><label class="ss-choice-label" for="group_1917197250_1">El 70% permanece en la misma categoría y el 10% promociona a operarios</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1917197250" value="El 70% permanece en la misma categoría y el 30% abandona la organización" id="group_1917197250_2" class="ss-q-radio" aria-label="El 70% permanece en la misma categoría y el 30% abandona la organización"><label class="ss-choice-label" for="group_1917197250_2">El 70% permanece en la misma categoría y el 30% abandona la organización</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1917197250" value="Las alternativas a y b son CORRECTAS" id="group_1917197250_3" class="ss-q-radio" aria-label="Las alternativas a y b son CORRECTAS"><label class="ss-choice-label" for="group_1917197250_3">Las alternativas a y b son CORRECTAS</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_662557174"><div class="ss-q-title">2.- Dentro de 1 año, ¿cuál será la procedencia profesional de los Encargados de Planta, esto es, de qué categorías profesionales proceden?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.144271337" value="Del 10% de director de departamento, del 70% del mismo colectivo y en un 10% de contrataciones externas" id="group_144271337_1" class="ss-q-radio" aria-label="Del 10% de director de departamento, del 70% del mismo colectivo y en un 10% de contrataciones externas"><label class="ss-choice-label" for="group_144271337_1">Del 10% de director de departamento, del 70% del mismo colectivo y en un 10% de contrataciones externas</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.144271337" value="Del 70% del mismo colectivo, del 40% de los supervisores. Si fuera necesario, se acudiría a contrataciones externas" id="group_144271337_2" class="ss-q-radio" aria-label="Del 70% del mismo colectivo, del 40% de los supervisores. Si fuera necesario, se acudiría a contrataciones externas"><label class="ss-choice-label" for="group_144271337_2">Del 70% del mismo colectivo, del 40% de los supervisores. Si fuera necesario, se acudiría a contrataciones externas</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.144271337" value="Del 10% del mismo colectivo y del 70% de director de departamento" id="group_144271337_3" class="ss-q-radio" aria-label="Del 10% del mismo colectivo y del 70% de director de departamento"><label class="ss-choice-label" for="group_144271337_3">Del 10% del mismo colectivo y del 70% de director de departamento</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_213775970"><div class="ss-q-title">3.- Suponiendo que no se efectúen nuevas contrataciones a lo largo de ese tiempo y que las necesidades de personal de la empresa se mantienen igual, o dicho de otra forma, ¿de cuántos trabajadores dispondrá la empresa para cubrir dichas necesidades dentro de 1 año?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.715112813" value="30,8 directivos y 360 operarios" id="group_715112813_1" class="ss-q-radio" aria-label="30,8 directivos y 360 operarios"><label class="ss-choice-label" for="group_715112813_1">30,8 directivos y 360 operarios</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.715112813" value="28,8 directivos y 40 operarios" id="group_715112813_2" class="ss-q-radio" aria-label="28,8 directivos y 40 operarios"><label class="ss-choice-label" for="group_715112813_2">28,8 directivos y 40 operarios</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.715112813" value="29,8 directivos y 400 operarios" id="group_715112813_3" class="ss-q-radio" aria-label="29,8 directivos y 400 operarios"><label class="ss-choice-label" for="group_715112813_3">29,8 directivos y 400 operarios</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_874967516"><div class="ss-q-title">4.- ¿En qué medida estarán cubiertas las necesidades de operarios?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.483099495" value="No estarán cubiertas con los operarios que tendrá la empresa dentro de 1 año. Será necesario acudir al mercado laboral externo para contratar a 40 nuevos operarios" id="group_483099495_1" class="ss-q-radio" aria-label="No estarán cubiertas con los operarios que tendrá la empresa dentro de 1 año. Será necesario acudir al mercado laboral externo para contratar a 40 nuevos operarios"><label class="ss-choice-label" for="group_483099495_1">No estarán cubiertas con los operarios que tendrá la empresa dentro de 1 año. Será necesario acudir al mercado laboral externo para contratar a 40 nuevos operarios</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.483099495" value="No estarán cubiertas, pues dentro de 1 año la empresa tendrá tan solo a 40 operarios" id="group_483099495_2" class="ss-q-radio" aria-label="No estarán cubiertas, pues dentro de 1 año la empresa tendrá tan solo a 40 operarios"><label class="ss-choice-label" for="group_483099495_2">No estarán cubiertas, pues dentro de 1 año la empresa tendrá tan solo a 40 operarios</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.483099495" value="Estarán cubiertas, pues dentro de 1 año la empresa seguirá disponiendo de 400 operarios" id="group_483099495_3" class="ss-q-radio" aria-label="Estarán cubiertas, pues dentro de 1 año la empresa seguirá disponiendo de 400 operarios"><label class="ss-choice-label" for="group_483099495_3">Estarán cubiertas, pues dentro de 1 año la empresa seguirá disponiendo de 400 operarios</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info">
+        <p>En la actualidad (año n) la empresa TESAURUS, S.A. cuenta con 80 obreros y 8 directivos en la unidad de fabricación, con 36 agentes comerciales y 4 directivos en marketing en la unidad de comercialización, y con 45 administrativos y 5 directivos en la unidad de administración. El índice de promoción de empleado (obreros, agentes comerciales y administrativos) a directivo coincide en las tres unidades y equivale al 10%. En todas las unidades, la rotación de los empleados (20%) es superior a la de los directivos (10%). Teniendo en cuenta los datos aportados, conteste a la siguiente pregunta:</p>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_395841964"><div class="ss-q-title">5.- ¿Cuál de las siguientes alternativas refleja el vector estado del periodo actual (año N)?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.499710536" value="8, 80, 4, 36, 5, 45" id="group_499710536_1" class="ss-q-radio" aria-label="8, 80, 4, 36, 5, 45"><label class="ss-choice-label" for="group_499710536_1">8, 80, 4, 36, 5, 45</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.499710536" value="16, 80, 36, 45" id="group_499710536_2" class="ss-q-radio" aria-label="16, 80, 36, 45"><label class="ss-choice-label" for="group_499710536_2">16, 80, 36, 45</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.499710536" value="88, 40, 50" id="group_499710536_3" class="ss-q-radio" aria-label="88, 40, 50"><label class="ss-choice-label" for="group_499710536_3">88, 40, 50</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+      <div class="alert alert-info">
+        <p>Teniendo en cuenta los datos aportados, elabore la matriz de transición correspondiente,  y conteste a las siguientes preguntas:</p>
+      </div>
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_797710338"><div class="ss-q-title">6.- ¿Cuál es la probabilidad asociada a la Promoción de la categoría profesional de Obreros?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1193536993" value="0,2" id="group_1193536993_1" class="ss-q-radio" aria-label="0,2"><label class="ss-choice-label" for="group_1193536993_1">0,2</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1193536993" value="0,1" id="group_1193536993_2" class="ss-q-radio" aria-label="0,1"><label class="ss-choice-label" for="group_1193536993_2">0,1</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1193536993" value="0,7" id="group_1193536993_3" class="ss-q-radio" aria-label="0,7"><label class="ss-choice-label" for="group_1193536993_3">0,7</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1651360530"><div class="ss-q-title">7.- ¿Cuál es la probabilidad asociada a la Rotación Externa de la categoría profesional de Comerciales de Marketing?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1454729568" value="0,2" id="group_1454729568_1" class="ss-q-radio" aria-label="0,2"><label class="ss-choice-label" for="group_1454729568_1">0,2</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1454729568" value="0,1" id="group_1454729568_2" class="ss-q-radio" aria-label="0,1"><label class="ss-choice-label" for="group_1454729568_2">0,1</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1454729568" value="0" id="group_1454729568_3" class="ss-q-radio" aria-label="0"><label class="ss-choice-label" for="group_1454729568_3">0</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_443463900"><div class="ss-q-title">8.- ¿Cuál es la probabilidad asociada al Índice de Permanencia de la categoría profesional de Directivos de Fabricación?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1975676718" value="0,7" id="group_1975676718_1" class="ss-q-radio" aria-label="0,7"><label class="ss-choice-label" for="group_1975676718_1">0,7</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1975676718" value="0,9" id="group_1975676718_2" class="ss-q-radio" aria-label="0,9"><label class="ss-choice-label" for="group_1975676718_2">0,9</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1975676718" value="0,1" id="group_1975676718_3" class="ss-q-radio" aria-label="0,1"><label class="ss-choice-label" for="group_1975676718_3">0,1</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+      <div class="alert alert-info">
+        <p>Determine los recursos existentes en el Año N+1 en cada una de las unidades y conteste a las siguientes preguntas.</p>
+      </div>
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2034585701"><div class="ss-q-title">9.- ¿Cuántos Directivos de Administración tendremos en el Año N+1?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1683655217" value="9" id="group_1683655217_1" class="ss-q-radio" aria-label="9"><label class="ss-choice-label" for="group_1683655217_1">9</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1683655217" value="5" id="group_1683655217_2" class="ss-q-radio" aria-label="5"><label class="ss-choice-label" for="group_1683655217_2">5</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1683655217" value="4,5" id="group_1683655217_3" class="ss-q-radio" aria-label="4,5"><label class="ss-choice-label" for="group_1683655217_3">4,5</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1851284088"><div class="ss-q-title">10.- ¿Cuántos empleados saldrán de la empresa en el Año N+1?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1671557960" value="44,5" id="group_1671557960_1" class="ss-q-radio" aria-label="44,5"><label class="ss-choice-label" for="group_1671557960_1">44,5</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1671557960" value="16,95" id="group_1671557960_2" class="ss-q-radio" aria-label="16,95"><label class="ss-choice-label" for="group_1671557960_2">16,95</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1671557960" value="33,9" id="group_1671557960_3" class="ss-q-radio" aria-label="33,9"><label class="ss-choice-label" for="group_1671557960_3">33,9</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1138276549"><div class="ss-q-title">11.- ¿Cuál de las siguientes alternativas refleja el vector estado Año N+1?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.77729411" value="15,2; 56; 7,2; 25,2; 9; 31,5; 33,9" id="group_77729411_1" class="ss-q-radio" aria-label="15,2; 56; 7,2; 25,2; 9; 31,5; 33,9"><label class="ss-choice-label" for="group_77729411_1">15,2; 56; 7,2; 25,2; 9; 31,5; 33,9</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.77729411" value="19,28; 39,2; 9; 17,64; 11,25; 22,05; 25,68" id="group_77729411_2" class="ss-q-radio" aria-label="19,28; 39,2; 9; 17,64; 11,25; 22,05; 25,68"><label class="ss-choice-label" for="group_77729411_2">19,28; 39,2; 9; 17,64; 11,25; 22,05; 25,68</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.77729411" value="Las alternativas a y b son INCORRECTAS." id="group_77729411_3" class="ss-q-radio" aria-label="Las alternativas a y b son INCORRECTAS."><label class="ss-choice-label" for="group_77729411_3">Las alternativas a y b son INCORRECTAS.</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info">
+        <p>Suponiendo que las necesidades de personal estimadas para el año N+1 sean las siguientes:</p>
+        <ul>
+          <li>Obreros = 59</li>
+          <li>Directivos de fabricación = 6</li>
+          <li>Comerciales de marketing = 34</li>
+          <li>Directivos de marketing = 6</li>
+          <li>Administrativos = 30</li>
+          <li>Directivos administrativos = 3</li>
+        </ul>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_383678904"><div class="ss-q-title">12.- ¿Cuántos Directivos de Fabricación deberán ser buscados en el mercado externo?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1284278336" value="Ninguno, pues habrá 9,2 directivos más de los que se necesitan" id="group_1284278336_1" class="ss-q-radio" aria-label="Ninguno, pues habrá 9,2 directivos más de los que se necesitan"><label class="ss-choice-label" for="group_1284278336_1">Ninguno, pues habrá 9,2 directivos más de los que se necesitan</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1284278336" value="9,2" id="group_1284278336_2" class="ss-q-radio" aria-label="9,2"><label class="ss-choice-label" for="group_1284278336_2">9,2</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1284278336" value="2" id="group_1284278336_3" class="ss-q-radio" aria-label="2"><label class="ss-choice-label" for="group_1284278336_3">2</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1379720272"><div class="ss-q-title">13.- ¿Cuántos Comerciales de Marketing deberán ser buscados en el mercado externo?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1615769649" value="Ninguno, pues habrá 2 comerciales más de los que se necesitan" id="group_1615769649_1" class="ss-q-radio" aria-label="Ninguno, pues habrá 2 comerciales más de los que se necesitan"><label class="ss-choice-label" for="group_1615769649_1">Ninguno, pues habrá 2 comerciales más de los que se necesitan</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1615769649" value="Ninguno, pues habrá 8,8 comerciales más de los que se necesitan" id="group_1615769649_2" class="ss-q-radio" aria-label="Ninguno, pues habrá 8,8 comerciales más de los que se necesitan"><label class="ss-choice-label" for="group_1615769649_2">Ninguno, pues habrá 8,8 comerciales más de los que se necesitan</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1615769649" value="8,8" id="group_1615769649_3" class="ss-q-radio" aria-label="8,8"><label class="ss-choice-label" for="group_1615769649_3">8,8</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p id="esta_incompleto" class='alert alert-error' style="display:none;">Faltan preguntas por responder</p>
+        <input id="boton_envio" class="btn btn-primary" type="submit" name="submit" value="Terminar el Ejercicio" />
+              
+        <div id="felicidades">
+          <h3>Muy bien!</h3>
+          <p>Has terminado el ejercicio, &eacute;chale un vistazo a tus respuestas a ver que tal</p>
+        </div>
+          </form>
 
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Previsi&oacute;n de oferta y demanda</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/estilos.css" rel="stylesheet" media="screen">
@@ -10,18 +10,18 @@
     <script src="js/correccion.js"></script>
     <script>
         $().ready(
-			function(){$('#felicidades').hide();}
-		);
-		function envia(form){
-			var numero_de_preguntas = 1;
-			$('.warning').remove();
-			if (valida(numero_de_preguntas)){
-				form.action='https://docs.google.com/forms/d/1srMv9Dl59A4cyKhH9QRagw_ri5ibZ9_6U-UAeubHIH8/formResponse';
-				muestraSoluciones();
-			} else if (!valida(numero_de_preguntas)) {
-				$("#esta_incompleto").show();
-			} 
-		}
+      function(){$('#felicidades').hide();}
+    );
+    function envia(form){
+      var numero_de_preguntas = 9;
+      $('.warning').remove();
+      if (valida(numero_de_preguntas)){
+        form.action='https://docs.google.com/forms/d/1QceIaj-viv0cPQ3VpjMkfbILED9piyiV72LQPy6eubk/formResponse';
+        muestraSoluciones();
+      } else if (!valida(numero_de_preguntas)) {
+        $("#esta_incompleto").show();
+      } 
+    }
     </script>
   </head>
   <body>
@@ -66,7 +66,7 @@
                         </ul>
                       </li>
 
-                       <li class="dropdown active">
+                      <li class="dropdown active">
                         <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"> Ejercicios <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li class="nav-header">Ejercicios</li>
@@ -85,45 +85,282 @@
     </div>
 
     <div class="container marketing">
-      <div class="row"> 
-     	
-     	<ul class="menu_lateral nav nav-tabs nav-stacked affix span3">
+      <div class="row">
+
+        <ul class="menu_lateral nav nav-tabs nav-stacked affix span3">
           <li class="active"><a href="ejercicios_demanda.html">Ejercicios de previsi&oacute;n de la Demanda</a></li>
           <li><a href="ejercicios_oferta.html">Ejercicios de previsi&oacute;n de la Oferta</a></li>
         </ul>
-
+      
         <div class="span9 offset3">
-      		<div class="hero">
-      			<h1>
-      				Ejercicios
-      				<br>
-      				<small>Previsi&oacute;n de la Demanda</small>
-      			</h1>
-      		</div>
+          <div class="hero">
+            <h1>
+              Ejercicios
+              <br>
+              <small>Prevision de la Demanda</small>
+            </h1>
+          </div>
 
-      		<iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
+          <iframe src="#" id="fake-target" name="fake-target" style="width:0px; height:0px; border:0px;"></iframe>
 
-      		<form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
-		        <div class="errorbox-good">
-					<div dir="ltr" class="ss-item  ss-radio">
-						<div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1288492921"><div class="ss-q-title">El enunciado de la pregunta</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-							<ul class="ss-choices">
-								<li class="ss-choice-item correcta"><label><input type="radio" name="entry.399294581" value="Option 1" id="group_399294581_1" class="ss-q-radio" aria-label="Option 1"><label class="ss-choice-label" for="group_399294581_1">Option 1. lorem ut vel magnis! Sagittis elementum habitasse. Odio! Ac lundium! Pulvinar ultricies integer? Facilisis odio! Est et enim augue, purus sociis et, nisi porttitor, platea. Odio enim pulvinar velit integer dis, enim mauris ultricies ultrices elementum montes! Urna sagittis natoque lorem pellentesque mus, eu etiam integer mauris! Sed urna, eros nascetur sociis ut. Hac, aliquet. Magna integer ultricies integer amet et parturient a in aliquet adipiscing eros elit ridiculus, eu, adipiscing magna? Facilisis habitasse porttitor, tincidunt quis! Enim ridiculus in tincidunt et ut? Penatibus dapibus, tincidunt in, risus scelerisque mattis turpis, elementum ridi</label></label></li> 
-								<li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.399294581" value="Option 2" id="group_399294581_2" class="ss-q-radio" aria-label="Option 2"><label class="ss-choice-label" for="group_399294581_2">Option 2</label></label></li> 
-								<li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.399294581" value="Option 3" id="group_399294581_3" class="ss-q-radio" aria-label="Option 3"><label class="ss-choice-label" for="group_399294581_3">Option 3</label></label></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+          <form action="" onsubmit="envia(this);" target="fake-target" method="POST" id="ss-form">
+            
+        <form action="https://docs.google.com/forms/d/1QceIaj-viv0cPQ3VpjMkfbILED9piyiV72LQPy6eubk/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+          <div class="errorbox-good">
+          <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1172765212"><div class="ss-q-title">Escribe tu nombre. <i>Ejemplo: Pérez Pérez, PEPE</i> <input type="text" name="entry.1172765212" value="" class="ss-q-short" id="entry_1172765212" dir="auto" aria-required="true">
+            <label for="itemView.getDomIdToLabel()" aria-label="(Campo obligatorio)"></label>
+          </div>
+          </label>
+          </div>
+        </div>
+      </div>
 
-				<p id="esta_incompleto" class='alert alert-error' style="display:none;">Faltan preguntas por responder</p>
-				<input id="boton_envio" class="btn btn-primary" type="submit" name="submit" value="Terminar el Ejercicio" />
-							
-				<div id="felicidades">
-					<h3>Muy bien!</h3>
-					<p>Has terminado el ejercicio, &eacute;chale un vistazo a tus respuestas a ver que tal</p>
-				</div>
-      		</form>
+      <div class="alert alert-info">
+        <p>En una planificación de efectivos se ha registrado los siguientes niveles de empleo en un periodo de 5 años:</p>
+          <ul>
+            <li><u>Serie histórica</u></li>
+            <li>20</li>
+            <li>21</li>
+            <li>24</li>
+            <li>25</li>
+            <li>15</li>
+            <li>11</li>
+            <li>10</li>
+            <li>10</li>
+            <li>9</li>
+          </ul>
+        <p>Se desea obtener una aproximación al valor futuro de las necesidades de empleo. Observe los datos aportados y aplique la técnica que usted considere oportuna. A continuación conteste a las siguientes preguntas.</p>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1834994570"><div class="ss-q-title">1.- ¿Cuál será el valor futuro de las necesidades de empleo?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1261670883" value="11" id="group_1261670883_1" class="ss-q-radio" aria-label="11"><label class="ss-choice-label" for="group_1261670883_1">11</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1261670883" value="9,67" id="group_1261670883_2" class="ss-q-radio" aria-label="9,67"><label class="ss-choice-label" for="group_1261670883_2">9,67</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1261670883" value="9" id="group_1261670883_3" class="ss-q-radio" aria-label="9"><label class="ss-choice-label" for="group_1261670883_3">9</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+           <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1791791210"><div class="ss-q-title">2.- ¿Cuál de las siguientes técnicas ha podido utilizar?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1932485427" value="Análisis de Ratios" id="group_1932485427_1" class="ss-q-radio" aria-label="Análisis de Ratios"><label class="ss-choice-label" for="group_1932485427_1">Análisis de Ratios</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1932485427" value="Cadenas de Markov" id="group_1932485427_2" class="ss-q-radio" aria-label="Cadenas de Markov"><label class="ss-choice-label" for="group_1932485427_2">Cadenas de Markov</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1932485427" value="Análisis de Tendencias: Medias Móviles" id="group_1932485427_3" class="ss-q-radio" aria-label="Análisis de Tendencias: Medias Móviles"><label class="ss-choice-label" for="group_1932485427_3">Análisis de Tendencias: Medias Móviles</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+      <div class="alert alert-info">
+        <p>La cadena de hoteles “El paraíso” S/A dispone de la siguiente información relativa al personal contratado actualmente en sus 25 hoteles.</p>
+        <table>
+          <tr>
+            <th>Categoría profesional</th>
+            <th>Número de empleados</th>
+          </tr>
+          <tr>
+            <td>Director General</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Director Administración</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>Encargado de Habitaciones</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>Director de Mantenimiento</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Personal de Administración</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>Personal de Mantenimiento</td>
+            <td>33</td>
+          </tr>
+          <tr>
+            <td>Personal de Limpieza</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Personal de Recepción</td>
+            <td>115</td>
+          </tr>
+          <tr>
+            <td>Conserjes</td>
+            <td>53</td>
+          </tr>
+        </table>
+        <p>Está prevista la construcción inminente de 7 nuevos hoteles, los cuales entrarán en funcionamiento dentro de 3 años.</p>
+        <p>Estime la ratio de proporcionalidad de cada categoría profesional, así como el nivel de empleo necesario para cada una y conteste a las siguientes preguntas.</p>
+      </div>
+
+           <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1984908515"><div class="ss-q-title">3.- ¿Cuál de las siguientes alternativas refleja la ratio de proporcionalidad de la categoría profesional: Encargado de Habitaciones?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1188807793" value="25/32" id="group_1188807793_1" class="ss-q-radio" aria-label="25/32"><label class="ss-choice-label" for="group_1188807793_1">25/32</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1188807793" value="60/3" id="group_1188807793_2" class="ss-q-radio" aria-label="60/3"><label class="ss-choice-label" for="group_1188807793_2">60/3</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1188807793" value="60/25" id="group_1188807793_3" class="ss-q-radio" aria-label="60/25"><label class="ss-choice-label" for="group_1188807793_3">60/25</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+           <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1746274444"><div class="ss-q-title">4.- ¿Cuál de las siguientes alternativas refleja la ratio de proporcionalidad de la categoría profesional: Director General?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1193444730" value="25/25" id="group_1193444730_1" class="ss-q-radio" aria-label="25/25"><label class="ss-choice-label" for="group_1193444730_1">25/25</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1193444730" value="32/25" id="group_1193444730_2" class="ss-q-radio" aria-label="32/25"><label class="ss-choice-label" for="group_1193444730_2">32/25</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1193444730" value="25/32" id="group_1193444730_3" class="ss-q-radio" aria-label="25/32"><label class="ss-choice-label" for="group_1193444730_3">25/32</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_514901466"><div class="ss-q-title">5.- Dentro de 3 años, ¿Cuál será el nivel de empleo necesario para la categoría profesional: Personal de Mantenimiento?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.803183117" value="33" id="group_803183117_1" class="ss-q-radio" aria-label="33"><label class="ss-choice-label" for="group_803183117_1">33</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.803183117" value="42,24" id="group_803183117_2" class="ss-q-radio" aria-label="42,24"><label class="ss-choice-label" for="group_803183117_2">42,24</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.803183117" value="18,94" id="group_803183117_3" class="ss-q-radio" aria-label="18,94"><label class="ss-choice-label" for="group_803183117_3">18,94</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info">
+        <table>
+          <tr>
+            <th>Año</th>
+            <th>Cifras de ventas</th>
+            <th>Empleados directos</th>
+          </tr>
+          <tr>
+            <td>N+1</td>
+            <td>250</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>n+2</td>
+            <td>280</td>
+            <td>29</td>
+          </tr>
+          <tr>
+            <td>n+3</td>
+            <td>310</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <td>n+4</td>
+            <td>340</td>
+            <td>36</td>
+          </tr>
+          <tr>
+            <td>n+5</td>
+            <td>380</td>
+            <td>37</td>
+          </tr>
+          <tr>
+            <td>n+6</td>
+            <td>450</td>
+            <td>45</td>
+          </tr>
+        </table>
+        <p>Las ventas previstas para los próximos años N+7, N+8, N+9 ascienden a 600, 680 y 750 unidades económicas respectivamente. Se trata de calcular la demanda de empleados directos para este horizonte temporal a través de la fórmula de regresión siguiente: Y = A + B * X, en la que A = 0,166 y B = 0,1.</p>
+        <p>Halle el valor futuro que adquiere las necesidades de personal para los tres años y conteste a la siguiente pregunta.</p>
+      </div>
+
+           <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2139514131"><div class="ss-q-title">6.- ¿Cuáles serán las necesidades de personal directo para los próximos años?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1105736782" value="Año N+7 = 159,6; Año N+8 = 180,88; Año N+9 = 199,5" id="group_1105736782_1" class="ss-q-radio" aria-label="Año N+7 = 159,6; Año N+8 = 180,88; Año N+9 = 199,5"><label class="ss-choice-label" for="group_1105736782_1">Año N+7 = 159,6; Año N+8 = 180,88; Año N+9 = 199,5</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1105736782" value="Año N+7 = 99,6; Año N+8 = 112,88; Año N+9 = 124,5" id="group_1105736782_2" class="ss-q-radio" aria-label="Año N+7 = 99,6; Año N+8 = 112,88; Año N+9 = 124,5"><label class="ss-choice-label" for="group_1105736782_2">Año N+7 = 99,6; Año N+8 = 112,88; Año N+9 = 124,5</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1105736782" value="Año N+7 = 60,166; Año N+8 = 68,166; Año N+9 = 72,166" id="group_1105736782_3" class="ss-q-radio" aria-label="Año N+7 = 60,166; Año N+8 = 68,166; Año N+9 = 72,166"><label class="ss-choice-label" for="group_1105736782_3">Año N+7 = 60,166; Año N+8 = 68,166; Año N+9 = 72,166</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+      <div class="alert alert-info">
+        <p>En el hotel “El Manantial” se ha decidido estimar las necesidades futuras de personal aplicando la técnica de correlación-regresión. Para ello, se ha obtenido información sobre los niveles de empleo de 15 hoteles con diversos grados de capacidad o números de camas. Este hotel quiere ampliar la capacidad del hotel de 80 a 110 camas.</p>
+        <p>Conteste a la siguiente pregunta:</p>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2097214668"><div class="ss-q-title">7.- Usted debe estimar a través de la técnica de correlación-regresión, el número de empleados en el servicio de limpieza que el hotel “El Manantial” necesitará cuando se incremente la capacidad en un 37,5%, ¿entre cuál de las siguientes variables debería hallar el coeficiente de correlación?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.2015872825" value="Entre el número de camas que el hotel “El Manantial” quiere tener y el número de empleados en el servicio de limpieza que tienen en plantilla otros hoteles de la zona" id="group_2015872825_1" class="ss-q-radio" aria-label="Entre el número de camas que el hotel “El Manantial” quiere tener y el número de empleados en el servicio de limpieza que tienen en plantilla otros hoteles de la zona"><label class="ss-choice-label" for="group_2015872825_1">Entre el número de camas que el hotel “El Manantial” quiere tener y el número de empleados en el servicio de limpieza que tienen en plantilla otros hoteles de la zona</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.2015872825" value="Entre el número de camas que tienen los otros hoteles de la zona y el número de empleados del servicio de limpieza que estos mismos hoteles tienen en plantilla" id="group_2015872825_2" class="ss-q-radio" aria-label="Entre el número de camas que tienen los otros hoteles de la zona y el número de empleados del servicio de limpieza que estos mismos hoteles tienen en plantilla"><label class="ss-choice-label" for="group_2015872825_2">Entre el número de camas que tienen los otros hoteles de la zona y el número de empleados del servicio de limpieza que estos mismos hoteles tienen en plantilla</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.2015872825" value="Entre el número de camas que tienen los otros hoteles de la zona y el número de empleados del servicio de limpieza que el hotel “El Manantial” tiene actualmente en plantilla" id="group_2015872825_3" class="ss-q-radio" aria-label="Entre el número de camas que tienen los otros hoteles de la zona y el número de empleados del servicio de limpieza que el hotel “El Manantial” tiene actualmente en plantilla"><label class="ss-choice-label" for="group_2015872825_3">Entre el número de camas que tienen los otros hoteles de la zona y el número de empleados del servicio de limpieza que el hotel “El Manantial” tiene actualmente en plantilla</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info">
+        <p>En el hotel “El Manantial” se ha decidido estimar las necesidades futuras de personal aplicando la técnica de correlación-regresión. Para ello, se ha obtenido información sobre los niveles de empleo de 15 hoteles con diversos grados de capacidad o números de camas. Este hotel quiere ampliar la capacidad del hotel de 80 a 110 camas.</p>
+
+        <ul>
+          <li><u>Encargado/a de habitaciones:</u></li>
+          <li>R = 0,34901; Significación = 0,211</li>
+          <li>Capacidad: Media = 135,6; Desviación típica  = 115,14078</li>
+          <li>Encargado/a de habitaciones: Media = 1,6667; Desviación típica = 1,11270</li>
+        </ul>
+        <ul>
+          <li><u>Personal del servicio de recepción:</u></li>
+          <li>R = 0,926; Significación = 0,001</li>
+          <li>Capacidad: Media = 135,6; Desviación típica  = 115,14078</li>
+          <li>Personal del servicio de recepción: Media = 6,3333; Desviación típica = 2,87021</li>
+        </ul>
+        <p>Conteste a las siguientes preguntas:</p>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1369394440"><div class="ss-q-title">8.- ¿Cuál de las siguientes alternativas refleja las necesidades de personal para la categoría: Personal del Servicio de Recepción?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1929233502" value="5,0499" id="group_1929233502_1" class="ss-q-radio" aria-label="5,0499"><label class="ss-choice-label" for="group_1929233502_1">5,0499</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1929233502" value="6,924" id="group_1929233502_2" class="ss-q-radio" aria-label="6,924"><label class="ss-choice-label" for="group_1929233502_2">6,924</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1929233502" value="5,742" id="group_1929233502_3" class="ss-q-radio" aria-label="5,742"><label class="ss-choice-label" for="group_1929233502_3">5,742</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+            <div class="errorbox-good">
+          <div dir="ltr" class="ss-item  ss-radio">
+            <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_907457022"><div class="ss-q-title">9.- ¿Cuál de las siguientes alternativas refleja las necesidades de personal para la categoría: Encargado de Habitaciones?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1727828708" value="No se puede hallar o estimar" id="group_1727828708_1" class="ss-q-radio" aria-label="No se puede hallar o estimar"><label class="ss-choice-label" for="group_1727828708_1">No se puede hallar o estimar</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1727828708" value="2,530" id="group_1727828708_2" class="ss-q-radio" aria-label="2,530"><label class="ss-choice-label" for="group_1727828708_2">2,530</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1727828708" value="2,157" id="group_1727828708_3" class="ss-q-radio" aria-label="2,157"><label class="ss-choice-label" for="group_1727828708_3">2,157</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p id="esta_incompleto" class='alert alert-error' style="display:none;">Faltan preguntas por responder</p>
+        <input id="boton_envio" class="btn btn-primary" type="submit" name="submit" value="Terminar el Ejercicio" />
+              
+        <div id="felicidades">
+          <h3>Muy bien!</h3>
+          <p>Has terminado el ejercicio, &eacute;chale un vistazo a tus respuestas a ver que tal</p>
+        </div>
+          </form>
 
 
 
