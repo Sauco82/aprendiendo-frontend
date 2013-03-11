@@ -74,6 +74,7 @@ table.correlacion{width:100%;margin-top: 20px;}
 	font-size: 130%;
 	text-align: center;
 } 
+.media{text-decoration: overline;}
 .detalles{text-align: center;}
 
 table.datos td.sumandos{background:#BEE5F7;}

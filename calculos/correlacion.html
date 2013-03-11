@@ -321,12 +321,9 @@
               <li><strong>Zy:</strong> número de camareros/as de habitaciones que se necesitará en el hotel en puntuaciones típicas</li>
               <li><strong>Rxy:</strong> coeficiente de correlación entre el número de camas (x) y el número de camareros/as de habitaciones (y) que actualmente existen en los diversos hoteles analizados. En el ejemplo R= 0,876</li>
               <li><strong>Zx:</strong> número de camas al que se quiere ampliar la capacidad del hotel en puntuaciones típicas
-              <div class="cuenta_margenes_ejemplo">
-              <div class="cuenta">
-                <p>Zx = 110 - 135,6/ 115,1408 = -0,2223364</p>
-                <p>Por lo tanto Zy = 0,876 x (- 0,2223364) = -0,1947668</p>
-              </div>
-            </div></li>
+                <p class="detalles">Zx = 110 - 135,6/ 115,1408 = -0,2223364</p>
+                <p class="detalles">Por lo tanto Zy = 0,876 x (- 0,2223364) = -0,1947668</p>
+              </li>
             </ul>
             
         
@@ -337,7 +334,7 @@
               <strong class="nombre">Zy</strong>
               <span class="igual">=</span>
               <div class="fraccion">
-                <span class="dividendo">Y - media de Y</span>
+                <span class="dividendo">Y - <span class="media">Y</span></span>
                 <span class="divisor">Sdy</span>
               </div>
             </div>
@@ -345,7 +342,7 @@
           <p>Como queremos despejar la Y, la fórmula nos queda así</p>
           <div class="cuenta_correlacion ejemplo well">
               <div class="cuenta">
-                <p>Y = Zy * Sdy + media de Y</p>
+                <p>Y = Zy * Sdy + <span class="media">Y</span></p>
                 <p>Y= -0,1947668 * 3,4268 + 7,2 = 6,532</p>
               </div>
           </div>

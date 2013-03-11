@@ -190,12 +190,10 @@
           <hr>
 
           <p>Para calcular la oferta interna de mano de obra en el año n+2, habrá que hallar el producto del vector estado año n+1 por la matriz de transición de la misma forma que lo hemos visto en el ejemplo. Esta operación se repite para la estimación de los siguientes momentos temporales (por ejemplo, año n+3, año n+4, etc.)</p>
-          <p class="alert warning">Es importante tener en cuenta que para el cálculo de empleados que sale de la empresa en un año posterior (por ejemplo, en el año n+2) al calculado previamente (año n+1), es necesario sustituir en el vector estado año n+2, el número de empleados que salieron por un 0 pues, si no se hace, cuando calculemos el número de empleados que salen de la empresa   en el año n+2, éste reflejará también los que ya salieron en el año n+1.
-            <div class="cuenta_margenes_ejemplo">
-              <div class="cuenta">
-                <p>|35, 145, 350, 0|</p>
-              </div>
-          </div></p>
+          <div class="alert alert-info">
+            <p>Es importante tener en cuenta que para el cálculo de empleados que sale de la empresa en un año posterior (por ejemplo, en el año n+2) al calculado previamente (año n+1), es necesario sustituir en el vector estado año n+2, el número de empleados que salieron por un <strong>0</strong> pues, si no se hace, cuando calculemos el número de empleados que salen de la empresa   en el año n+2, éste reflejará también los que ya salieron en el año n+1.</p>
+            <p class="ecuacion">|35, 145, 350, <strong>0</strong>|</p>
+          </div>
           
           <p>Los resultados obtenidos sobre la oferta interna de mano de obra existente en el futuro (año n+1, año n+2, etc.) serán los datos que se confronten con los relativos a la demanda prevista para los mismos años, comparando necesidades o demandas futuras con la oferta futura.  Esta comparación nos permitirá establecer las acciones correctivas que se estimen oportunas.</p>
           <p>Por ejemplo, supongamos que dentro de 1 año (año n+2 si contamos desde el comienzo del ejemplo) la necesidad futura de empleo para la categoría profesional de supervisores es de 90. Según los resultados obtenidos para esta categoría profesional, la oferta interna de supervisores será de 145.</p>
