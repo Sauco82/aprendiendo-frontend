@@ -10,18 +10,18 @@
     <script src="js/correccion.js"></script>
     <script>
         $().ready(
-      function(){$('#felicidades').hide();}
-    );
-    function envia(form){
-      var numero_de_preguntas = 9;
-      $('.warning').remove();
-      if (valida(numero_de_preguntas)){
-        form.action='https://docs.google.com/forms/d/1QceIaj-viv0cPQ3VpjMkfbILED9piyiV72LQPy6eubk/formResponse';
-        muestraSoluciones();
-      } else if (!valida(numero_de_preguntas)) {
-        $("#esta_incompleto").show();
-      } 
-    }
+            function(){$('#felicidades').hide();}
+        );
+        function envia(form){
+            var numero_de_preguntas = 9;
+            $('.warning').remove();
+            if (valida(numero_de_preguntas)){
+                form.action='https://docs.google.com/forms/d/1QceIaj-viv0cPQ3VpjMkfbILED9piyiV72LQPy6eubk/formResponse';
+                muestraSoluciones();
+            } else if (!valida(numero_de_preguntas)) {
+                $("#esta_incompleto").show();
+            } 
+        }
     </script>
   </head>
   <body>
@@ -97,7 +97,7 @@
             <h1>
               Ejercicios
               <br>
-              <small>Prevision de la Demanda</small>
+              <small>Previsión de la Demanda</small>
             </h1>
           </div>
 

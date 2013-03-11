@@ -95,24 +95,23 @@
       		</div>
 
       		<h2>Matriz de transición</h2>
-          <p>Ésta técnica, aplicada al análisis de movimientos de personal, permite observar la información relativa a las diferentes categorías profesionales y ayuda a conocer las probabilidades que tienen los empleados de cambiar de un puesto, o categoría profesional, a otro</p>
-          <p>Estas probabilidades de trasvase entre puestos se calculan abarcando el tiempo entre dos momentos temporales y afectan a:</p>
+          <p>Ésta técnica, aplicada al análisis de movimientos de personal, permite conocer las probabilidades que tienen los empleados de cambiar de un puesto, o categoría profesional, a otro; de permanecer en el mismo puesto o categoría; o de salir de la empresa entre dos momentos temporales, por ejemplo, del año n (momento actual) al año n+1 (dentro de 1 año).</p>
+          <p>Las probabilidades de trasvase asociadas a cada categoría profesional se basan en datos históricos o del pasado de la empresa, relacionados con los movimientos de personal. Los movimientos de personal con los que trabajaremos son:</p>
           <ul>
             <li><strong>1.</strong> Promociones</li>
-            <li><strong>2.</strong> Bajas</li>
-            <li><strong>3.</strong> Nuevas contrataciones</li>
-            <li><strong>4.</strong> Trabajadores que permanecen en sus puestos (Índice de supervivencia)</li>
+            <li><strong>2.</strong> Rotación externa: Bajas o salidas de la organización</li>
+            <li><strong>3.</strong> Índice de supervivencia: Trabajadores que permanecen en sus puestos</li>
+            <li><strong>4.</strong> Nuevas contrataciones</li>
           </ul>
 
           <hr>
-          <p>Las probabilidades de trasvase se reflejan en la tabla en forma de proporciones con valores entre 0 (probabilidad nula) y 1 (probabilidad absoluta) de forma que la suma de los elementos de las filas y las columnas debe ser igual a 1.</p>
-          <p class="alert alert-warning">Cuando se aplica la técnica, las probabilidades de trasvase hacen referencia al número de empleados de cada categoría global, y no al global de empleados de la empresa, por lo que los elementos de las columnas no tienen porqué sumar 1.</p> 
-          <p>Estas proporciones se basan en datos históricos de la empresa relacionados con los movimientos de personal</p>
+          <p>Las probabilidades de trasvase se reflejan en una <strong>matriz cuadrada</strong> en forma de proporciones con valores entre 0 (probabilidad nula) y 1 (probabilidad absoluta) de forma que la suma de los elementos de las filas y las columnas debe ser igual a 1.</p>
+          <p class="alert alert-warning">Cuando se aplica la técnica a la previsión de la oferta de mano de obra, las probabilidades no hacen referencia al número global de empleados, sino al número de empleados de cada categoría profesional o colectivo, de tal manera que la suma de las probabilidades de las filas debe ser igual a 1, pero la suma de las probabilidades de las columnas no tienen por qué sumar 1.</p>
           <p>La tabla en la que se reflejan las proporciones admite dos lecturas:</p>
-          <p>La tabla en la que se reflejan las proporciones admite dos lecturas:</p>
+          
           <ul>
-            <li><strong>1.</strong> Una lectura por filas que responde a la pregunta ¿Cuál es el destino profesional del colevtivo “i”?</li>
-            <li><strong>2.</strong> Una lectura por columnas que responde a la pregunta ¿De dónde proceden los elementos del conjunto “j”?</li>
+            <li><strong>1.</strong> Una lectura por filas que responde a la pregunta ¿Cuál es el destino profesional del colevtivo “X”?</li>
+            <li><strong>2.</strong> Una lectura por columnas que responde a la pregunta ¿De dónde proceden los trabajadores del conjunto “X”?</li>
           </ul>
 
           <table>
@@ -158,16 +157,16 @@
             </tr>
             <tr class="fila_popover">
               <td></td>
-              <td><span class="btn btn-primary btn-mini popovers" data-placement="bottom" data-content="¿De dónde provienen los directores de producción?. Este colectivo procede en un 75% del mismo colectivo; un 20% de los supervisores de producción pasan a engrosar este grupo, y el resto es logrado recurriendo a las contrataciones externas.">Descripci&oacute;n</span></td>
-              <td><span class="btn btn-primary btn-mini popovers" data-placement="bottom" data-content="¿de dónde provienen los supervisores de producción?. Este colectivo procede en un 70% del mismo colectivo; un 15% del grupo de operarios y el resto es logrado recurriendo a las contrataciones externas.">Descripci&oacute;n</span></td>
-              <td><span class="btn btn-primary btn-mini popovers" data-placement="bottom" data-content="¿de dónde provienen los operarios?. Este colectivo procede en un 70% del mismo colectivo, el resto es logrado recurriendo a las contrataciones externas.">Descripci&oacute;n</span></td>
-              <td><span class="btn btn-primary btn-mini popovers" data-placement="bottom" data-content="¿de dónde provienen los trabajadores que se marchan de la empresa?. Estos trabajadores proceden de distintos colectivos, de tal forma que, un 25% de los directivos, un 10% de los supervisores, y un 15% de los operarios abandonan o salen fuera de la empresa. Un 100% de los ajenos a la empresa o de fuera de la empresa permanecen fuera de ella, o sea, en el mercado laboral externo.">Descripci&oacute;n</span></td>
+              <td><span class="btn btn-primary btn-mini popovers" data-placement="bottom" data-content="¿De dónde provienen los directores de producción?. Este colectivo procede del 75% del mismo colectivo; del 20% de los supervisores de producción y, si fuera necesario, esto es, si no hubiera suficientes directores de producción para cubrir las necesidades futuras, se acudiría a contrataciones externas. ">Descripci&oacute;n</span></td>
+              <td><span class="btn btn-primary btn-mini popovers" data-placement="bottom" data-content="¿De dónde provienen los supervisores de producción?. Este colectivo procede del 70% del mismo colectivo o categoría profesional; del 15% del grupo de operarios y, si no hubiera suficientes supervisores de producción para cubrir las necesidades, se acudiría a las contrataciones externas.">Descripci&oacute;n</span></td>
+              <td><span class="btn btn-primary btn-mini popovers" data-placement="bottom" data-content="¿De dónde provienen los operarios?. Este colectivo procede del 70% del mismo colectivo y si fuera necesario, se acudiría a las contrataciones externas.">Descripci&oacute;n</span></td>
+              <td><span class="btn btn-primary btn-mini popovers" data-placement="bottom" data-content="¿De dónde provienen los trabajadores que se marchan de la empresa?. Estos trabajadores proceden de distintos colectivos: del 25% de los directivos, del 10% de los supervisores, y del 15% de los operarios. Estos porcentajes de empleados abandonan o salen fuera de la empresa.">Descripci&oacute;n</span></td>
               <td></td>
             </tr>
           </table>
 
           <hr>
-          <p class="alert alert-warning">Cuando se realiza la lectura de una columna, los porcentajes indicados no son comparables entre si ya que se refieren a bases distintas (a sus colectivos profesionales). Por ello, en la lectura de la primera columna no podemos decir que el 95% de las necesidades están cubiertas ya que no podemos sumar el 75% de los directores de producción + el 20% de los supervisores, salvo en términos absolutos. Es decir, no sumando los porcentajes, sino las cantidades derivadas de esos porcentajes</p>
+          <p class="alert alert-warning">Cuando se realiza la lectura de una columna, los porcentajes indicados no son comparables entre si, ya que se refieren a bases distintas (a sus colectivos profesionales). Por ello, en la lectura de la primera columna no podemos decir que el 95% de las necesidades están cubiertas, ya que no podemos sumar el 75% de los directores de producción + el 20% de los supervisores, salvo en términos absolutos. Es decir, no sumando los porcentajes, sino las cantidades derivadas de esos porcentajes partir del número de trabajadores que hay en cada colectivo.</p>
           <p>El <strong>inconveniente</strong> de esta técnica es que no ofrece una estimación directa de la disponibilidad de mano de obra en el futuro, es decir, no nos indica el número de empleados que estarán disponibles en la organización. Para paliar este inconveniente, se complementa con las cadenas de Markov</p>
 
           <p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="markov.html">Cadenas de Markov »</a></p> 

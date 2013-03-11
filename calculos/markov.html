@@ -95,8 +95,8 @@
       		</div>
 
       		<h2>Cadenas de Markov</h2>
-          <p>A partir del conocimiento de la situación en un momento determinado (vector estado año “n”) y de las probabilidades de trasvase calculadas en la matriz de transición, podemos calcular la situación de la oferta de mano de obra en un punto del futuro o n+1</p>
-          <p>Para la explicación tanto de la multiplicación de matrices como de la resolución de esta técnica lo veremos con un ejemplo:</p>
+          <p>A partir del conocimiento de la situación de la oferta en un momento determinado (vector estado año “n”) y de las probabilidades de trasvase calculadas en la matriz de transición, podemos calcular la situación de la oferta de mano de obra en un punto del futuro, por ejemplo, n+1, n+2,  etc.</p>
+          <p>Para ello, no hay más que realizar el producto del vector estado del año “n” por la matriz de transición. Para ver como se realiza este producto utilizaremos un ejemplo:</p>
 
           <h4>Ejemplo</h4>
           <p>Partiendo de los datos de la matriz de transición del apartado anterior:</p>
@@ -139,7 +139,7 @@
             </tr>
           </table>
           <hr>
-          <p> Supongamos que la situación en el momento "<strong>n</strong>" responde a <strong>20 directores de producción, 100 supervisores y 500 operarios</strong> ¿Cual será la situación de la oferta en el periodo "<strong>n+1</strong>"?</p>
+          <p> Supongamos que la situación de la oferta de mano de obra en el momento "<strong>n</strong>" responde a <strong>20 directores de producción, 100 supervisores y 500 operarios</strong> ¿Cuál será la situación de la oferta en el periodo "<strong>n+1</strong>"?</p>
 
           <div class="cuenta_markov well">
             <p class="operando1">|20, 100, 500, 0|  x</p>
@@ -169,7 +169,7 @@
 				  <td class="linea_der">1</td>
 				</tr>
 			</table>
-            <p class="resultado">= 35, 145, 350, 90</p>
+            <p class="resultado">= |35, 145, 350, 90|</p>
 			<hr>
             <div class="resultados">
               <p><strong>35</strong>= (20*0,75) + (100*0,2) + (500*0) + (0*0)</p>
@@ -184,12 +184,46 @@
             <li>La oferta interna de <strong>directores ascenderá a 35</strong></li>
             <li>La oferta de <strong>supervisores ascenderá a 145</strong></li>
             <li>Los operarios <strong>disminuiran hasta 350</strong></li>
-            <li><strong>90 trabajadores</strong> (directivos, supervisores y operarios) <strong>se marcharán de la empresa</strong></li>
+            <li><strong>90 trabajadores en total</strong> (directivos, supervisores y operarios) <strong>se marcharán de la empresa</strong></li>
           </ul>
 
+          <hr>
+
+          <p>Para calcular la oferta interna de mano de obra en el año n+2, habrá que hallar el producto del vector estado año n+1 por la matriz de transición de la misma forma que lo hemos visto en el ejemplo. Esta operación se repite para la estimación de los siguientes momentos temporales (por ejemplo, año n+3, año n+4, etc.)</p>
+          <p class="alert warning">Es importante tener en cuenta que para el cálculo de empleados que sale de la empresa en un año posterior (por ejemplo, en el año n+2) al calculado previamente (año n+1), es necesario sustituir en el vector estado año n+2, el número de empleados que salieron por un 0 pues, si no se hace, cuando calculemos el número de empleados que salen de la empresa   en el año n+2, éste reflejará también los que ya salieron en el año n+1.
+            <div class="cuenta_margenes_ejemplo">
+              <div class="cuenta">
+                <p>|35, 145, 350, 0|</p>
+              </div>
+          </div></p>
+          
+          <p>Los resultados obtenidos sobre la oferta interna de mano de obra existente en el futuro (año n+1, año n+2, etc.) serán los datos que se confronten con los relativos a la demanda prevista para los mismos años, comparando necesidades o demandas futuras con la oferta futura.  Esta comparación nos permitirá establecer las acciones correctivas que se estimen oportunas.</p>
+          <p>Por ejemplo, supongamos que dentro de 1 año (año n+2 si contamos desde el comienzo del ejemplo) la necesidad futura de empleo para la categoría profesional de supervisores es de 90. Según los resultados obtenidos para esta categoría profesional, la oferta interna de supervisores será de 145.</p>
+          <table>
+            <tr></tr>
+              <td>Momento</td>
+              <td>Supervisores necesitados</td>
+              <td>Diferencia</td>
+            <tr></tr>
+              <td>n</td>
+              <td>100</td>
+              <td></td>
+            <tr></tr>
+              <td>n+1</td>
+              <td>145</td>
+              <td>+ 45</td>
+            <tr></tr>
+              <td>n+2</td>
+              <td>90</td>
+              <td>- 55</td>
+
+          </table>
+          <p>¿Necesitaremos conseguir supervisores del mercado laboral externo o, por el contrario, será necesario dar de baja a alguno/s?</p>
+          <p>Lógicamente, nos sobran supervisores, concretamente, 55. Por tanto, deberemos dar de baja o emprender procesos de desafectación con 55 de ellos.</p>
 
 
-         <p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="markov.html">Cadenas de Markov »</a></p> 
+
+         <p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="ejercicios_demanda.html">Ejercicios »</a></p> 
           
 
         </div>

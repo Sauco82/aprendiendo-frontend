@@ -120,12 +120,12 @@
       <div class="span5">
         
       <p class="alert alert-info">
-        El resultado oscila entre -1 y 1. Cuanto más nos acerquemos a los extremos más relación hay (si el resultado es 0, no hay ninguna). Se acepta la existencia de correlación a partir de 0,4
+        El resultado oscila entre -1 y +1. Cuanto más nos acerquemos a los extremos más relación hay (si el resultado es 0, no hay ninguna). Se acepta la existencia de correlación a partir de valores absolutos superiores a 0,4 y nivel de significación de p&le;0,05
       </p>
       </div>
       
     </div>
-		<p class="alert alert-warning">Es importante tener en cuenta que la validez de esta técnica depende del coeficiente de correlación entre la variable causal (el indicador de actividad) y la variable a predecir (nivel de empleo). Si esta correlación no es válida, no se puede aplicar este análisis con esas variables.</p>	
+		<p class="alert alert-warning">Es importante tener en cuenta que la validez de esta técnica depende del coeficiente de correlación entre la variable causal (el indicador de actividad) y la variable a predecir (nivel de empleo). Si esta correlación no es válida, no se puede aplicar este análisis con esas variables. Éste solo tiene sentido, cuando hay relación entre la variable causal o predictora y la variable a predecir.</p>
 
 		<p>Aunque en ocasiones la parábola puede ofrecer coeficientes de correlación mejores entre la variable causal y el nivel de empleo su fórmula es compleja, de modo que sólo vamos a ver el modelo lineal para la representación de las relaciones entre estas variables que es el modelo más simple</p>
 
@@ -138,10 +138,10 @@
 			
 			<p class="detalles"><span class="btn btn-primary" data-toggle="collapse" data-target="#directas"> Detalles </span></p>
 			<div id="directas" class="collapse" >
-				<p><strong>Y:</strong> Variable que representa el nivel de empleo</p>
+				<p><strong>Y:</strong> Variable que representa el nivel de empleo futuro</p>
 				<p><strong>A:</strong> Valor del eje de ordenadas</p>
 				<p><strong>B:</strong> Valor del eje de abcisas</p>
-				<p><strong>X:</strong> Variable causal</p>
+				<p><strong>X:</strong> Variable causal del nivel de empleo en el futuro</p>
 			</div>
 		</div>
 
@@ -288,7 +288,7 @@
           <ul>
             <li>Las medias marginales de X e Y</li>
             <li>El producto de cada X por cada Y</li>
-            <li>Hacer la fórmula Cov(x,y) = 345,6385</li>
+            <li>Aplicar la fórmula Cov(x,y) = 345,6385</li>
           </ul>
           <li><strong>2:</strong> Hallar las desviaciones típicas de X e Y. En este caso nos las dan de modo que</li>
           <ul>
@@ -316,14 +316,39 @@
           <li><strong>4:</strong> Predecir el número de camareros de habitaciones. Se puede hacer, como hemos visto antes, de 2 maneras</li>
           <ul>
             <li>Si conocemos A y B podemos aplicar la fórmula para las puntuaciones directas</li>
-            <li>A través de la fórmula para las puntuaciones típicas. Donde:</li>
+            <li>Si no, a través de la fórmula para las puntuaciones típicas. Donde:</li>
             <ul>
               <li><strong>Zy:</strong> número de camareros/as de habitaciones que se necesitará en el hotel en puntuaciones típicas</li>
-              <li><strong>Rxy:</strong> coeficiente de correlación entre el número de camas (x) y el número de camareros/as de habitaciones (y) que actualmenre existen en los diversos hoteles analizados</li>
-              <li><strong>Zx:</strong> número de camas al que se quiere ampliar la capacidad del hotel en puntuaciones típicas</li>
+              <li><strong>Rxy:</strong> coeficiente de correlación entre el número de camas (x) y el número de camareros/as de habitaciones (y) que actualmente existen en los diversos hoteles analizados. En el ejemplo R= 0,876</li>
+              <li><strong>Zx:</strong> número de camas al que se quiere ampliar la capacidad del hotel en puntuaciones típicas
+              <div class="cuenta_margenes_ejemplo">
+              <div class="cuenta">
+                <p>Zx = 110 - 135,6/ 115,1408 = -0,2223364</p>
+                <p>Por lo tanto Zy = 0,876 x (- 0,2223364) = -0,1947668</p>
+              </div>
+            </div></li>
             </ul>
+            
+        
           </ul>
           <li><strong>5:</strong> -0,1947668 es el número de camareros de habitaciones que es necesario tener en plantilla pero en puntuaciones típicas, hace falta pasarlas a puntuaciones directas</li>
+          <div class="cuenta_correlacion ejemplo well">
+              <div class="cuenta">
+              <strong class="nombre">Zy</strong>
+              <span class="igual">=</span>
+              <div class="fraccion">
+                <span class="dividendo">Y - media de Y</span>
+                <span class="divisor">Sdy</span>
+              </div>
+            </div>
+            </div>
+          <p>Como queremos despejar la Y, la fórmula nos queda así</p>
+          <div class="cuenta_correlacion ejemplo well">
+              <div class="cuenta">
+                <p>Y = Zy * Sdy + media de Y</p>
+                <p>Y= -0,1947668 * 3,4268 + 7,2 = 6,532</p>
+              </div>
+          </div>
           <li>El resultado (6,5 aprox) nos indica que hay que tener en plantilla 6 ó 7 camareros de habitaciones. Como actualmente tenemos 3, habrá que contratar 3 ó 4 más, depende del juicio administrativo</li>
         </ul>
 
@@ -331,7 +356,7 @@
 		<p>Aunque de las tres técnicas vistas es la más precisa también presenta inconvenientes ya que la correlación no es realista, pues supone que todos los demás factores y todas las circunstancias que rodean a la empresa permanecen inalterables, lo cual raramente se da en la realidad</p>
 		<p>No obstante, puede llegar a ofrecer una estimación de gran poder predictivo</p>
 		
-		<p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="ejemplos_demanda.html">Ejemplos »</a></p>
+		<p class="siguiente"><a class="btn btn-primary btn-large pull-right" href="transicion.html">Previsión de la Oferta »</a></p>
 
         </div>
       </div>
