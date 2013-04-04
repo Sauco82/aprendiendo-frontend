@@ -8,10 +8,18 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        $(function(){
-          // carousel demo
-          $('.popovers').popover();
-        })
+        $().ready(
+          function(){
+            $('#felicidades').hide();
+            var hoy = new Date().getTime();
+            var principio = new Date("04/06/2013").getTime();
+            var fin = new Date("04/07/2013").getTime();
+            if ((hoy>principio) && (hoy<fin)){
+              $('#examen_oculto').show();
+              $('#anuncio').hide();
+            }
+          }
+        );
     </script>
   </head>
   <body>
@@ -79,19 +87,19 @@
     
     <div class="container marketing">
       <div class="row">       
-        <div class="span9 offset3">
+        <div class="span9 offset1">
       		<div class="hero">
       			<h1>
       				Examen
       				<br>
-      				<small>No disponible todavia</small>
+      				<small id="anuncio">No disponible todavia</small>
       			</h1>
       		</div>
         </div>
       </div>
         <hr>
 
-        <form action="https://docs.google.com/forms/d/1UOPIQ5Y7V8ou0lXB5pqbDmLUjFbxKA1svwPJ0wkQv6Q/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+        <form id="examen_oculto" class="span9 offset1" style="display:none" action="https://docs.google.com/forms/d/1UOPIQ5Y7V8ou0lXB5pqbDmLUjFbxKA1svwPJ0wkQv6Q/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
               <div class="errorbox-good">
             <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1209944393"><div class="ss-q-title">Escribe tu nombre <div class="ss-q-help ss-secondary-text" dir="ltr">Ejemplo: Pérez Pérez, PEPE</div></label><input type="text" name="entry.1209944393" value="" class="ss-q-short" id="entry_1209944393" dir="auto" aria-required="true">
             <label for="itemView.getDomIdToLabel()" aria-label="(Campo obligatorio)"></label>
@@ -359,7 +367,8 @@ A partir de esta información y utilizando la siguiente fórmula Zy = Rxy * Zx  
 <div class="ss-item ss-navigate"><div class="ss-form-entry">
 <input type="submit" name="submit" value="Enviar" id="ss-submit">
 </div></div></form>
-        <footer>
+
+        <footer class="span12">
           <p class="pull-right"><a href="#">Volver arriba</a></p>
           <p>© 2013 Sauco and Milius Inc. </p>
         </footer>
