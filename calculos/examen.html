@@ -8,10 +8,18 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        $(function(){
-          // carousel demo
-          $('.popovers').popover();
-        })
+        $().ready(
+          function(){
+            $('#felicidades').hide();
+            var hoy = new Date().getTime();
+            var principio = new Date("04/06/2013").getTime();
+            var fin = new Date("04/07/2013").getTime();
+            if ((hoy>principio) && (hoy<fin)){
+              $('#examen_oculto').show();
+              $('#anuncio').hide();
+            }
+          }
+        );
     </script>
   </head>
   <body>
@@ -79,19 +87,288 @@
     
     <div class="container marketing">
       <div class="row">       
-        <div class="span9 offset3">
+        <div class="span9 offset1">
       		<div class="hero">
       			<h1>
       				Examen
       				<br>
-      				<small>No disponible todavia</small>
+      				<small id="anuncio">No disponible todavia</small>
       			</h1>
       		</div>
         </div>
       </div>
+        <hr>
 
-       
-        <footer>
+        <form id="examen_oculto" class="span9 offset1" style="display:none" action="https://docs.google.com/forms/d/1UOPIQ5Y7V8ou0lXB5pqbDmLUjFbxKA1svwPJ0wkQv6Q/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1209944393"><div class="ss-q-title">Escribe tu nombre <div class="ss-q-help ss-secondary-text" dir="ltr">Ejemplo: Pérez Pérez, PEPE</div></label><input type="text" name="entry.1209944393" value="" class="ss-q-short" id="entry_1209944393" dir="auto" aria-required="true">
+            <label for="itemView.getDomIdToLabel()" aria-label="(Campo obligatorio)"></label>
+            <span class="ss-required-asterisk"></span></div>
+           
+            </div>
+          </div>
+        </div>
+
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1767765354"><div class="ss-q-title">1.- En una planificación de efectivos el responsable de la misma observa que los niveles de empleo de la empresa en los últimos 4 años han sido los siguientes: 7, 6, 5, 4, 4, 4, 5, 5, 5. Tomando como punto de referencia esta información, ¿cuál será el valor futuro de las necesidades de empleo?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.2142059447" value="4,6" id="group_2142059447_1" class="ss-q-radio" aria-label="4,6"><label class="ss-choice-label" for="group_2142059447_1">4,6</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.2142059447" value="5" id="group_2142059447_2" class="ss-q-radio" aria-label="5"><label class="ss-choice-label" for="group_2142059447_2">5</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.2142059447" value="4,75" id="group_2142059447_3" class="ss-q-radio" aria-label="4,75"><label class="ss-choice-label" for="group_2142059447_3">4,75</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+              
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1390973845"><div class="ss-q-title">2.- La empresa “Qué bien pego, S.A.” dispone en plantilla de 15 operarios que le permiten lograr un nivel de producción de 2000 botes de pegamento por hora. Dado que la demanda del producto ha bajado a lo largo del último año, se ha previsto reducir dicho nivel de producción en un 30% para el año n+1. ¿Cuál de las siguientes alternativas refleja la ratio de proporcionalidad?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.2046401577" value="15 / 2000" id="group_2046401577_1" class="ss-q-radio" aria-label="15 / 2000"><label class="ss-choice-label" for="group_2046401577_1">15 / 2000</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.2046401577" value="15 / 30" id="group_2046401577_2" class="ss-q-radio" aria-label="15 / 30"><label class="ss-choice-label" for="group_2046401577_2">15 / 30</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.2046401577" value="15 / 600" id="group_2046401577_3" class="ss-q-radio" aria-label="15 / 600"><label class="ss-choice-label" for="group_2046401577_3">15 / 600</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+              
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2115791359"><div class="ss-q-title">3.- Según los datos aportados en la pregunta nº 2, ¿cuál será el nivel de empleo necesario para cubrir dicho nivel de producción?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1296753727" value="10,5" id="group_1296753727_1" class="ss-q-radio" aria-label="10,5"><label class="ss-choice-label" for="group_1296753727_1">10,5</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1296753727" value="4,5" id="group_1296753727_2" class="ss-q-radio" aria-label="4,5"><label class="ss-choice-label" for="group_1296753727_2">4,5</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1296753727" value="19,5" id="group_1296753727_3" class="ss-q-radio" aria-label="19,5"><label class="ss-choice-label" for="group_1296753727_3">19,5</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1584551699"><div class="ss-q-title">4.- Para la estimación de la demanda de personal de la empresa “Zas - Zas, S.A.” se va a aplicar la técnica de correlación-regresión. Los datos estadísticos obtenidos para cada categoría profesional son: 
+                <div class= "alert alert-info"> 
+                  <ul>
+                    <li>Director de producción: Rxy = 0,884; Significación = 0,004</li>
+                    <li>Comerciales: Rxy = 0,920; Significación = 0,007</li>
+                    <li>Operarios: Rxy = 0,389; Significación = 0,09 </li>
+                  </ul>
+                  <p>La estimación de la variable predictora en puntuaciones típicas es de Zx = – 0,7437
+A partir de esta información y utilizando la siguiente fórmula Zy = Rxy * Zx  se ha estimado las siguientes necesidades de empleo:</p>
+                  <ul>
+                    <li>Director de producción: Zy = - 0,657</li>
+                    <li>Comerciales: Zy = - 0,684</li>
+                    <li>Operarios: Zy = - 0,289</li>
+                  </ul>
+                </div>¿Cuál de las siguientes categorías profesionales implica una estimación INCORRECTA?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1387989149" value="Director de producción" id="group_1387989149_1" class="ss-q-radio" aria-label="Director de producción"><label class="ss-choice-label" for="group_1387989149_1">Director de producción</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1387989149" value="Comerciales" id="group_1387989149_2" class="ss-q-radio" aria-label="Comerciales"><label class="ss-choice-label" for="group_1387989149_2">Comerciales</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1387989149" value="Operarios" id="group_1387989149_3" class="ss-q-radio" aria-label="Operarios"><label class="ss-choice-label" for="group_1387989149_3">Operarios</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_946024288"><div class="ss-q-title">5.- Usted debe estimar a través de la técnica de correlación-regresión, el número de operarios que la empresa de productos lácteos “La Lecherita, S/A” necesitará cuando se incremente en un 20% el número de yogures al mes que produce, ¿entre cuál de las siguientes variables debería hallar el coeficiente de correlación?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.600515614" value="Entre el número de yogures que la empresa “La Lecherita” quiere hacer al mes y el número de operarios que tienen en plantilla las otras empresas de productos lácteos de la zona" id="group_600515614_1" class="ss-q-radio" aria-label="Entre el número de yogures que la empresa “La Lecherita” quiere hacer al mes y el número de operarios que tienen en plantilla las otras empresas de productos lácteos de la zona"><label class="ss-choice-label" for="group_600515614_1">Entre el número de yogures que la empresa “La Lecherita” quiere hacer al mes y el número de operarios que tienen en plantilla las otras empresas de productos lácteos de la zona</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.600515614" value="Entre el número de yogures que las otras empresas de productos lácteos de la zona hacen al mes y el número de operarios que la empresa “La Lecherita” tiene actualmente en plantilla" id="group_600515614_2" class="ss-q-radio" aria-label="Entre el número de yogures que las otras empresas de productos lácteos de la zona hacen al mes y el número de operarios que la empresa “La Lecherita” tiene actualmente en plantilla"><label class="ss-choice-label" for="group_600515614_2">Entre el número de yogures que las otras empresas de productos lácteos de la zona hacen al mes y el número de operarios que la empresa “La Lecherita” tiene actualmente en plantilla</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.600515614" value="Entre el número de yogures que las otras empresas de productos lácteos de la zona hacen al mes y el número de operarios que estas mismas empresas tienen en plantilla" id="group_600515614_3" class="ss-q-radio" aria-label="Entre el número de yogures que las otras empresas de productos lácteos de la zona hacen al mes y el número de operarios que estas mismas empresas tienen en plantilla"><label class="ss-choice-label" for="group_600515614_3">Entre el número de yogures que las otras empresas de productos lácteos de la zona hacen al mes y el número de operarios que estas mismas empresas tienen en plantilla</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_141421219"><div class="ss-q-title">6.- Partiendo de la siguiente matriz de transición
+                <div class= "alert alert-info"> 
+                <table>
+                  <tr>
+                    <td></td>
+                    <td>Director de proyectos</td>
+                    <td>Ayudante de director</td>
+                    <td>Encargado de sección</td>
+                    <td>Controladores</td>
+                    <td>Ajeno a la organización</td>
+                  </tr>
+                  <tr>
+                    <td>a) Director de proyectos</td>
+                    <td>0,8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0,2</td>
+                  </tr>
+                  <tr>
+                    <td>b) Ayudante de director</td>
+                    <td>0,2</td>
+                    <td>0,7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0,1</td>
+                  </tr>
+                  <tr>
+                    <td>c) Encargado de sección</td>
+                    <td>0</td>
+                    <td>0,1</td>
+                    <td>0,7</td>
+                    <td>0</td>
+                    <td>0,2</td>
+                  </tr>
+                  <tr>
+                    <td>d) Controladores</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0,1</td>
+                    <td>0,8</td>
+                    <td>0,1</td>
+                  </tr>
+                  <tr>
+                    <td>e) Ajeno a la organización</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                </div>
+                ¿Cuál será el destino profesional de los “ayudantes de director” dentro de 1 año?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1838060441" value="El 70% permanece en la misma categoría, &nbsp;el 10% promocionan a encargados de sección y ninguno abandona la organización" id="group_1838060441_1" class="ss-q-radio" aria-label="El 70% permanece en la misma categoría, &nbsp;el 10% promocionan a encargados de sección y ninguno abandona la organización"><label class="ss-choice-label" for="group_1838060441_1">El 70% permanece en la misma categoría, &nbsp;el 10% promocionan a encargados de sección y ninguno abandona la organización</label></label></li> 
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.1838060441" value="El 70% permanece en la misma categoría, el 20% promociona a director de proyectos &nbsp;y el 10% abandona la organización" id="group_1838060441_2" class="ss-q-radio" aria-label="El 70% permanece en la misma categoría, el 20% promociona a director de proyectos &nbsp;y el 10% abandona la organización"><label class="ss-choice-label" for="group_1838060441_2">El 70% permanece en la misma categoría, el 20% promociona a director de proyectos &nbsp;y el 10% abandona la organización</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.1838060441" value="El 20% permanece en la misma categoría, el 70% promociona a director de proyecto y el 10% abandona la organización" id="group_1838060441_3" class="ss-q-radio" aria-label="El 20% permanece en la misma categoría, el 70% promociona a director de proyecto y el 10% abandona la organización"><label class="ss-choice-label" for="group_1838060441_3">El 20% permanece en la misma categoría, el 70% promociona a director de proyecto y el 10% abandona la organización</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1517640192"><div class="ss-q-title">7.- Como responsables del Departamento de RR.HH de la empresa NARCEA, S.A. pretendemos conocer la disponibilidad de empleados por categorías profesionales que tendremos el próximo año (n+1). Partiendo del vector estado del período actual (año n) y de la correspondiente matriz de transición:
+                <div class= "alert alert-info"> 
+                <p>|10,50,300,500,0|</p>
+                <table>
+                  <tr>
+                    <td></td>
+                    <td>Director de proyectos</td>
+                    <td>Ayudante de director</td>
+                    <td>Encargado de sección</td>
+                    <td>Controladores</td>
+                    <td>Ajeno a la organización</td>
+                  </tr>
+                  <tr>
+                    <td>a) Director de proyectos</td>
+                    <td>0,8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0,2</td>
+                  </tr>
+                  <tr>
+                    <td>b) Ayudante de director</td>
+                    <td>0,2</td>
+                    <td>0,7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0,1</td>
+                  </tr>
+                  <tr>
+                    <td>c) Encargado de sección</td>
+                    <td>0</td>
+                    <td>0,1</td>
+                    <td>0,7</td>
+                    <td>0</td>
+                    <td>0,2</td>
+                  </tr>
+                  <tr>
+                    <td>d) Controladores</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0,1</td>
+                    <td>0,8</td>
+                    <td>0,1</td>
+                  </tr>
+                  <tr>
+                    <td>e) Ajeno a la organización</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                </div>
+             
+                ¿Cuántos Encargados de sección tendremos en el año n+1?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item correcta"><label><input type="radio" name="entry.25586112" value="260" id="group_25586112_1" class="ss-q-radio" aria-label="260"><label class="ss-choice-label" for="group_25586112_1">260</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.25586112" value="210" id="group_25586112_2" class="ss-q-radio" aria-label="210"><label class="ss-choice-label" for="group_25586112_2">210</label></label></li> 
+              <li class="ss-choice-item incorrecta"><label><input type="radio" name="entry.25586112" value="160" id="group_25586112_3" class="ss-q-radio" aria-label="160"><label class="ss-choice-label" for="group_25586112_3">160</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2056290829"><div class="ss-q-title">8.- Según los datos aportados en la pregunta nº 7, ¿Cuántos empleados saldrán de la empresa en el año n+2?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item"><label><input type="radio" name="entry.1057601022" value="102,1" id="group_1057601022_1" class="ss-q-radio" aria-label="102,1"><label class="ss-choice-label" for="group_1057601022_1">102,1</label></label></li> 
+              <li class="ss-choice-item"><label><input type="radio" name="entry.1057601022" value="165,1" id="group_1057601022_2" class="ss-q-radio" aria-label="165,1"><label class="ss-choice-label" for="group_1057601022_2">165,1</label></label></li> 
+              <li class="ss-choice-item"><label><input type="radio" name="entry.1057601022" value="117" id="group_1057601022_3" class="ss-q-radio" aria-label="117"><label class="ss-choice-label" for="group_1057601022_3">117</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1119366778"><div class="ss-q-title">9.- Según los datos aportados en la pregunta nº 7, ¿De cuántos controladores dispondrá la empresa en el año n+2?</div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item"><label><input type="radio" name="entry.2043682182" value="360" id="group_2043682182_1" class="ss-q-radio" aria-label="360"><label class="ss-choice-label" for="group_2043682182_1">360</label></label></li> 
+              <li class="ss-choice-item"><label><input type="radio" name="entry.2043682182" value="400" id="group_2043682182_2" class="ss-q-radio" aria-label="400"><label class="ss-choice-label" for="group_2043682182_2">400</label></label></li> 
+              <li class="ss-choice-item"><label><input type="radio" name="entry.2043682182" value="320" id="group_2043682182_3" class="ss-q-radio" aria-label="320"><label class="ss-choice-label" for="group_2043682182_3">320</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+              <div class="errorbox-good">
+            <div dir="ltr" class="ss-item  ss-radio">
+              <div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1515345935"><div class="ss-q-title"><p>10.- Suponiendo</p> 
+                <div class= "alert alert-info"> 
+                <p>que la demanda de personal respecto a las categorías profesionales de (a) directores de proyecto; (b) ayudantes de director; (c) encargados de sección y (d) controladores de la empresa RICOS S/A para el año n+1 sean las siguientes:</p>
+                <p>|2,100,600,700|</p>
+                <p>y que la oferta de personal estimada para el mismo año sea la siguiente:</p>
+                <p>|15,75,450,600|</p>
+                </div>
+                <p>¿Cuál de las siguientes interpretaciones es CORRECTA?</p></div><div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <ul class="ss-choices">
+              <li class="ss-choice-item"><label><input type="radio" name="entry.245039537" value="Habrá que seleccionar a 5 empleados" id="group_245039537_1" class="ss-q-radio" aria-label="Habrá que seleccionar a 5 empleados"><label class="ss-choice-label" for="group_245039537_1">Habrá que seleccionar a 5 empleados</label></label></li> 
+              <li class="ss-choice-item"><label><input type="radio" name="entry.245039537" value="Habrá que dar de baja a 100 controladores" id="group_245039537_2" class="ss-q-radio" aria-label="Habrá que dar de baja a 100 controladores"><label class="ss-choice-label" for="group_245039537_2">Habrá que dar de baja a 100 controladores</label></label></li> 
+              <li class="ss-choice-item"><label><input type="radio" name="entry.245039537" value="Habrá que seleccionar a 150 encargados de sección" id="group_245039537_3" class="ss-q-radio" aria-label="Habrá que seleccionar a 150 encargados de sección"><label class="ss-choice-label" for="group_245039537_3">Habrá que seleccionar a 150 encargados de sección</label></label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+<input type="hidden" name="draftResponse" value="[]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+<div class="ss-item ss-navigate"><div class="ss-form-entry">
+<input type="submit" name="submit" value="Enviar" id="ss-submit">
+</div></div></form>
+
+        <footer class="span12">
           <p class="pull-right"><a href="#">Volver arriba</a></p>
           <p>© 2013 Sauco and Milius Inc. </p>
         </footer>
