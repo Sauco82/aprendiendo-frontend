@@ -7,6 +7,21 @@
     <link href="css/estilos.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $().ready(
+          function(){
+            $('#felicidades').hide();
+            var hoy = new Date().getTime();
+            var principio = new Date("04/06/2013").getTime();
+            var fin = new Date("04/07/2013").getTime();
+            if ((hoy>principio) && (hoy<fin)){
+              $('#examen_oculto').show();
+              $('#anuncio').hide();
+              $('#ejercicios_a_ocultar').hide();
+            }
+          }
+        );
+    </script>
   </head>
   <body>
 
@@ -50,7 +65,7 @@
                         </ul>
                       </li>
 
-                      <li class="dropdown">
+                      <li id="ejercicios_a_ocultar" class="dropdown">
                         <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"> Ejercicios <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li class="nav-header">Ejercicios</li>
