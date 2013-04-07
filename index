@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Preselecci&oacute;n a través del CV</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/estilos.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+   
+  </head>
+  <body>
+
+    <div id="menu" class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse">
+               <div class="navbar-inner">
+
+                  <a class="brand" href="index.html">Preselecci&oacute;n a través del CV</a>
+
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+                  
+
+                  <div class="nav-collapse collapse pull-right">
+                  
+                    <ul class="nav active">
+                      <li><a href="index.html">&Iacute;ndice</a></li>
+                  
+                      <li class="dropdown">
+                        <a href="intro.html" class="dropdown-toggle" data-toggle="dropdown"> Introducci&oacute;n te&oacute;rica<b class="caret"></b></a>
+                      </li>
+
+                      <li class="dropdown">
+                        <a href="ejercicios.html" class="dropdown-toggle" data-toggle="dropdown"> Ejercicios <b class="caret"></b></a>
+                      </li>
+
+                      <li class="dropdown">
+                        <a href="trabajo.html" class="dropdown-toggle" data-toggle="dropdown"> Trabajo en grupo <b class="caret"></b></a>
+                       
+                      </li>
+                      
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+
+
+
+    
+    <div class="container marketing">
+
+      <div class="row">
+        
+        <div class="span9 offset3">
+        	<div class="hero">
+        		<h1>
+        			Índice
+        			<br>
+	        		<small>Preselecci&oacute;n a través del CV</small>
+	        	</h1>
+	        	<ul>
+					     <li><a href="intro.html">Introducci&oacute;n te&oacute;rica</a></li>
+					     <li><a href="ejercicios.html">Ejercicio pr&aacute;ctico</a></li>
+					     <li><a href="trabajo.html">Trabajo en grupo</a></li>                         
+					
+				    </ul>
+        	</div>
+
+          	<p><a class="btn btn-primary btn-large pull-right" href="#">Introducci&oacute;n te&oacute;rica »</a></p>
+        </div>
+      </div>
+
+
+      <hr>
+
+      <footer>
+        <p class="pull-right"><a href="#">Volver arriba</a></p>
+        <p>© 2013 Sauco and Milius Inc. </p>
+      </footer>
+
+    </div>
+
+
+
+   
+    
+  
+
+</body>
+</html>
