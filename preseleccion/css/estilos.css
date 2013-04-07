@@ -31,6 +31,8 @@ table th.imprescindible{background-color:#bce8f1}
 
 .intro-texto{min-width:685px}
 
+.opcion{width: 100px}
+
 
 .marco_del_ejemplo{overflow: hidden;}
 .marco_del_ejemplo .datos, .marco_del_ejemplo .formulas{float:left;}
