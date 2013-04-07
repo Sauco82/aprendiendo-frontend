@@ -17,11 +17,14 @@ ul{list-style: none;}
 
 form table{width: 100%;margin-bottom: 40px;}
 table th{font-weight: normal; font-style: italic;}
-table td,table th{text-align: center;border-bottom: 1px solid #aaa;}
+table td,table th{text-align: left;border-bottom: 1px solid #aaa;}
 table tr.suma td,table tr.suma th{background:#aaa;}
 table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
 
 table.correlacion{width:100%;margin-top: 20px;}
+
+table td.no_imprescindible{background-color:rgba(0, 155, 204, 0.66)}
+table td.imprescindible{background-color:rgba(0, 136, 204, 0.8);}
 
 .marco_del_ejemplo{overflow: hidden;}
 .marco_del_ejemplo .datos, .marco_del_ejemplo .formulas{float:left;}
