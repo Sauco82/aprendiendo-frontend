@@ -24,8 +24,12 @@ table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
 
 table.correlacion{width:100%;margin-top: 20px;}
 
-table td.no_imprescindible{background-color:rgba(0, 155, 204, 0.66)}
-table td.imprescindible{background-color:rgba(0, 136, 204, 0.8);}
+table td.no_imprescindible{background-color:#d9edf7}
+table td.imprescindible{background-color:#bce8f1}
+table th.no_imprescindible{background-color:#d9edf7}
+table th.imprescindible{background-color:#bce8f1}
+
+.intro-texto{min-width:685px}
 
 
 .marco_del_ejemplo{overflow: hidden;}
