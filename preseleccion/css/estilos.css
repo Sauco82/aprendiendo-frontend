@@ -34,6 +34,8 @@ table th.imprescindible{background-color:#bce8f1}
 
 .opcion{width: 100px}
 
+.IconsCV{float:left;padding: 3px}
+
 
 .marco_del_ejemplo{overflow: hidden;}
 .marco_del_ejemplo .datos, .marco_del_ejemplo .formulas{float:left;}
