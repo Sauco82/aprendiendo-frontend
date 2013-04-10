@@ -34,7 +34,12 @@ table th.imprescindible{background-color:#bce8f1}
 
 .opcion{width: 100px}
 
-.IconsCV{float:left;padding: 3px}
+#navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 3px;
+}
 
 
 .marco_del_ejemplo{overflow: hidden;}

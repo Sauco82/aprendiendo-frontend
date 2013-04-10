@@ -183,13 +183,13 @@
                   <div id="collapseTwo" class="accordion-body collapse">
                     <div class="accordion-inner">
                       <div class="IconsCV">
-                      <ul>
-                        <li class="IconsCV"><img src="img/IconVirginia.png"></li>
-                        <li class="IconsCV"><img src="img/IconRaquel.png"></li>
-                        <li class="IconsCV"><img src="img/IconIsidoro.png"></li>
-                        <li class="IconsCV"><img src="img/IconCarmen.png"></li>
-                        <li class="IconsCV"><img src="img/IconVanesa.png"></li>
-                        <li class="IconsCV"><img src="img/IconTamara.png"></li>
+                      <ul id="navlist">
+                        <li a href="#" <form><input type="image" src="img/IconVirginia.png" value="Texto" onClick="window.location.href='CVvirginia.pdf'"></form> </li>
+                        <li a href="#" <form><input type="image" src="img/IconRaquel.png" value="Texto" onClick="window.location.href='CVraquel.pdf'"></form> </li>
+                        <li a href="#" <form><input type="image" src="img/IconIsidoro.png" value="Texto" onClick="window.location.href='CVisidoro.pdf'"></form> </li>
+                        <li a href="#" <form><input type="image" src="img/IconCarmen.png" value="Texto" onClick="window.location.href='CVcarmen.pdf'"></form> </li>
+                        <li a href="#" <form><input type="image" src="img/IconVanesa.png" value="Texto" onClick="window.location.href='CVvanesa.pdf'"></form> </li>
+                        <li a href="#" <form><input type="image" src="img/IconTamara.png" value="Texto" onClick="window.location.href='CVtamara.pdf'"></form> </li>
                       </ul>
                     </div>
                     </div>
@@ -1032,7 +1032,8 @@
 
         <div class="ss-item ss-navigate">
           <div class="ss-form-entry">
-            <input type="submit" name="submit" value="Submit" id="ss-submit">
+            <p id="esta_incompleto" class='alert alert-error' style="display:none;">Faltan preguntas por responder</p>
+            <input id="boton_envio" class="btn btn-primary" type="submit" name="submit" value="Terminar el Ejercicio" />
           </div>
         </div>
       </form>
