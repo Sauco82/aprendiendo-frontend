@@ -24,10 +24,10 @@ table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
 
 table.correlacion{width:100%;margin-top: 20px;}
 
-table td.no_imprescindible{background-color:#d9edf7}
-table td.imprescindible{background-color:#bce8f1}
-table th.no_imprescindible{background-color:#d9edf7}
-table th.imprescindible{background-color:#bce8f1}
+table td.no_imprescindible{background-color:#fcf8e3}
+table td.imprescindible{background-color:#dff0d8}
+table th.no_imprescindible{background-color:#fcf8e3}
+table th.imprescindible{background-color:#dff0d8}
 
 .intro-texto{min-width:685px}
 .nombre{width:275px}
@@ -40,6 +40,8 @@ display: inline;
 list-style-type: none;
 padding-right: 3px;
 }
+
+.blank{height: 300px}
 
 
 .marco_del_ejemplo{overflow: hidden;}
