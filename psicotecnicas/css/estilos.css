@@ -1,0 +1,166 @@
+h2,h3{font-weight: normal;font-style: italic;}
+ul{list-style: none;}
+
+#menu{margin-top: 20px;}
+
+.navbar{font-size: 14px}
+
+.menu_lateral{font-size: 14px;}	
+.menu_lateral li a i {float: right;}
+.menu_lateral li.active a{color:white; background:#08C;}
+
+.hero{ padding-bottom:40px;}
+
+.nav-stacked .nav-header{padding:0;}
+
+.siguiente {overflow: hidden; margin-top: 40px;}
+
+form table{width: 100%;margin-bottom: 40px;}
+table th{font-weight: normal; font-style: italic;}
+table td{text-align: left;border-bottom: 1px solid #aaa;}
+table th{text-align: center;border-bottom: 1px solid #aaa;}
+table tr.suma td,table tr.suma th{background:#aaa;}
+table tr.promedio td,table tr.promedio th{background:#0099d4;color:white;}
+
+table.correlacion{width:100%;margin-top: 20px;}
+
+table td.no_imprescindible{background-color:#fcf8e3}
+table td.imprescindible{background-color:#dff0d8}
+table th.no_imprescindible{background-color:#fcf8e3}
+table th.imprescindible{background-color:#dff0d8}
+
+.intro-texto{min-width:685px}
+.nombre{width:275px}
+
+.opcion{width: 100px}
+
+#navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 3px;
+}
+
+.blank{height: 300px}
+
+
+.marco_del_ejemplo{overflow: hidden;}
+.marco_del_ejemplo .datos, .marco_del_ejemplo .formulas{float:left;}
+.marco_del_ejemplo .datos{width:260px; margin: 0px 50px;}
+.marco_del_ejemplo .formulas{width:440px;margin: 0px 20px;}
+
+.rango{padding: 40px 20px 20px 20px; text-align: center; font-size: 24px;}
+
+
+.cuenta .nombre, .cuenta .igual, .cuenta .fraccion, .cuenta .resultado{float:left;}
+.cuenta .nombre, .cuenta .igual, .cuenta .resultado{line-height: 60px; vertical-align: center;}
+.cuenta .nombre{width: 145px; text-align: right;}
+.cuenta .igual{width: 25px; text-align: center;}
+.cuenta .fraccion{width:200px;}
+.cuenta .resultado{width:40px;}
+
+.cuenta_margenes{ overflow: hidden; display: block}
+.cuenta_margenes .cuenta{margin:0 auto; width: 520px}
+.cuenta_margenes .cuenta .nombre{width: 245px; }
+.cuenta_margenes .cuenta .fraccion{width:250px;}
+
+.cuenta_margenes_ejemplo{ overflow: hidden; display: block}
+.cuenta_margenes_ejemplo .cuenta{margin:0 auto; width: 270px}
+.cuenta_margenes_ejemplo .cuenta .fraccion{width:200px;}
+
+.cuenta_correlacion{ overflow: hidden; display: block}
+.cuenta_correlacion .cuenta{margin:20px auto 0 auto; width: 250px}
+.cuenta_correlacion .cuenta .nombre{width: 25px; }
+
+.cuenta_correlacion.ejemplo .cuenta {width: 330px;}
+
+.dividendo,.divisor{display: block; text-align: center; line-height: 28px}
+.dividendo{border-bottom: 2px solid #888;padding-bottom: 5px;}
+.divisor{padding-top: 5px;	line-height: 30px}
+.resultado{float:left;height: 77px;line-height: 77px;font-weight: bold;}
+
+
+.cuenta_markov .operando1, .cuenta_markov .operando2, .cuenta_markov .resultado{width: 30%; float:left;}
+.cuenta_markov .operando1, .cuenta_markov .resultado{height: 77px;line-height: 77px;}
+.cuenta_markov .operando1{text-align: right;}
+.cuenta_markov .resultado{text-align: left;}
+.cuenta_markov table.operando2{margin: 0 10px;}
+.cuenta_markov table.operando2 tr td{border:0;}
+.cuenta_markov table.operando2 tr td.linea_izq{border-left: 1px solid #aaa;}
+.cuenta_markov table.operando2 tr td.linea_der{border-right: 1px solid #aaa;}	
+.cuenta_markov .resultados{clear:both; padding-top: 20px}
+.cuenta_markov .resultados p{width: 400px; margin:0 auto ;}
+
+.ecuacion{
+	font-size: 130%;
+	text-align: center;
+} 
+.media{text-decoration: overline;}
+.detalles{text-align: center;}
+
+table.datos td.sumandos{background:#BEE5F7;}
+
+table tr.fila_popover td{border:0; padding-top: 10px;}
+.popover-content{font-size: 15px;}
+
+
+
+
+/* Media queries */
+@media  (min-width: 980px) and (max-width: 1200px) {  
+	.marco_del_ejemplo .datos{margin: 0px;}
+	.marco_del_ejemplo .formulas{width:420px;margin: 0px 0px 0px 20px;}
+	.cuenta .fraccion{width:180px;}
+}
+ 
+@media (min-width: 768px) and (max-width: 979px) {  
+	.marco_del_ejemplo .datos{margin: 0px;}
+	.marco_del_ejemplo .formulas{width:250px;margin: 0px 0px 0px 20px;}	
+	.cuenta .fraccion{width:180px;}
+	.cuenta .nombre{ display: block;}
+}
+ 
+@media (max-width: 767px) { 
+	.affix{display: none}
+}
+
+
+/* Formulario */
+
+
+
+.ss-q-title{
+	font-size: 19px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.ss-choices{overflow: hidden;}
+.ss-choice-item label input{
+	float:left;
+	clear:left;
+	width:40px;
+}
+.ss-choice-item label label{
+	margin-left:40px ;
+}
+
+#boton_envio{
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px 40px;
+	display: block;
+	margin: 0 auto;
+	border:none;
+	cursor:pointer;
+	background:#0099d4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:white;
+	text-shadow: 1px 1px 0 #007dae;
+	text-decoration: none;
+	font-weight: normal;
+}
+	#boton_envio:hover{background:#00b1f4;}
