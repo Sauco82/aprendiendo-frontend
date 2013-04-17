@@ -1,9 +1,10 @@
 h2,h3{font-weight: normal;font-style: italic;}
 ul{list-style: none;}
 
-#menu{margin-top: 20px;}
+#menu{margin-top:0px;}
 
 .navbar{font-size: 14px}
+.navbar-fixed-top{margin-top:0px; margin-bottom:30px}
 
 .menu_lateral{font-size: 14px;}	
 .menu_lateral li a i {float: right;}
@@ -29,8 +30,9 @@ table td.imprescindible{background-color:#dff0d8}
 table th.no_imprescindible{background-color:#fcf8e3}
 table th.imprescindible{background-color:#dff0d8}
 
-.intro-texto{min-width:685px}
-.nombre{width:275px}
+.intro-texto{min-width:98%}
+.intro-texto-cuadro{min-width:485px}
+.nombre{margin-left:5px; width:400px}
 
 .opcion{width: 100px}
 
@@ -42,6 +44,7 @@ padding-right: 3px;
 }
 
 .blank{height: 300px}
+.cutrearreglo{height:30px}]
 
 
 .marco_del_ejemplo{overflow: hidden;}
