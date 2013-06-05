@@ -10,10 +10,11 @@ h2,h3{
 	.navbar{font-size: 14px}
 
 .hero{
-	text-align: center;
 	padding-bottom:40px;
 }
 
 .nav-stacked .nav-header{
 	padding:0;
 }
+
+.blank{height: 300px}
