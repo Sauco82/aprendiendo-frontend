@@ -7,7 +7,8 @@ h2,h3{
 #menu{
 	margin-top: 20px;
 }
-	.navbar{font-size: 14px}
+
+.navbar{font-size: 14px}
 
 .hero{
 	padding-bottom:40px;
@@ -40,5 +41,10 @@ h2,h3{
   border-bottom-color: #999999;
 }
 
-.nav-tabs{}
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #f5f4f0;
+  border-bottom: 1px solid #cccdc8;
+}
 
