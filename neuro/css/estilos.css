@@ -1,0 +1,50 @@
+h2,h3{
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+#menu{
+	margin-top: 20px;
+}
+
+.navbar{font-size: 14px}
+
+.hero{
+	padding-bottom:40px;
+}
+
+.nav-stacked .nav-header{
+	padding:0;
+}
+
+.blank{height: 100px}
+.miniblank{height: 20px}
+
+.fondimagen{background-color: #f5f4f0}
+
+.centered{position: center;}
+
+.verde{background-color: #dff0d8}
+.azul{background-color: #d9edf7}
+.amarillo{background-color: #fcf8e3}
+.rojo{background-color: #f2dede}
+.gris{background-color: #cccdc8}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  color: #555555;
+  cursor: default;
+  background-color: #cccdc8;
+  border: 1px solid #999999;
+  border-bottom-color: #999999;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #f5f4f0;
+  border-bottom: 1px solid #cccdc8;
+}
+
