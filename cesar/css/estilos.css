@@ -39,3 +39,7 @@
     max-height: 100%;
     text-align: center;
 }
+
+.miniblank {
+    height: 20px;
+}
