@@ -33,3 +33,9 @@
     text-align: center;
     padding: 10px
 }
+
+.cabecera {
+    max-width: 100%
+    max-height: 100%;
+    text-align: center;
+}
